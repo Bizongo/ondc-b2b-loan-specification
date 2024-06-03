@@ -96,15 +96,13 @@
                 "invoice_number": "INV-2024-05-001",
                 "invoice_date": "2024-05-10",
                 "invoice_amount": 85000,
-                "seller_gstin": "98ZYXWV9876543210U",
-                "download_link": "https://api.example.com/invoices/INV-2024-05-001?token=abc123"
+                "counterparty_gstin": "98ZYXWV9876543210U",
               },
               {
                 "invoice_number": "INV-2024-05-002",
                 "invoice_date": "2024-05-15",
                 "invoice_amount": 120000,
-                "seller_gstin": "76FEDCBA5432109876",
-                "download_link": "https://api.example.com/invoices/INV-2024-05-002?token=def456"
+                "counterparty_gstin": "76FEDCBA5432109876",
               }
             ]
           },
