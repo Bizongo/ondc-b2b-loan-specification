@@ -32,12 +32,19 @@
     "transaction_id": "uuid-90215d70-c146-48a9-8c11-680123456789",
     "message_id": "uuid-123e4567-e89b-12d3-a456-426614174000",
     "timestamp": "2024-05-21T10:00:00Z",
-    "bpp_id": "bpp.credit.becknprotocol.org",
-    "bpp_uri": "https://bpp.credit.becknprotocol.org"
+    "ttl": "PT5M",
+    "location": {
+      "city": {
+        "code": "*"
+      },
+      "country": {
+        "code": "IND"
+      }
+    }
   },
   "message": {
     "intent": {
-      "item": {
+      "category": {
         "descriptor": {
           "code": "WORKING_CAPITAL_LOAN"
         }
@@ -155,7 +162,7 @@
             "descriptor": {
               "code": "MAXIMUM_ACCEPTABLE_RATE"
             },
-            "value": 15.0
+            "value": 15
           }
         ]
       },
@@ -175,6 +182,57 @@
           }
         ]
       }
+    },
+    "payment": {
+      "collected_by": "BPP",
+      "tags": [
+        {
+          "descriptor": {
+            "code": "BUYER_FINDER_FEES"
+          },
+          "display": false,
+          "list": [
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEES_TYPE"
+              },
+              "value": "percent-annualized"
+            },
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEES_PERCENTAGE"
+              },
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "descriptor": {
+            "code": "SETTLEMENT_TERMS"
+          },
+          "display": false,
+          "list": [
+            {
+              "descriptor": {
+                "code": "DELAY_INTEREST"
+              },
+              "value": "2.5"
+            },
+            {
+              "descriptor": {
+                "code": "STATIC_TERMS"
+              },
+              "value": "https://bap.credit.becknprotocol.io/personal-banking/loans/personal-loan"
+            },
+            {
+              "descriptor": {
+                "code": "OFFLINE_CONTRACT"
+              },
+              "value": "true"
+            }
+          ]
+        }
+      ]
     }
   }
 }
