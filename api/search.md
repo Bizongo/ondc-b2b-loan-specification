@@ -48,193 +48,159 @@
         "descriptor": {
           "code": "WORKING_CAPITAL_LOAN"
         }
-      }
-    },
-    "criteria": {
-      "gst": {
-        "descriptor": {
-          "name": "GST Information"
-        },
-        "tags": [
-          {
-            "descriptor": {
-              "code": "GSTIN"
-            },
-            "value": "12ABCDE3456F7G8H9I"
-          },
-          {
-            "descriptor": {
-              "code": "BUSINESS_NAME"
-            },
-            "value": "Example Trader"
-          },
-          {
-            "descriptor": {
-              "code": "BUSINESS_TYPE"
-            },
-            "value": "Proprietorship"
-          },
-          {
-            "descriptor": {
-              "code": "REGISTRATION_DATE"
-            },
-            "value": "2022-08-01"
-          }
-        ]
       },
-      "invoices": {
-        "descriptor": {
-          "name": "Invoice Data"
-        },
-        "tags": [
-          {
-            "descriptor": {
-              "code": "INVOICE"
-            },
-            "list": [
+      "fulfillment": {
+        "customer": {
+          "organization": {
+            "tags": [
               {
-                "invoice_number": "INV-2024-05-001",
-                "invoice_date": "2024-05-10",
-                "invoice_amount": 85000,
-                "counterparty_gstin": "98ZYXWV9876543210U",
+                "descriptor": {
+                  "code": "GSTIN"
+                },
+                "value": "12ABCDE3456F7G8H9I"
               },
               {
-                "invoice_number": "INV-2024-05-002",
-                "invoice_date": "2024-05-15",
-                "invoice_amount": 120000,
-                "counterparty_gstin": "76FEDCBA5432109876",
+                "descriptor": {
+                  "code": "BUSINESS_NAME"
+                },
+                "value": "Example Trader"
+              },
+              {
+                "descriptor": {
+                  "code": "BUSINESS_TYPE"
+                },
+                "value": "Proprietorship"
+              },
+              {
+                "descriptor": {
+                  "code": "REGISTRATION_DATE"
+                },
+                "value": "2022-08-01"
               }
             ]
-          },
-          {
-            "descriptor": {
-              "code": "BULK_INVOICES_LINK"
-            },
-            "value": "https://api.example.com/invoices/download-zip?token=bulk_download_token"
           }
-        ]
-      },
-      "bank_statement": {
-        "descriptor": {
-          "name": "Bank Statement"
         },
         "tags": [
           {
             "descriptor": {
-              "code": "FETCH_MODE"
+              "code": "LOAN_AMOUNT"
             },
-            "value": "ONLINE"
+            "value": 100000
           },
-          {
-            "descriptor": {
-              "code": "SERVICE_PROVIDER"
-            },
-            "value": "Perfios"
-          },
-          {
-            "descriptor": {
-              "code": "STATEMENT_LINK"
-            },
-            "value": "https://api.perfios.com/v2/statements/download?token=xyz123"
-          },
-          {
-            "descriptor": {
-              "code": "STATEMENT_PERIOD"
-            },
-            "value": "2024-04-01_to_2024-04-30"
-          }
-        ]
-      },
-      "loan_amount": {
-        "descriptor": {
-          "name": "Desired Loan Amount"
-        },
-        "value": 100000
-      },
-      "loan_interest_rate": {
-        "descriptor": {
-          "name": "Loan Interest Rate"
-        },
-        "tags": [
           {
             "descriptor": {
               "code": "MAXIMUM_ACCEPTABLE_RATE"
             },
             "value": 15
-          }
-        ]
-      },
-      "loan_repayment": {
-        "descriptor": {
-          "name": "Loan Repayment"
-        },
-        "tags": [
+          },
           {
             "descriptor": {
-              "code": "PREFERRED_TENURE_MONTHS"
+              "code": "INVOICE_DATA",
+              "name": "Invoice Details"
             },
-            "list": [
-              3,
-              6
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "INVOICE"
+                },
+                "items": [
+                  {
+                    "id": "invoice-item-1",
+                    "descriptor": {
+                      "name": "Invoice 1"
+                    },
+                    "price": {
+                      "currency": "INR",
+                      "value": "85000"
+                    },
+                    "tags": [
+                      {
+                        "descriptor": {
+                          "code": "INVOICE_NUMBER"
+                        },
+                        "value": "INV-2024-05-001"
+                      },
+                      {
+                        "descriptor": {
+                          "code": "INVOICE_DATE"
+                        },
+                        "value": "2024-05-10"
+                      },
+                      {
+                        "descriptor": {
+                          "code": "COUNTERPARTY_GSTIN"
+                        },
+                        "value": "98ZYXWV9876543210U"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "BULK_INVOICE_LINK"
+                },
+                "value": "https://api.example.com/invoices/download?token=secure_token"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "GST_RETURNS",
+              "name": "GST Returns Information"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "GST_RETURN_PERIOD"
+                },
+                "value": 4
+              },
+              {
+                "descriptor": {
+                  "code": "GST_RETURNS_LINK"
+                },
+                "value": "https://api.example.com/gst-returns/download?token=secure_token"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "BANK_STATEMENT",
+              "name": "Bank Statement"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "USE_ACCOUNT_AGGREGATOR"
+                },
+                "value": true
+              },
+              {
+                "descriptor": {
+                  "code": "AGGREGATOR_NAME"
+                },
+                "value": "perfios"
+              },
+              {
+                "descriptor": {
+                  "code": "STATEMENT_PERIOD_MONTHS"
+                },
+                "value": 12
+              },
+              {
+                "descriptor": {
+                  "code": "BANK_STATEMENT_LINK"
+                },
+                "value": "https://api.example.com/bank-statements/download?token=secure_token"
+              }
             ]
           }
         ]
       }
-    },
-    "payment": {
-      "collected_by": "BPP",
-      "tags": [
-        {
-          "descriptor": {
-            "code": "BUYER_FINDER_FEES"
-          },
-          "display": false,
-          "list": [
-            {
-              "descriptor": {
-                "code": "BUYER_FINDER_FEES_TYPE"
-              },
-              "value": "percent-annualized"
-            },
-            {
-              "descriptor": {
-                "code": "BUYER_FINDER_FEES_PERCENTAGE"
-              },
-              "value": "1"
-            }
-          ]
-        },
-        {
-          "descriptor": {
-            "code": "SETTLEMENT_TERMS"
-          },
-          "display": false,
-          "list": [
-            {
-              "descriptor": {
-                "code": "DELAY_INTEREST"
-              },
-              "value": "2.5"
-            },
-            {
-              "descriptor": {
-                "code": "STATIC_TERMS"
-              },
-              "value": "https://bap.credit.becknprotocol.io/personal-banking/loans/personal-loan"
-            },
-            {
-              "descriptor": {
-                "code": "OFFLINE_CONTRACT"
-              },
-              "value": "true"
-            }
-          ]
-        }
-      ]
     }
   }
 }
-
 ```
 
 ### Response

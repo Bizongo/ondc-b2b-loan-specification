@@ -23,101 +23,114 @@
     "domain": "ONDC:FIS12",
     "version": "2.1.0",
     "action": "init",
-    "bap_id": "buyer-app-abc.becknprotocol.io",
-    "bap_uri": "https://buyer-app-abc.becknprotocol.io/",
-    "transaction_id": "uuid-90215d70-c146-48a9-8c11-680123456789", 
-    "message_id": "uuid-0123456789abcdef-1234-5678-90ab-cdef01234567",
-    "timestamp": "2024-05-21T10:15:00Z",
+    "bap_id": "bap.credit.becknprotocol.io",
+    "bap_uri": "https://bap.credit.becknprotocol.io/",
+    "transaction_id": "uuid-90215d70-c146-48a9-8c11-680123456789",
+    "message_id": "uuid-789abcdef0-1234-5678-90ab-cdef12345678",
+    "timestamp": "2024-05-21T10:10:00Z",
     "bpp_id": "bpp.credit.becknprotocol.org",
     "bpp_uri": "https://bpp.credit.becknprotocol.org"
   },
   "message": {
     "order": {
-      "provider": {
-        "id": "lender-xyz" 
-      },
       "items": [
-        {
-          "id": "offer-pqr-789" 
-        }
+        "ITEM_ID_INVOICE_LOAN_ICICI"
       ],
-      "tags": [
-        {
-          "descriptor": {
-            "code": "KYC_PROCESS",
-            "name": "KYC Process" 
+      "fulfillment": {
+        "type": "LOAN_REQUIREMENTS",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "KYC_PROCESS",
+              "name": "KYC Process Details"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "MODE"
+                },
+                "value": "ONLINE"
+              },
+              {
+                "descriptor": {
+                  "code": "STATUS"
+                },
+                "value": "COMPLETED"
+              },
+              {
+                "descriptor": {
+                  "code": "SCHEDULED_DATE"
+                },
+                "value": "2024-05-28"
+              }
+            ]
           },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "STATUS"
-              },
-              "value": "COMPLETED" // Or "PENDING" if offline
+          {
+            "descriptor": {
+              "code": "DOCUMENT_SUBMISSION",
+              "name": "Document Submission Requirements"
             },
-            {
-              "descriptor": {
-                "code": "SCHEDULED_DATE" // If offline
-              },
-              "value": "2024-05-28" // Provided by buyer app
-            }
-          ]
-        },
-        {
-          "descriptor": {
-            "code": "DOCUMENT_SUBMISSION",
-            "name": "Document Submission"
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "DOCUMENTS_REQUIRED",
+                  "name": "Required Documents"
+                },
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "SUBMISSION_STATUS"
+                    },
+                    "value": "COMPLETED"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "UPLOAD_URL"
+                    },
+                    "value": "https://buyer-app.example.com/documents?token=secure_token"
+                  }
+                ]
+              }
+            ]
           },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "FORM_ID"
-              },
-              "value": "F001-ICICI"
+          {
+            "descriptor": {
+              "code": "WORKING_CAPITAL_LIMITS",
+              "name": "Working Capital Limits"
             },
-            {
-              "descriptor": {
-                "code": "SUBMISSION_STATUS" 
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "COUNTERPARTY_GSTINS",
+                  "name": "Allowed Counterparty GSTINs"
+                },
+                "list": [
+                  "98ZYXWV9876543210U",
+                  "76FEDCBA5432109876"
+                ]
               },
-              "value": "COMPLETED"
-            }
-          ]
-        },
-        {
-          "descriptor": {
-            "code": "WORKING_CAPITAL_LIMITS",
-            "name": "Working Capital Limits"
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "COUNTERPARTY_GSTINS",
-                "name": "Allowed Counterparty GSTINs" 
+              {
+                "descriptor": {
+                  "code": "COUNTERPARTY_ACCEPTANCE",
+                  "name": "Counterparty Acceptance Required"
+                },
+                "value": true
               },
-              "list": [
-                "98ZYXWV9876543210U",
-                "76FEDCBA5432109876" 
-              ]
-            },
-            {
-              "descriptor": {
-                "code": "COUNTERPARTY_ACCEPTANCE", 
-                "name": "Counterparty Acceptance Required" 
-              },
-              "value": true
-            },
-            {
-              "descriptor": {
-                "code": "ACCEPTED"
-              },
-              "value": true
-            }
-          ]
-        }
-      ]
+              {
+                "descriptor": {
+                  "code": "BORROWER_ACCEPTED"
+                },
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "created_at": "2024-05-21T10:15:00Z",
+      "updated_at": "2024-05-21T10:15:00Z"
     }
   }
 }
-
 ```
 
 ### Response
