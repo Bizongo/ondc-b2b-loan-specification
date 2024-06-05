@@ -33,6 +33,9 @@
   },
   "message": {
     "order": {
+      "provider": {
+        "id": "lender-xyz" 
+      },
       "items": [
         "ITEM_ID_INVOICE_LOAN_ICICI"
       ]
