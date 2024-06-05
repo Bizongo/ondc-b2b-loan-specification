@@ -52,11 +52,11 @@
                     "descriptor": {
                       "code": "LINE_ID"
                     },
-                    "value": "WCL-1234567890" 
+                    "value": "WCL-1234567890"
                   },
                   {
                     "descriptor": {
-                      "code": "LINE_DETAILS" 
+                      "code": "LINE_DETAILS"
                     },
                     "value": {
                       "limit": 100000,

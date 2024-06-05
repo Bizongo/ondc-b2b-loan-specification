@@ -24,8 +24,8 @@
     "domain": "ONDC:FIS12",
     "version": "2.1.0",
     "action": "confirm",
-    "bap_id": "buyer-app-abc.becknprotocol.io",
-    "bap_uri": "https://buyer-app-abc.becknprotocol.io/",
+    "bap_id": "bap.credit.becknprotocol.io",
+    "bap_uri": "https://bap.credit.becknprotocol.io/",
     "transaction_id": "uuid-90215d70-c146-48a9-8c11-680123456789",
     "message_id": "uuid-abcdef012-3456-7890-abcd-ef0123456789",
     "timestamp": "2024-05-21T10:20:00Z",
@@ -34,9 +34,7 @@
   },
   "message": {
     "order": {
-      "provider": {
-        "id": "lender-xyz"
-      },
+      "id": "order-id-123",
       "items": [
         {
           "id": "offer-pqr-789"
@@ -65,13 +63,27 @@
           "tags": [
             {
               "descriptor": {
+                "code": "OWNERS_KYC",
+                "name": "Owner KYC"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "STATUS"
+                  },
+                  "value": "COMPLETED"
+                }
+              ]
+            },
+            {
+              "descriptor": {
                 "code": "ENACH_SETUP",
                 "name": "eNACH Setup"
               },
               "tags": [
                 {
                   "descriptor": {
-                    "code": "STATUS" 
+                    "code": "STATUS"
                   },
                   "value": "COMPLETED"
                 }
@@ -87,14 +99,14 @@
                   "descriptor": {
                     "code": "STATUS"
                   },
-                  "value": "COMPLETED" 
+                  "value": "COMPLETED"
                 }
               ]
             },
             {
               "descriptor": {
-                "code": "BORROWER_BANK_ACCOUNT", 
-                "name": "Borrower Bank Account Details" 
+                "code": "BANK_ACCOUNT_DETAILS",
+                "name": "Bank Account Details"
               },
               "tags": [
                 {
@@ -107,25 +119,27 @@
                   "descriptor": {
                     "code": "ACCOUNT_NUMBER"
                   },
-                  "value": "123456789012" 
+                  "value": "123456789012"
                 },
                 {
                   "descriptor": {
                     "code": "IFSC_CODE"
                   },
-                  "value": "ABCD0001234" 
+                  "value": "ABCD0001234"
                 },
                 {
                   "descriptor": {
                     "code": "BANK_NAME"
                   },
-                  "value": "Example Bank" 
+                  "value": "Example Bank"
                 }
               ]
             }
           ]
         }
-      ]
+      ],
+      "created_at": "2024-05-21T10:20:00Z",
+      "updated_at": "2024-05-21T10:20:00Z"
     }
   }
 }

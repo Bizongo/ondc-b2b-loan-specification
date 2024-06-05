@@ -34,221 +34,227 @@
     "bpp_uri": "https://bpp.credit.becknprotocol.org"
   },
   "message": {
-    "list": [
-      {
-        "fi_name": "TATA Capital",
-        "fi_catalog": {
-          "id": "PROVIDER_ID",
-          "offer_details": {
+    "order": {
+      "id": "order-id-123",
+      "state": "PENDING",
+      "items": [
+        {
+          "id": "offer-pqr-789"
+        }
+      ],
+      "fulfillment": {
+        "type": "LOAN_SANCTION_DETAILS",
+        "tags": [
+          {
             "descriptor": {
-              "name": "Invoice based Loan"
+              "code": "SANCTION_DEATILS",
+              "name": "Final Sanction Details"
             },
             "tags": [
               {
                 "descriptor": {
-                  "code": "SANCTION_DETAILS",
-                  "name": "Final Sanction Details"
+                  "code": "SANCTIONED_AMOUNT"
                 },
-                "tags": [
-                  {
-                    "descriptor": {
-                      "code": "SANCTIONED_AMOUNT"
-                    },
-                    "value": 90000
-                  },
-                  {
-                    "descriptor": {
-                      "code": "INTEREST_RATE"
-                    },
-                    "value": 13.5
-                  },
-                  {
-                    "descriptor": {
-                      "code": "TENURE_MONTHS"
-                    },
-                    "value": 4
-                  },
-                  {
-                    "descriptor": {
-                      "code": "PROCESSING_FEES"
-                    },
-                    "value": 1200
-                  }
-                ]
+                "value": 90000
               },
               {
                 "descriptor": {
-                  "code": "LOAN_TERMS",
-                  "name": "Loan Terms"
+                  "code": "INTEREST_RATE"
+                },
+                "value": 13.5
+              },
+              {
+                "descriptor": {
+                  "code": "TENURE_MONTHS"
+                },
+                "value": 4
+              },
+              {
+                "descriptor": {
+                  "code": "PROCESSING_FEES"
+                },
+                "value": 1200
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "LOAN_TERMS",
+              "name": "Loan Terms"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "GENERAL",
+                  "name": "General Terms"
                 },
                 "tags": [
                   {
                     "descriptor": {
-                      "code": "GENERAL",
-                      "name": "General Terms"
+                      "code": "LOAN_AMOUNT",
+                      "name": "Loan Amount"
                     },
-                    "tags": [
-                      {
-                        "descriptor": {
-                          "code": "LOAN_AMOUNT",
-                          "name": "Loan Amount"
-                        },
-                        "value": 75000.00
-                      },
-                      {
-                        "descriptor": {
-                          "code": "TOTAL_INTEREST_CHARGE",
-                          "name": "Total Interest Charge",
-                          "short_desc": "During entire tenure of loan"
-                        },
-                        "value": 20000.00
-                      },
-                      {
-                        "descriptor": {
-                          "code": "OTHER_UPFRONT_CHARGES",
-                          "name": "Other up front charges",
-                          "short_desc": "break-up of each component given below"
-                        },
-                        "value": 530.00
-                      },
-                      {
-                        "descriptor": {
-                          "code": "PROCESSING_FEE",
-                          "name": "Processing fee"
-                        },
-                        "value": 231.00
-                      },
-                      {
-                        "descriptor": {
-                          "code": "INSURANCE_CHARGES",
-                          "name": "Insurance charges"
-                        },
-                        "value": 231.00
-                      },
-                      {
-                        "descriptor": {
-                          "code": "OTHERS",
-                          "name": "Others"
-                        },
-                        "value": 231.00
-                      },
-                      {
-                        "descriptor": {
-                          "code": "TENOR_OF_THE_LOAN",
-                          "name": "Tenor of the loan",
-                          "short_desc": "In month/days"
-                        },
-                        "value": "24 Months"
-                      }
-                    ]
+                    "value": 75000
                   },
                   {
                     "descriptor": {
-                      "code": "CONTINGENT",
-                      "name": "Contingent Terms"
+                      "code": "TOTAL_INTEREST_CHARGE",
+                      "name": "Total Interest Charge",
+                      "short_desc": "During entire tenure of loan"
                     },
-                    "tags": [
-                      {
-                        "descriptor": {
-                          "code": "RATE_ANNUALISED_PENAL_CHARGES",
-                          "name": "Rate Annualised penal charges"
-                        },
-                        "value": 20000.00
-                      },
-                      {
-                        "descriptor": {
-                          "code": "ANNUALISED_OTH_PENAL_CHARGES",
-                          "name": "Annualised oth penal charges",
-                          "short_desc": "if any, details to be provided"
-                        },
-                        "value": 20000.00
-                      }
-                    ]
+                    "value": 20000
+                  },
+                  {
+                    "descriptor": {
+                      "code": "OTHER_UPFRONT_CHARGES",
+                      "name": "Other up front charges",
+                      "short_desc": "break-up of each component given below"
+                    },
+                    "value": 530
+                  },
+                  {
+                    "descriptor": {
+                      "code": "PROCESSING_FEE",
+                      "name": "Processing fee"
+                    },
+                    "value": 231
+                  },
+                  {
+                    "descriptor": {
+                      "code": "INSURANCE_CHARGES",
+                      "name": "Insurance charges"
+                    },
+                    "value": 231
                   },
                   {
                     "descriptor": {
                       "code": "OTHERS",
-                      "name": "Other Terms"
+                      "name": "Others"
                     },
-                    "tags": [
-                      {
-                        "descriptor": {
-                          "code": "COOLING_OFF",
-                          "name": "Cooling off",
-                          "short_desc": "Look up period during which borrower shouldn't be charged any penalty on repayment loan."
-                        },
-                        "value": "12 Days"
-                      },
-                      {
-                        "descriptor": {
-                          "code": "DETAILS_OF_LSP",
-                          "name": "Details of LSP",
-                          "short_desc": "Acting as recovery agent and authorised to approach borrower"
-                        },
-                        "value": "Contact details to be provided"
-                      }
-                    ]
+                    "value": 231
+                  },
+                  {
+                    "descriptor": {
+                      "code": "TENOR_OF_THE_LOAN",
+                      "name": "Tenor of the loan",
+                      "short_desc": "In month/days"
+                    },
+                    "value": "24 Months"
                   }
                 ]
               },
               {
                 "descriptor": {
-                  "code": "SANCTION_REQUIREMENTS",
-                  "name": "Additional Requirements"
+                  "code": "CONTINGENT",
+                  "name": "Contingent Terms"
                 },
                 "tags": [
                   {
                     "descriptor": {
-                      "code": "ENACH_SETUP",
-                      "name": "eNACH Setup"
+                      "code": "RATE_ANNUALISED_PENAL_CHARGES",
+                      "name": "Rate Annualised penal charges"
                     },
-                    "tags": [
-                      {
-                        "descriptor": {
-                          "code": "LINK"
-                        },
-                        "value": "https://www.icicibank.com/enach-setup"
-                      }
-                    ]
+                    "value": 20000
                   },
                   {
                     "descriptor": {
-                      "code": "BANK_VERIFICATION",
-                      "name": "Bank Verification"
+                      "code": "ANNUALISED_OTH_PENAL_CHARGES",
+                      "name": "Annualised oth penal charges",
+                      "short_desc": "if any, details to be provided"
                     },
-                    "tags": [
-                      {
-                        "descriptor": {
-                          "code": "MODE"
-                        },
-                        "value": "PENNY_DROP"
-                      },
-                    ]
+                    "value": 20000
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "OTHERS",
+                  "name": "Other Terms"
+                },
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "COOLING_OFF",
+                      "name": "Cooling off",
+                      "short_desc": "Look up period during which borrower shouldn't be charged any penalty on repayment loan."
+                    },
+                    "value": "12 Days"
                   },
                   {
                     "descriptor": {
-                      "code": "BORROWER_BANK_ACCOUNT", 
-                      "name": "Borrower Bank Account Details" 
+                      "code": "DETAILS_OF_LSP",
+                      "name": "Details of LSP",
+                      "short_desc": "Acting as recovery agent and authorised to approach borrower"
                     },
-                    "tags": [ 
-                      {
-                        "descriptor": {
-                          "code": "REQUIRED"
-                        },
-                        "value": true 
-                      }
-                    ]
+                    "value": "Contact details to be provided"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "SANCTION_REQUIREMENTS",
+              "name": "Additional Requirements"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "ENACH_SETUP",
+                  "name": "eNACH Setup"
+                },
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "LINK"
+                    },
+                    "value": "https://www.icicibank.com/enach-setup"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "BANK_VERIFICATION",
+                  "name": "Bank Verification"
+                },
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "MODE"
+                    },
+                    "value": "PENNY_DROP"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "INSTRUCTIONS"
+                    },
+                    "value": "Please use the penny drop method to verify the borrower's bank account."
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "BORROWER_BANK_ACCOUNT",
+                  "name": "Borrower Bank Account Details"
+                },
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "REQUIRED"
+                    },
+                    "value": true
                   }
                 ]
               }
             ]
           }
-        }
-      }
-    ]
+        ]
+      },
+      "created_at": "2024-05-21T10:15:00Z",
+      "updated_at": "2024-05-21T10:15:00Z"
+    }
   }
 }
-
 ```
 
 ### Response
