@@ -1,0 +1,216 @@
+type: object
+properties:
+  context:
+    type: object
+    description: Contextual information related to the request.
+    properties:
+      domain:
+        type: string
+        enum:
+          - ONDC:FIS12
+        description: Domain of the request, indicating it belongs to the ONDC Financial Services (FIS) network.
+      version:
+        type: string
+        enum:
+          - 2.1.0
+        description: Version of the ONDC FIS specification used for this request.
+      action:
+        type: string
+        enum:
+          - search
+        description: Indicates the action being performed, which is a search in this case.
+      bap_id:
+        type: string
+        example: buyer-app-abc.becknprotocol.io
+        description: Unique identifier of the buyer application (BAP) sending the request.
+      bap_uri:
+        type: string
+        format: uri
+        example: https://buyer-app-abc.becknprotocol.io/
+        description: URI of the buyer application.
+      transaction_id:
+        type: string
+        format: uuid
+        example: uuid-90215d70-c146-48a9-8c11-680123456789
+        description: Unique identifier for the transaction.
+      message_id:
+        type: string
+        format: uuid
+        example: uuid-123e4567-e89b-12d3-a456-426614174000
+        description: Unique identifier for the message within the transaction.
+      timestamp:
+        type: string
+        format: date-time
+        example: '2024-05-21T10:00:00Z'
+        description: Timestamp of the request.
+      ttl:
+        type: string
+        format: duration
+        example: PT5M
+        description: Time to live for the request.
+      location:
+        type: object
+        properties:
+          city:
+            type: object
+            properties:
+              code:
+                type: string
+                example: "*"
+            required:
+              - code
+          country:
+            type: object
+            properties:
+              code:
+                type: string
+                example: IND
+            required:
+              - code
+        required:
+          - city
+          - country
+    required:
+      - domain
+      - version
+      - action
+      - bap_id
+      - bap_uri
+      - transaction_id
+      - message_id
+      - timestamp
+      - ttl
+      - location
+  message:
+    type: object
+    description: The message body containing the loan search intent and criteria.
+    properties:
+      intent:
+        type: object
+        description: Descriptor object indicating the intent of the request.
+        properties:
+          category:
+            type: object
+            properties:
+              descriptor:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    enum:
+                      - WORKING_CAPITAL_LOAN
+                required:
+                  - code
+            required:
+              - descriptor
+        required:
+          - category
+      tags:
+        type: array
+        description: Array of tags providing additional details about the loan search criteria.
+        items:
+          type: object
+          properties:
+            descriptor:
+              type: object
+              properties:
+                code:
+                  type: string
+                name:
+                  type: string
+              required:
+                - code
+            value:
+              type: string
+            minimum_amount:
+              type: number
+              format: float
+            maximum_amount:
+              type: number
+              format: float
+            minimum_rate:
+              type: number
+              format: float
+            maximum_rate:
+              type: number
+              format: float
+            minimum_tenure:
+              type: integer
+            maximum_tenure:
+              type: integer
+          example:
+            - descriptor:
+                code: LOAN_AMOUNT
+              value: 100000
+            - descriptor:
+                code: MAXIMUM_ACCEPTABLE_RATE
+              value: 15
+            - descriptor:
+                code: INVOICE_DATA
+                name: Invoice Details
+              tags:
+                - descriptor:
+                    code: INVOICE
+                  items:
+                    - id: invoice-item-1
+                      descriptor:
+                        name: Invoice 1
+                      price:
+                        currency: INR
+                        value: '85000'
+                      tags:
+                        - descriptor:
+                            code: INVOICE_NUMBER
+                          value: INV-2024-05-001
+                        - descriptor:
+                            code: INVOICE_DATE
+                          value: '2024-05-10'
+                        - descriptor:
+                            code: COUNTERPARTY_GSTIN
+                          value: '98ZYXWV9876543210U'
+                - descriptor:
+                    code: BULK_INVOICE_LINK
+                  value: https://api.example.com/invoices/download?token=bulk_download_token
+            - descriptor:
+                code: GST
+                name: GST Information
+              tags:
+                - descriptor:
+                    code: GSTIN
+                  value: '12ABCDE3456F7G8H9I'
+                - descriptor:
+                    code: BUSINESS_NAME
+                  value: Example Trader
+                - descriptor:
+                    code: BUSINESS_TYPE
+                  value: Proprietorship
+                - descriptor:
+                    code: REGISTRATION_DATE
+                  value: '2022-08-01'
+                - descriptor:
+                    code: GST_RETURN_PERIOD
+                  value: 4
+                - descriptor:
+                    code: GST_RETURNS_LINK
+                  value: https://api.example.com/gst-returns/download?token=gst_zip_token
+            - descriptor:
+                code: BANK_STATEMENT
+                name: Bank Statement
+              tags:
+                - descriptor:
+                    code: USE_ACCOUNT_AGGREGATOR
+                  value: true
+                - descriptor:
+                    code: AGGREGATOR_NAME
+                  value: perfios
+                - descriptor:
+                    code: STATEMENT_PERIOD_MONTHS
+                  value: 12
+                - descriptor:
+                    code: BANK_STATEMENT_LINK
+                  value: https://api.example.com/bank-statements/download?token=statement_zip_token
+    required:
+      - intent
+required:
+  - context
+  - message

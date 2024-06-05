@@ -1,0 +1,42 @@
+openapi: 3.0.0
+info:
+  title: ONDC B2B Invoice-Based Lending API
+  version: 1.0.0
+paths:
+  /search:
+    post:
+      summary: Initiate a Search for Working Capital Loan Offers
+      description: This endpoint allows buyer applications (BAPs) to initiate a search for working capital loan offers based on specific criteria provided by the borrower. The request includes details about the borrower's GSTIN, selected invoices, bank statement information, desired loan amount, interest rate preferences, and repayment preferences.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '../components/schemas/SearchRequest.yaml'
+      responses:
+        '202':
+          description: Acknowledgment of the search request.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: object
+                    properties:
+                      ack:
+                        type: object
+                        properties:
+                          status:
+                            type: string
+                            enum:
+                              - ACK
+                        required:
+                          - status
+                    required:
+                      - ack
+                required:
+                  - message
+        '400':
+          description: Bad Request - Invalid request format or missing required fields.
+        '500':
+          description: Internal Server Error - An error occurred while processing the request.
