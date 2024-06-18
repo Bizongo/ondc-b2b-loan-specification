@@ -69,6 +69,6 @@
 
 <p align="center">
 
-[← Back to Previous File](on_search-1.md) | [Next File →](on_search-2.md)
+[← Back to Previous File](on_search_1.md) | [Next File →](on_search_2.md)
 
 </p>

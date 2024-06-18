@@ -123,7 +123,7 @@
 
 <p align="center">
 
-[← Back to Previous File](search-1.md) | [Go to Form →](form-1.md) | [Next File →](search-2.md)
+[← Back to Previous File](search_1.md) | [Go to Form →](form_1.md) | [Next File →](search_2.md)
 
 </p>
 

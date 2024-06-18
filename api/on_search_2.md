@@ -111,7 +111,7 @@
 
 <p align="center">
 
-[← Back to Previous File](search-2.md) | [Next File →](select.md)
+[← Back to Previous File](search_2.md) | [Next File →](select.md)
 
 </p>
 
