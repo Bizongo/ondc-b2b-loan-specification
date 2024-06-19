@@ -25,47 +25,13 @@
     "bap_id": "buyer-app-abc.becknprotocol.io",
     "bap_uri": "https://buyer-app-abc.becknprotocol.io/",
     "transaction_id": "uuid-90215d70-c146-48a9-8c11-680123456789",
-    "message_id": "uuid-status-request-12345",
-    "timestamp": "2024-05-22T09:00:00Z",
+    "message_id": "uuid-abcdef012-3456-7890-abcd-ef0123456789",
+    "timestamp": "2024-05-21T11:00:00Z",
     "bpp_id": "bpp.credit.becknprotocol.org",
     "bpp_uri": "https://bpp.credit.becknprotocol.org"
   },
   "message": {
-    "list": [
-      {
-        "fi_name": "TATA Capital", 
-        "fi_catalog": {
-          "id": "PROVIDER_ID", 
-          "offer_details": {
-            "descriptor": {
-              "name": "Invoice based Loan" 
-            },
-            "tags": [
-              {
-                "descriptor": {
-                  "code": "WORKING_CAPITAL_LINE",
-                  "name": "Working Capital Line" 
-                },
-                "tags": [
-                  {
-                    "descriptor": {
-                      "code": "LINE_ID" 
-                    },
-                    "value": "WCL-1234567890" 
-                  }
-                ]
-              },
-              {
-                "descriptor": {
-                  "code": "STATUS_TYPE" 
-                },
-                "value": "DISBURSEMENT" // Or "REPAYMENT" 
-              }
-            ]
-          }
-        }
-      }
-    ]
+    "order_id": "WCL-1234567890" // Working Capital Line ID 
   }
 }
 ```
