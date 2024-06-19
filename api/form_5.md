@@ -1,3 +1,4 @@
+``` html
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,3 +27,15 @@
   <input type="submit" value="Next">
 </body>
 </html>
+```
+
+
+
+---
+
+<p align="center">
+
+[← Back to Previous File](on_init_1.md) | [Next File →](init_2.md)
+
+</p>
+

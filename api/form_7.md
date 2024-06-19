@@ -1,3 +1,4 @@
+``` html
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,3 +14,15 @@
   <input type="submit" value="Confirm">
 </body>
 </html>
+```
+
+
+
+---
+
+<p align="center">
+
+[← Back to Previous File](on_init_3.md) | [Next File →](confirm.md)
+
+</p>
+

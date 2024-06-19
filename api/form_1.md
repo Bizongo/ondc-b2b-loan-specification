@@ -1,6 +1,6 @@
 ## Loan Application Form
 
-```html
+``` html
 <!DOCTYPE html>
 <html>
 <head>

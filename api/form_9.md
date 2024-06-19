@@ -1,3 +1,4 @@
+``` html
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,3 +18,15 @@
   <input type="submit" value="Confirm Payment">
 </body>
 </html>
+```
+
+
+
+---
+
+<p align="center">
+
+[← Back to Previous File](on_cancel_1.md) | [Next File →](cancel_2.md)
+
+</p>
+
