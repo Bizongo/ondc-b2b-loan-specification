@@ -1,19 +1,18 @@
-## ON_SEARCH
+## ON_SELECT
 
+**Purpose:** Provides KYC details, operational limits, and document requirements for the selected loan offer.
 
-**Purpose:** Delivers loan offers from lenders in response to a SEARCH request
-
-**Endpoint:** /on_search
+**Endpoint:** /on_select
 
 **Method:** POST
 
-**Description:** The FI's BPP responds to the peer-to-peer SEARCH request with this endpoint.
-
+**Description:** The ONDC network (or the selected FI) uses this endpoint to send detailed information about the selected loan offer, including KYC requirements, working capital limits, and document submission details.
 
 **Steps:**
-  - **Process Form Data:** The FI's BPP retrieves the borrower's data using the FORM_SUBMISSION_ID.
-  - **Generate Offers:** The FI evaluates the borrower's information and generates personalized loan offers.
-  - **Send Response:** The FI's BPP sends the refined ON_SEARCH response, containing the tailored loan offers.
+  - **Prepare Offer Details:** The FI prepares details about the KYC process, operational limits, and document requirements.
+  - **Send Details:** The network sends the ON_SELECT response to the buyer app, including the detailed information about the selected offer.
+  - **Present Details:** The buyer app displays the details to the borrower.
+
 
 
 ### Request Body
@@ -21,19 +20,11 @@
 ``` json
 {
     "context": {
-        "domain": "ONDC:FIS12",
-        "location": {
-            "country": {
-                "code": "IND"
-            },
-            "city": {
-                "code": "*"
-            }
-        },
-        "action": "on_select",
+        "domain": "ONDC:FIS",
         "version": "2.0.0",
-        "bap_id": "bap.credit.becknprotocol.io",
-        "bap_uri": "https://bap.credit.becknprotocol.io/",
+        "action": "on_select",
+        "bap_id": "bizongo-next.becknprotocol.io",
+        "bap_uri": "https://bizongo-next.becknprotocol.io/",
         "bpp_id": "bpp.credit.becknprotocol.org",
         "bpp_uri": "https://bpp.credit.becknprotocol.org",
         "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
@@ -67,7 +58,7 @@
                     "xinput": {
                         "head": {
                             "descriptor": {
-                                "name": "Business & Financial Details"
+                                "name": "KYC"
                             },
                             "index": {
                                 "min": 0,
@@ -75,16 +66,16 @@
                                 "max": 1
                             },
                             "headings": [
-                                "Business Details",
-                                "Financial Details"
+                                "KYC Links for Director",
+                                "Field Visit"
                             ]
                         },
                         "form": {
-                            "id": "BUSINESS_FINANCIAL_FORM",
-                            "mime_type": "text/html",
-                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/BUSINESS_FINANCIAL_FORM"
+                            "id": "KYC_LINK",
+                            "mime_type": "application/html",
+                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/EXCEPTIONAL_DOCUMENTS_FORM"
                         },
-                        "required": true
+                        "required": false
                     }
                 }
             ]
@@ -110,7 +101,7 @@
 
 <p align="center">
 
-[← Back to Previous File](search_2.md) | [Next File →](select.md)
+[← Back to Previous File](select.md) | [Next File →](init.md)
 
 </p>
 

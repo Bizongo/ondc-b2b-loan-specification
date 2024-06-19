@@ -19,34 +19,34 @@
 
 ``` json
 {
-  "context": {
-    "domain": "ONDC:FIS12",
-    "version": "2.1.0",
-    "action": "search",
-    "bap_id": "buyer-app-abc.becknprotocol.io",
-    "bap_uri": "https://buyer-app-abc.becknprotocol.io/",
-    "transaction_id": "uuid-90215d70-c146-48a9-8c11-680123456789",
-    "message_id": "uuid-123e4567-e89b-12d3-a456-426614174000",
-    "timestamp": "2024-05-21T10:00:00Z",
-    "ttl": "PT5M",
-    "location": {
-      "city": {
-        "code": "*"
-      },
-      "country": {
-        "code": "IND"
-      }
-    }
-  },
-  "message": {
-    "intent": {
-      "category": {
-        "descriptor": {
-          "code": "WORKING_CAPITAL_LOAN"
+    "context": {
+        "domain": "ONDC:FIS12",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "*"
+            }
+        },
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
+        "action": "search",
+        "timestamp": "2023-05-25T05:23:03.443Z",
+        "version": "2.0.0",
+        "bap_uri": "https://bap.credit.becknprotocol.io/",
+        "bap_id": "bap.credit.becknprotocol.io",
+        "ttl": "PT10M"
+    },
+    "message": {
+        "intent": {
+            "category": {
+                "descriptor": {
+                    "code": "WORKING_CAPITAL_LOAN"
+                }
+            }
         }
-      }
     }
-  }
 }
 ```
 
@@ -54,11 +54,11 @@
 
 ```json
 {
-  "message": {
-    "ack": {
-      "status": "ACK"
+    "message": {
+        "ack": {
+            "status": "ACK"
+        }
     }
-  }
 }
 ```
 

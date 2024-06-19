@@ -1,19 +1,18 @@
-## SEARCH
+## INIT
 
+**Purpose:** Signals the borrower's intent to proceed with the loan and provides fulfillment details for sanction requirements.
 
-**Purpose:** Initiates a search for working capital loan offers.
-
-**Endpoint:** /search
+**Endpoint:** /init
 
 **Method:** POST
 
-**Description:** The buyer app sends this request directly to the BPP of the selected FI after the borrower submits the loan application form.
+**Description:** The buyer app uses this endpoint to inform the FI that the borrower intends to proceed with the loan and to provide details about the fulfillment of pre-sanction requirements, including KYC, document submission, and acceptance of operational limits.
 
 **Steps:**
-  - **Form Submission:** The borrower fills in the form provided in the ON_SEARCH response and submits it to the buyer app.
-  - **Process Form Data:** The buyer app processes the form data, extracts the relevant information, and prepares the refined SEARCH request.
-  - **Peer-to-Peer Request:** The buyer app sends the refined SEARCH request directly to the BPP of the FI selected by the borrower.
-  - **FI Response (Refined Offers):** The FI's BPP evaluates the borrower's information and returns personalized loan offers in the ON_SEARCH response.
+  - **Confirmation of Intent:** The borrower confirms their intent to proceed with the loan.
+  - **Fulfilment Details:** The buyer app sends the INIT request with details about KYC completion (or scheduling), document submission status (including upload URLs), and confirmation of acceptance of the working capital limits.
+  - **Process Initiation:** The FI initiates the loan processing steps.
+  - **Response (ACK):** The FI sends an ACK response to the buyer app.
 
 
 ### Request Body
@@ -51,11 +50,11 @@
                     "id": "ITEM_ID_WORKING_CAPITAL_LOAN",
                     "xinput": {
                         "form": {
-                            "id": "F01"
+                            "id": "F12"
                         },
                         "form_response": {
                             "status": "SUCCESS",
-                            "submission_id": "F01_SUBMISSION_ID"
+                            "submission_id": "F12_SUBMISSION_ID"
                         }
                     }
                 }
@@ -69,11 +68,11 @@
 
 ```json
 {
-    "message": {
-        "ack": {
-            "status": "ACK"
-        }
+  "message": {
+    "ack": {
+      "status": "ACK"
     }
+  }
 }
 ```
 
@@ -82,6 +81,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_search_1.md) | [Next File →](on_search_2.md)
+[← Back to Previous File](on_select.md) | [Next File →](on_init.md)
 
 </p>
+
