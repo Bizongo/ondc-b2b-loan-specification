@@ -1,6 +1,6 @@
 ## Loan Application Form
 
-```html
+``` html
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,7 +72,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_search-1.md) | [Next File →](search-2.md)
+[← Back to Previous File](on_search_1.md) | [Next File →](search_2.md)
 
 </p>
 
