@@ -86,7 +86,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init.md) | [Next File →](confirm.md)
+[← Back to Previous File](init_2.md) | [Go to Form →](form_6.md) | [Next File →](init_3.md)
 
 </p>
 

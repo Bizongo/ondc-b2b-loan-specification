@@ -100,7 +100,7 @@
 
 <p align="center">
 
-[← Back to Previous File](select.md) | [Next File →](init.md)
+[← Back to Previous File](select_1.md) | [Go to Form →](form_3.md) | [Next File →](select_2.md)
 
 </p>
 
