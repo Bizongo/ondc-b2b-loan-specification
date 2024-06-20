@@ -43,7 +43,7 @@
                         "id": "offer-pqr-789",
                         "xinput": {
                             "form": {
-                                "id": "accept_loan_terms_form",
+                                "id": "F15",
                                 "form_response": {
                                     "status": "SUCCESS",
                                     "submission_id": "79850933-4e41-4c76-bbe6-c5a392481226"

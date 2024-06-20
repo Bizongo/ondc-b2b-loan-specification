@@ -89,7 +89,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_3.md) | [Go to Form →](link_enach.md) | [Next File →](confirm.md)
+[← Back to Previous File](init_5.md) | [Go to Form →](form_bank_details.md) | [Next File →](confirm.md)
 
 </p>
 
