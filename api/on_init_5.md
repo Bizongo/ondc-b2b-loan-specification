@@ -43,7 +43,7 @@
                     "xinput": {
                         "head": {
                             "descriptor": {
-                                "name": "eNACH Setup"
+                                "name": "Borrower Bank Details"
                             },
                             "index": {
                                 "min": 0,
