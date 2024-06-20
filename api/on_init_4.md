@@ -48,13 +48,14 @@
                             "index": {
                                 "min": 0,
                                 "cur": 3,
-                                "max": 3
+                                "max": 4
                             },
                             "headings": [
                                 "KYC Links for Director 1",
                                 "KYC Links for Director 2",
                                 "Addtional KYC",
-                                "eNACH Setup"
+                                "eNACH Setup",
+                                "Borrower Bank Details"
                             ]
                         },
                         "form": {
