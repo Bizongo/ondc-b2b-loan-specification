@@ -208,10 +208,13 @@
           },
           "index": {
             "min": 0,
-            "cur": 0,
+            "cur": 1,
             "max": 1
           },
-          "headings": [ "Acceptance" ]
+          "headings": [ 
+            "Additional Documents",
+            "Acceptance" 
+          ]
         },
         "form": {
           "id": "ACCEPTANCE_FORM",

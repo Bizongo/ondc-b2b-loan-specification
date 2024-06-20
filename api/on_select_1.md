@@ -66,13 +66,14 @@
                                 "max": 1
                             },
                             "headings": [
-                                "Additional Documents"
+                                "Additional Documents",
+                                "Acceptance"
                             ]
                         },
                         "form": {
                             "id": "ADDITIONAL_DOCUMENTS_FORM",
                             "mime_type": "text/html",
-                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/EXCEPTIONAL_DOCUMENTS_FORM"
+                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/ADDITIONAL_DOCUMENTS_FORM"
                         },
                         "required": false
                     }

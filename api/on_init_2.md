@@ -60,7 +60,7 @@
                         "form": {
                             "id": "KYC_LINK",
                             "mime_type": "application/html",
-                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/director1"
+                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/director2"
                         },
                         "required": true
                     }

@@ -47,7 +47,7 @@
                             },
                             "index": {
                                 "min": 0,
-                                "cur": 1,
+                                "cur": 2,
                                 "max": 3
                             },
                             "headings": [
@@ -60,7 +60,7 @@
                         "form": {
                             "id": "KYC_LINK",
                             "mime_type": "application/html",
-                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/director1"
+                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/addtional_kyc_field_visit"
                         },
                         "required": true
                     }
