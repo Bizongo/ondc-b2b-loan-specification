@@ -43,24 +43,24 @@
                     "xinput": {
                         "head": {
                             "descriptor": {
-                                "name": "KYC Links for Director 1"
+                                "name": "eNACH Setup"
                             },
                             "index": {
                                 "min": 0,
-                                "cur": 0,
+                                "cur": 3,
                                 "max": 3
                             },
                             "headings": [
                                 "KYC Links for Director 1",
                                 "KYC Links for Director 2",
-                                "Addtional KYC & Field Visit",
+                                "Addtional KYC",
                                 "eNACH Setup"
                             ]
                         },
                         "form": {
                             "id": "KYC_LINK",
                             "mime_type": "application/html",
-                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/director1"
+                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/enach-link"
                         },
                         "required": true
                     }
@@ -88,7 +88,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_1.md) | [Go to Form →](link_kyc_1.md) | [Next File →](init_2.md)
+[← Back to Previous File](init_3.md) | [Go to Form →](link_enach.md) | [Next File →](confirm.md)
 
 </p>
 

@@ -348,7 +348,7 @@
 
 <p align="center">
 
-[← Back to Previous File](search_1.md) | [Go to Form →](form_1.md) | [Next File →](search_2.md)
+[← Back to Previous File](search_1.md) | [Go to Form →](form_gst_bank_statement.md) | [Next File →](search_2.md)
 
 </p>
 

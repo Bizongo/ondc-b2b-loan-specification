@@ -23,7 +23,7 @@
     "context": {
         "domain": "ONDC:FIS12",
         "version": "2.1.0",
-        "action": "on_select",
+        "action": "on_init",
         "bap_id": "bap.credit.becknprotocol.io",
         "bap_uri": "https://bap.credit.becknprotocol.io/",
         "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
@@ -43,22 +43,24 @@
                     "xinput": {
                         "head": {
                             "descriptor": {
-                                "name": "Post Sanction Requirements"
+                                "name": "Addtional KYC & Field Visit"
                             },
                             "index": {
                                 "min": 0,
-                                "cur": 2,
-                                "max": 2
+                                "cur": 1,
+                                "max": 3
                             },
                             "headings": [
-                                "post saction document agreeement",
-                                "Bank Account details"
+                                "KYC Links for Director 1",
+                                "KYC Links for Director 2",
+                                "Addtional KYC & Field Visit",
+                                "eNACH Setup"
                             ]
                         },
                         "form": {
-                            "id": "additional_requirements_form",
-                            "mime_type": "text/html",
-                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/additional_requirements_form"
+                            "id": "KYC_LINK",
+                            "mime_type": "application/html",
+                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/director1"
                         },
                         "required": true
                     }
@@ -86,7 +88,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_3.md) | [Go to Form →](form_7.md) | [Next File →](confirm.md)
+[← Back to Previous File](init_3.md) | [Go to Form →](form_addtional_kyc_field_visit.md) | [Next File →](init_4.md)
 
 </p>
 

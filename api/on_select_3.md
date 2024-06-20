@@ -58,20 +58,21 @@
                     "xinput": {
                         "head": {
                             "descriptor": {
-                                "name": "Additional Documents"
+                                "name": "KYC"
                             },
                             "index": {
                                 "min": 0,
-                                "cur": 0,
+                                "cur": 1,
                                 "max": 1
                             },
                             "headings": [
-                                "Additional Documents"
+                                "KYC Links for Director",
+                                "Field Visit"
                             ]
                         },
                         "form": {
-                            "id": "ADDITIONAL_DOCUMENTS_FORM",
-                            "mime_type": "text/html",
+                            "id": "KYC_LINK",
+                            "mime_type": "application/html",
                             "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/EXCEPTIONAL_DOCUMENTS_FORM"
                         },
                         "required": false
@@ -100,7 +101,7 @@
 
 <p align="center">
 
-[← Back to Previous File](select_1.md) | [Go to Form →](form_additional_documents.md) | [Next File →](select_2.md)
+[← Back to Previous File](select_2.md) | [Go to Form →](form_4.md) | [Next File →](init_1.md)
 
 </p>
 
