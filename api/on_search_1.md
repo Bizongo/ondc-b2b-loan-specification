@@ -72,7 +72,7 @@
                         {
                             "id": "WORKING_CAPITAL_LOAN_ID",
                             "descriptor": {
-                                "code": "PERSONAL_LOAN",
+                                "code": "WORKING_CAPITAL_LOAN",
                                 "name": "Working Captail Loan"
                             },
                             "category_ids": [
@@ -224,7 +224,7 @@
                                             "descriptor": {
                                                 "code": "STATIC_TERMS"
                                             },
-                                            "value": "https://bpp.credit.becknprotocol.org/personal-banking/loans/personal-loan"
+                                            "value": "https://bpp.credit.becknprotocol.org/banking/loans/loan"
                                         },
                                         {
                                             "descriptor": {
