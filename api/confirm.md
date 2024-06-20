@@ -46,7 +46,7 @@
                                 "id": "accept_loan_terms_form",
                                 "form_response": {
                                     "status": "SUCCESS",
-                                    "submission_id": "submission_id_for_loan_terms"
+                                    "submission_id": "79850933-4e41-4c76-bbe6-c5a392481226"
                                 }
                             }
                         }
@@ -75,7 +75,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_init_3.md) | [Next File →](on_confirm.md)
+[← Back to Previous File](on_status_4.md) | [Next File →](on_confirm.md)
 
 </p>
 

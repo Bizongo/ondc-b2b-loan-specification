@@ -70,7 +70,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_1.md) | [Go to Form →](link_kyc_1.md) | [Next File →](init_2.md)
+[← Back to Previous File](on_init_1.md) | [Next File →](init_2.md)
 
 </p>
 

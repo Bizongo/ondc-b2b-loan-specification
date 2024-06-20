@@ -41,29 +41,11 @@
                 {
                     "id": "offer-pqr-789",
                     "xinput": {
-                        "head": {
-                            "descriptor": {
-                                "name": "KYC Links for Director 1"
-                            },
-                            "index": {
-                                "min": 0,
-                                "cur": 0,
-                                "max": 3
-                            },
-                            "headings": [
-                                "KYC Links for Director 1",
-                                "KYC Links for Director 2",
-                                "Addtional KYC & Field Visit",
-                                "eNACH Setup"
-                            ]
-                        },
-                        "form": {
-                            "id": "KYC_LINK",
-                            "mime_type": "application/html",
-                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/director1"
-                        },
-                        "required": true
+                        "form_response": {
+                         "status": "APPROVED",
+                        "submission_id": "79850933-4e41-4c76-bbe6-c5a392481226"
                     }
+             }
                 }
             ]
         }
@@ -88,7 +70,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_1.md) | [Go to Form →](link_kyc_1.md) | [Next File →](on_status_1.md)
+[← Back to Previous File](on_init_2.md) | [Next File →](init_3.md)
 
 </p>
 
