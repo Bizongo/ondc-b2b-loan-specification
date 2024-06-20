@@ -23,7 +23,7 @@
     "context": {
         "domain": "ONDC:FIS12",
         "version": "2.1.0",
-        "action": "on_select",
+        "action": "on_init",
         "bap_id": "bap.credit.becknprotocol.io",
         "bap_uri": "https://bap.credit.becknprotocol.io/",
         "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
@@ -43,22 +43,25 @@
                     "xinput": {
                         "head": {
                             "descriptor": {
-                                "name": "Additional Requirements"
+                                "name": "KYC Links for Director 2"
                             },
                             "index": {
                                 "min": 0,
                                 "cur": 1,
-                                "max": 2
+                                "max": 4
                             },
                             "headings": [
+                                "KYC Links for Director 1",
+                                "KYC Links for Director 2",
+                                "Addtional KYC",
                                 "eNACH Setup",
-                                "Bank Verification"
+                                "Borrower Bank Details"
                             ]
                         },
                         "form": {
-                            "id": "additional_requirements_form",
-                            "mime_type": "text/html",
-                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/additional_requirements_form"
+                            "id": "KYC_LINK",
+                            "mime_type": "application/html",
+                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/director2"
                         },
                         "required": true
                     }
@@ -86,7 +89,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_2.md) | [Go to Form →](form_6.md) | [Next File →](init_3.md)
+[← Back to Previous File](init_2.md) | [Go to Form →](link_kyc_2.md) | [Next File →](on_status_2.md)
 
 </p>
 

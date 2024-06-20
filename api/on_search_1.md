@@ -150,9 +150,7 @@
                                         "max": 1
                                     },
                                     "headings": [
-                                        "Organization Information",
-                                        "GSTIN Information",
-                                        "Bank Statement Information"
+                                        "Bank Statement & GST Returns"
                                     ]
                                 },
                                 "form": {
@@ -164,77 +162,6 @@
                                 },
                                 "required": true
                             }
-                        }
-                    ],
-                    "payments": [
-                        {
-                            "collected_by": "BPP",
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "code": "BUYER_FINDER_FEES"
-                                    },
-                                    "display": false,
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "code": "BUYER_FINDER_FEES_TYPE"
-                                            },
-                                            "value": "PERCENT_ANNUALIZED"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "code": "BUYER_FINDER_FEES_PERCENTAGE"
-                                            },
-                                            "value": "1"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "SETTLEMENT_TERMS"
-                                    },
-                                    "display": false,
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "code": "SETTLEMENT_WINDOW"
-                                            },
-                                            "value": "PT30D"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "code": "SETTLEMENT_BASIS"
-                                            },
-                                            "value": "INVOICE_RECEIPT"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "code": "MANDATORY_ARBITRATION"
-                                            },
-                                            "value": "TRUE"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "code": "COURT_JURISDICTION"
-                                            },
-                                            "value": "New Delhi"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "code": "STATIC_TERMS"
-                                            },
-                                            "value": "https://bpp.credit.becknprotocol.org/banking/loans/loan"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "code": "OFFLINE_CONTRACT"
-                                            },
-                                            "value": "true"
-                                        }
-                                    ]
-                                }
-                            ]
                         }
                     ],
                     "tags": [
@@ -350,7 +277,6 @@
 
 <p align="center">
 
-[← Back to Previous File](search_1.md) | [Go to Form →](form_1.md) | [Next File →](search_2.md)
+[← Back to Previous File](search_1.md) | [Go to Form →](form_gst_bank_statement.md) | [Next File →](search_2.md)
 
 </p>
-

@@ -54,7 +54,7 @@
                         },
                         "form_response": {
                             "status": "SUCCESS",
-                            "submission_id": "F13_SUBMISSION_ID"
+                            "submission_id": "79850933-4e41-4c76-bbe6-c5a392481226"
                         }
                     }
                 }
@@ -81,7 +81,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_init_1.md) | [Next File →](on_init_2.md)
+[← Back to Previous File](on_status_1.md) | [Next File →](on_init_2.md)
 
 </p>
 

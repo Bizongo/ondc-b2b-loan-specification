@@ -43,11 +43,11 @@
                     "xinput": {
                         "head": {
                             "descriptor": {
-                                "name": "Addtional KYC"
+                                "name": "Borrower Bank Details"
                             },
                             "index": {
                                 "min": 0,
-                                "cur": 2,
+                                "cur": 4,
                                 "max": 4
                             },
                             "headings": [
@@ -60,8 +60,8 @@
                         },
                         "form": {
                             "id": "KYC_LINK",
-                            "mime_type": "application/html",
-                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/addtional_kyc_field_visit"
+                            "mime_type": "text/html",
+                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/bank-account-link"
                         },
                         "required": true
                     }
@@ -89,7 +89,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_3.md) | [Go to Form →](form_addtional_kyc_field_visit.md) | [Next File →](on_status_3.md)
+[← Back to Previous File](init_5.md) | [Go to Form →](form_bank_details.md) | [Next File →](confirm.md)
 
 </p>
 

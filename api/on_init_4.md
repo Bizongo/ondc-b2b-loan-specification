@@ -43,11 +43,11 @@
                     "xinput": {
                         "head": {
                             "descriptor": {
-                                "name": "Addtional KYC"
+                                "name": "eNACH Setup"
                             },
                             "index": {
                                 "min": 0,
-                                "cur": 2,
+                                "cur": 3,
                                 "max": 4
                             },
                             "headings": [
@@ -61,7 +61,7 @@
                         "form": {
                             "id": "KYC_LINK",
                             "mime_type": "application/html",
-                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/addtional_kyc_field_visit"
+                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/enach-link"
                         },
                         "required": true
                     }
@@ -89,7 +89,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_3.md) | [Go to Form →](form_addtional_kyc_field_visit.md) | [Next File →](on_status_3.md)
+[← Back to Previous File](init_3.md) | [Go to Form →](link_enach.md) | [Next File →](on_status_4.md)
 
 </p>
 
