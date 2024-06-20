@@ -150,9 +150,7 @@
                                         "max": 1
                                     },
                                     "headings": [
-                                        "Organization Information",
-                                        "GSTIN Information",
-                                        "Bank Statement Information"
+                                        "Bank Statement & GST Returns"
                                     ]
                                 },
                                 "form": {
