@@ -143,10 +143,10 @@
                   },
                   {
                     "descriptor": {
-                      "code": "COUNTERPARTY_GSTIN",
-                      "name": "Counterparty GSTIN"
+                      "code": "COUNTERPARTY_GSTIN_ALLOWED",
+                      "name": "Counterparty GSTIN Alowed"
                     },
-                    "value": "Your Company's GSTIN"
+                    "value": "GSTIN1, GSTIN2, GSTIN3"
                   }
                 ]
               },
@@ -186,14 +186,6 @@
                       "short_desc": "Look up period during which borrower shouldn't be charged any penalty on repayment loan."
                     },
                     "value": "12 Days"
-                  },
-                  {
-                    "descriptor": {
-                      "code": "DETAILS_OF_LSP",
-                      "name": "Details of LSP",
-                      "short_desc": "Acting as recovery agent and authorised to approach borrower"
-                    },
-                    "value": "Contact details to be provided"
                   }
                 ]
               }
