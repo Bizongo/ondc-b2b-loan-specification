@@ -43,18 +43,19 @@
                     "xinput": {
                         "head": {
                             "descriptor": {
-                                "name": "Addtional KYC & Field Visit"
+                                "name": "Addtional KYC"
                             },
                             "index": {
                                 "min": 0,
                                 "cur": 2,
-                                "max": 3
+                                "max": 4
                             },
                             "headings": [
                                 "KYC Links for Director 1",
                                 "KYC Links for Director 2",
-                                "Addtional KYC & Field Visit",
-                                "eNACH Setup"
+                                "Addtional KYC",
+                                "eNACH Setup",
+                                "Borrower Bank Details"
                             ]
                         },
                         "form": {
