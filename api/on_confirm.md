@@ -100,10 +100,7 @@
                         "required": true
                     }
                 }
-            ],
-            "ack": {
-                "status": "ACK"
-            }
+            ]
         }
     }
 }
