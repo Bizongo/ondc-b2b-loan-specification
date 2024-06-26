@@ -50,11 +50,11 @@
                     "id": "ITEM_ID_WORKING_CAPITAL_LOAN",
                     "xinput": {
                         "form": {
-                            "id": "F12"
+                            "id": "F03"
                         },
                         "form_response": {
                             "status": "SUCCESS",
-                            "submission_id": "F12_SUBMISSION_ID"
+                            "submission_id": "F03_SUBMISSION_ID"
                         }
                     }
                 }

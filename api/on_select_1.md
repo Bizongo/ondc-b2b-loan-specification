@@ -196,22 +196,21 @@
       "xinput": {
         "head": {
           "descriptor": {
-            "name": "Acceptance"
+            "name": "Field Visit"
           },
           "index": {
             "min": 0,
-            "cur": 1,
-            "max": 1
+            "cur": 0,
+            "max": 0
           },
           "headings": [ 
-            "Additional Documents",
-            "Acceptance" 
+           "Field Visit" 
           ]
         },
         "form": {
           "id": "ACCEPTANCE_FORM",
           "mime_type": "application/html",
-          "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/ACCEPTANCE_FORM"
+          "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/form_addtional_kyc_field_visit/F03"
         },
         "required": true
       },
@@ -239,7 +238,7 @@
 
 <p align="center">
 
-[← Back to Previous File](select_2.md) | [Go to Form →](form_accept_loan_terms.md) | [Next File →](init_1.md)
+[← Back to Previous File](select_1.md) | [Go to Form →](form_addtional_kyc_field_visit.md) | [Next File →](init_1.md)
 
 </p>
 
