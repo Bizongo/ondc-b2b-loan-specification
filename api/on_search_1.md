@@ -142,21 +142,23 @@
                             "xinput": {
                                 "head": {
                                     "descriptor": {
-                                        "name": "Customer Information"
+                                        "name": "Bank Statement & GST Returns"
                                     },
                                     "index": {
                                         "min": 0,
                                         "cur": 0,
-                                        "max": 1
+                                        "max": 2
                                     },
                                     "headings": [
-                                        "Bank Statement & GST Returns"
+                                        "Bank Statement & GST Returns",
+                                        "Business & Financial Details",
+                                        "Loan Acceptance" 
                                     ]
                                 },
                                 "form": {
-                                    "id": "F01",
+                                    "id": "form_gst_bank_statement_F01",
                                     "mime_type": "text/html",
-                                    "url": "https://bpp.credit.becknprotocol.org/xinput/formid/F01",
+                                    "url": "https://bpp.credit.becknprotocol.org/xinput/formid/form_gst_bank_statement/F01",
                                     "resubmit": false,
                                     "multiple_sumbissions": false
                                 },

@@ -1,18 +1,19 @@
-## SELECT
+## SEARCH
 
-**Purpose:** Allows the buyer app to select a specific loan offer from an FI.
 
-**Endpoint:** /select
+**Purpose:** Initiates a search for working capital loan offers.
+
+**Endpoint:** /search
 
 **Method:** POST
 
-**Description:** The buyer app uses this endpoint to inform the ONDC network and the selected FI that the borrower has chosen a particular loan offer.
+**Description:** The buyer app sends this request directly to the BPP of the selected FI after the borrower submits the loan application form.
 
 **Steps:**
-  - **Offer Selection:** The borrower, through the buyer app, selects a loan offer from the list of available offers.
-  - **Send Selection:** The buyer app sends a SELECT request to the network, specifying the FI ID and catalog ID of the selected offer.
-  - **Confirmation (ACK):** The network sends an ACK response to the buyer app.
-  - **Network Broadcast:** The ONDC network broadcasts the SEARCH request to registered FIs.
+  - **Form Submission:** The borrower fills in the form provided in the ON_SEARCH response and submits it to the buyer app.
+  - **Process Form Data:** The buyer app processes the form data, extracts the relevant information, and prepares the refined SEARCH request.
+  - **Peer-to-Peer Request:** The buyer app sends the refined SEARCH request directly to the BPP of the FI selected by the borrower.
+  - **FI Response (Refined Offers):** The FI's BPP evaluates the borrower's information and returns personalized loan offers in the ON_SEARCH response.
 
 
 ### Request Body
@@ -41,7 +42,7 @@
         "bpp_uri": "https://bpp.credit.becknprotocol.org"
     },
     "message": {
-        "order": {
+       "order": {
             "provider": {
                 "id": "PROVIDER_ID"
             },
@@ -50,11 +51,11 @@
                     "id": "ITEM_ID_WORKING_CAPITAL_LOAN",
                     "xinput": {
                         "form": {
-                            "id": "F03"
+                            "id": "F02"
                         },
                         "form_response": {
                             "status": "SUCCESS",
-                            "submission_id": "F03_SUBMISSION_ID"
+                            "submission_id": "F02_SUBMISSION_ID"
                         }
                     }
                 }
@@ -68,11 +69,11 @@
 
 ```json
 {
-  "message": {
-    "ack": {
-      "status": "ACK"
+    "message": {
+        "ack": {
+            "status": "ACK"
+        }
     }
-  }
 }
 ```
 
@@ -81,7 +82,6 @@
 
 <p align="center">
 
-[← Back to Previous File](on_search_3.md) | [Next File →](on_select_1.md)
+[← Back to Previous File](on_search_1.md) | [Next File →](on_search_3.md)
 
 </p>
-
