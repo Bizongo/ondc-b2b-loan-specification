@@ -66,24 +66,27 @@
                     },
                     "xinput": {
                         "head": {
-                            "descriptor": {
-                                "name": "Business & Financial Details"
-                            },
-                            "index": {
-                                "min": 0,
-                                "cur": 1,
-                                "max": 1
-                            },
-                            "headings": [
-                                "Business Details",
-                                "Financial Details"
-                            ]
+                                "descriptor": {
+                                    "name":  "Business & Financial Details"
+                                },
+                                "index": {
+                                    "min": 0,
+                                    "cur": 1,
+                                    "max": 2
+                                },
+                               "headings": [
+                                        "Bank Statement & GST Returns",
+                                        "Business & Financial Details",
+                                        "Loan Acceptance" 
+                                ]
                         },
                         "form": {
-                            "id": "BUSINESS_FINANCIAL_FORM",
-                            "mime_type": "text/html",
-                            "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/BUSINESS_FINANCIAL_FORM"
-                        },
+                                    "id": "form_business_financial_F02",
+                                    "mime_type": "text/html",
+                                    "url": "https://bpp.credit.becknprotocol.org/xinput/formid/form_business_financial/F02",
+                                    "resubmit": false,
+                                    "multiple_sumbissions": false
+                                },
                         "required": true
                     }
                 }
@@ -110,7 +113,7 @@
 
 <p align="center">
 
-[← Back to Previous File](search_2.md) | [Go to Form →](form_business_financial.md) | [Next File →](select_1.md)
+[← Back to Previous File](search_2.md) | [Go to Form →](form_business_financial.md) | [Next File →](search_3.md)
 
 </p>
 
