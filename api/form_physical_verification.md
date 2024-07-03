@@ -23,7 +23,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_init_2.md) | [Next File →](init_3.md)
+[← Back to Previous File](on_init_2.md) | [Next File →](on_status_2.md)
 
 </p>
 

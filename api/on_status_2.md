@@ -219,7 +219,7 @@
             ],
             "xinput": {
               "form_response": {
-                "status": "APPROVED",
+                "status": "SUCCESS",
                 "submission_id": "79850933-4e41-4c76-bbe6-c5a392481226"
               }
             }
