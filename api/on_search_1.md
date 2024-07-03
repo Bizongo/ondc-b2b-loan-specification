@@ -72,8 +72,8 @@
                         {
                             "id": "WORKING_CAPITAL_LOAN_ID",
                             "descriptor": {
-                                "code": "WORKING_CAPITAL_LOAN",
-                                "name": "Working Captail Loan"
+                                "code": "LOAN",
+                                "name": "Loan"
                             },
                             "category_ids": [
                                 "101123"
