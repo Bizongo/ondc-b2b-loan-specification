@@ -26,7 +26,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_search_2.md) | [Next File →](select_1.md)
+[← Back to Previous File](on_search_2.md) | [Next File →](search_3.md)
 
 </p>
 
