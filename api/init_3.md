@@ -22,7 +22,7 @@
     "context": {
         "domain": "ONDC:FIS12",
         "version": "2.1.0",
-        "action": "on_select",
+        "action": "init",
         "bap_id": "bap.credit.becknprotocol.io",
         "bap_uri": "https://bap.credit.becknprotocol.io/",
         "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",

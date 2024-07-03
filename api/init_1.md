@@ -31,7 +31,7 @@
         },
         "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
         "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
-        "action": "select",
+        "action": "init",
         "timestamp": "2023-05-25T05:23:03.443Z",
         "version": "2.0.0",
         "bap_uri": "https://bap.credit.becknprotocol.io/",
@@ -47,16 +47,7 @@
             },
             "items": [
                 {
-                    "id": "ITEM_ID_WORKING_CAPITAL_LOAN",
-                    "xinput": {
-                        "form": {
-                            "id": "F03"
-                        },
-                        "form_response": {
-                            "status": "SUCCESS",
-                            "submission_id": "F03_SUBMISSION_ID"
-                        }
-                    }
+                    "id": "ITEM_ID_WORKING_CAPITAL_LOAN"
                 }
             ]
         }

@@ -21,25 +21,25 @@
 ``` json
 {
   "context": {
+    "domain": "ONDC:FIS12",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "*"
+      }
+    },
+    "version": "2.0.0",
     "action": "on_search",
     "bap_id": "bap.credit.becknprotocol.io",
     "bap_uri": "https://bap.credit.becknprotocol.io/",
-    "bpp_id": "bpp.credit.becknprotocol.org",
-    "bpp_uri": "https://bpp.credit.becknprotocol.org",
-    "domain": "ONDC:FIS12",
-    "location": {
-      "city": {
-        "code": "*"
-      },
-      "country": {
-        "code": "IND"
-      }
-    },
-    "message_id": "bb579fb8-cb82-4824-be12-acbc415b6608",
-    "timestamp": "2023-05-25T05:23:03.443Z",
     "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
     "ttl": "PT30M",
-    "version": "2.0.0"
+    "timestamp": "2023-05-25T05:23:03.443Z",
+    "bpp_id": "bpp.credit.becknprotocol.org",
+    "bpp_uri": "https://bpp.credit.becknprotocol.org"
   },
   "message": {
     "catalog": {
@@ -52,36 +52,91 @@
           "descriptor": {
             "images": [
               {
-                "size_type": "sm",
-                "url": "https://www.icicibank.com/content/dam/icicibank/india/assets/images/header/logo.png"
+                "url": "https://www.icicibank.com/content/dam/icicibank/india/assets/images/header/logo.png",
+                "size_type": "sm"
               }
             ],
-            "long_desc": "ICICI Bank Ltd, India.",
             "name": "ICICI Bank",
-            "short_desc": "ICICI Bank Ltd"
+            "short_desc": "ICICI Bank Ltd",
+            "long_desc": "ICICI Bank Ltd, India."
           },
-           "categories": [
+          "categories": [
             {
+              "id": "101123",
               "descriptor": {
                 "code": "WORKING_CAPITAL_LOAN",
                 "name": "Working Captail Loan"
-              },
-              "id": "101123"
+              }
             }
           ],
           "items": [
             {
               "id": "WORKING_CAPITAL_LOAN_ID",
-              "category_ids": [
-                "101123"
-              ],
               "descriptor": {
                 "code": "LOAN",
                 "name": "Loan"
               },
-              "matched": true,
-              "recommended": true,
+              "category_ids": [
+                "101123"
+              ],
               "tags": [
+                {
+                  "descriptor": {
+                    "code": "GENERAL_INFO",
+                    "name": "General Information"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "MIN_INTEREST_RATE",
+                        "name": "Minimum Interest Rate",
+                        "short_desc": "Loans starting from 9% (p.a)"
+                      },
+                      "value": "9%"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "MAX_INTEREST_RATE",
+                        "name": "Maximum Interest Rate",
+                        "short_desc": "Loan Rate below from 15% (p.a)"
+                      },
+                      "value": "15%"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "MIN_TENURE",
+                        "name": "Minimum Tenure",
+                        "short_desc": "Loan Tenure starting form 5 months"
+                      },
+                      "value": "5 months"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "MAX_TENURE",
+                        "name": "Maximum Tenure",
+                        "short_desc": "Loan Tenure upto form 5 years"
+                      },
+                      "value": "5 years"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "MIN_LOAN_AMOUNT",
+                        "name": "Minimum Loan Amount",
+                        "short_desc": "Loan Amount starting from 50,000"
+                      },
+                      "value": "50000"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "MAX_LOAN_AMOUNT",
+                        "name": "Minimum Loan Amount",
+                        "short_desc": "Loan Amount upto form 50,00,000"
+                      },
+                      "value": "5000000"
+                    }
+                  ],
+                  "display": true
+                },
                 {
                   "descriptor": {
                     "code": "SANCTION_DETAILS",
@@ -177,6 +232,13 @@
                             "short_desc": "In month/days"
                           },
                           "value": "24 Months"
+                        },
+                        {
+                          "descriptor": {
+                            "code": "COUNTERPARTY_GSTIN_ALLOWED",
+                            "name": "Counterparty GSTIN Alowed"
+                          },
+                          "value": "GSTIN1, GSTIN2, GSTIN3"
                         }
                       ]
                     },
@@ -222,6 +284,8 @@
                   ]
                 }
               ],
+              "matched": true,
+              "recommended": true,
               "xinput": {
                 "head": {
                   "descriptor": {
@@ -239,9 +303,11 @@
                   ]
                 },
                 "form": {
-                  "id": "form_accept_loan_terms_F03",
+                  "id": "form_accept_loan_terms",
                   "mime_type": "text/html",
-                  "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/form_accept_loan_terms/F03"
+                  "url": "https://bpp.credit.becknprotocol.org/xinput/form/form_accept_loan_terms/1",
+                  "resubmit": false,
+                  "multiple_sumbissions": false
                 },
                 "required": true
               }

@@ -138,11 +138,11 @@
       },
       "items": [
           {
+             "id": "WORKING_CAPITAL_LOAN_ID",
             "descriptor": {
-              "code": "WORKING_CAPITAL_LOAN",
-              "name": "Working Captail Loan"
+              "code": "LOAN",
+              "name": "Loan"
             },
-            "id": "WORKING_CAPITAL_LOAN_ID",
             "tags": [
               {
                 "descriptor": {
@@ -290,28 +290,7 @@
                   }
                 ]
               }
-            ],
-            "xinput": {
-              "head": {
-                "descriptor": {
-                  "name": "Field Visit"
-                },
-                "index": {
-                  "min": 0,
-                  "cur": 0,
-                  "max": 0
-                },
-                "headings": [
-                  "Field Visit"
-                ]
-              },
-              "form": {
-                "id": "Addtional KYC & Field Visit",
-                "mime_type": "application/html",
-                "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/form_addtional_kyc_field_visit/F03"
-              },
-              "required": true
-            }
+            ]
           }
         ]
     }
@@ -336,7 +315,7 @@
 
 <p align="center">
 
-[← Back to Previous File](select_1.md) | [Go to Form →](form_addtional_kyc_field_visit.md) | [Next File →](init_1.md)
+[← Back to Previous File](select_1.md) | [Next File →](init_1.md)
 
 </p>
 
