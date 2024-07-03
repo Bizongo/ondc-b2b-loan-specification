@@ -98,7 +98,7 @@
                       "disbursement_amount": "50000",
                       "disbursement_date": "2023-06-20",
                       "utr": "UTR-123456789",
-                      "description": "Invalid Accepted"
+                      "description": "Invoice Accepted"
                     },
                     {
                       "invoice_id": "invoice_submission_id_2",
@@ -109,13 +109,13 @@
                       "repayment_amount": "75000",
                       "repayment_date": "2023-08-10",
                       "repayment_utr": "UTR-789012345",
-                      "description": "Invalid Accepted"
+                      "description": "Invoice Accepted"
                     },
                     {
                       "invoice_id": "invoice_submission_id_3",
                       "invoice_state": "REJECTED",
                       "disbursement_amount": "20000",
-                      "description": "Invalid invoice"
+                      "description": "Invalid Rejected due to invalid gstin"
                     }
                   ]
                 }
