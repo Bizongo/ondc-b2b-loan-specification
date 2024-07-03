@@ -34,18 +34,19 @@
     },
     "message": {
         "order": {
-            "id": "order-id-123",
-            "state": "CONFIRMED",
+            "provider": {
+                "id": "PROVIDER_ID"
+            },
             "items": [
                 {
-                    "id": "offer-pqr-789",
+                    "id": "ITEM_ID_WORKING_CAPITAL_LOAN",
                     "xinput": {
                         "form": {
-                            "id": "invoice_upload_form",
-                            "form_response": {
-                                "status": "SUCCESS",
-                                "submission_id": "invoice_submission_id"
-                            }
+                            "id": "F15"
+                        },
+                        "form_response": {
+                            "status": "SUCCESS",
+                            "submission_id": "79850933-4e41-4c76-bbe6-c5a392481226"
                         }
                     }
                 }
