@@ -31,7 +31,7 @@
     "bpp_uri": "https://bpp.credit.becknprotocol.org"
   },
   "message": {
-    "order_id": "WCL-1234567890"
+    "order_id": "WORKING_CAPITAL_LOAN_ID"
   }
 }
 ```
