@@ -48,16 +48,8 @@
             },
             "providers": [
                 {
-                    "categories": [
-                        {
-                            "descriptor": {
-                                "code": "WORKING_CAPITAL_LOAN",
-                                "name": "Working Captail Loan"
-                            },
-                            "id": "101123"
-                        }
-                    ],
-                    "descriptor": {
+                    "id": "PROVIDER_ID",
+                     "descriptor": {
                         "images": [
                             {
                                 "size_type": "sm",
@@ -68,9 +60,18 @@
                         "name": "ICICI Bank",
                         "short_desc": "ICICI Bank Ltd"
                     },
-                    "id": "PROVIDER_ID",
+                    "categories": [
+                        {
+                            "descriptor": {
+                                "code": "WORKING_CAPITAL_LOAN",
+                                "name": "Working Captail Loan"
+                            },
+                            "id": "101123"
+                        }
+                    ],
                     "items": [
                         {
+                            "id": "WORKING_CAPITAL_LOAN_ID",
                             "category_ids": [
                                 "101123"
                             ],
@@ -78,9 +79,6 @@
                                 "code": "WORKING_CAPITAL_LOAN",
                                 "name": "Working Captail Loan"
                             },
-                            "id": "WORKING_CAPITAL_LOAN_ID",
-                            "matched": true,
-                            "recommended": true,
                             "tags": [
                                 {
                                     "descriptor": {
@@ -164,7 +162,9 @@
                                     }
                                 },
                                 "required": true
-                            }
+                            },
+                            "matched": true,
+                            "recommended": true,
                         }
                     ],
                     "tags": [

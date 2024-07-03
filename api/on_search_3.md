@@ -48,15 +48,7 @@
       },
       "providers": [
         {
-          "categories": [
-            {
-              "descriptor": {
-                "code": "WORKING_CAPITAL_LOAN",
-                "name": "Working Captail Loan"
-              },
-              "id": "101123"
-            }
-          ],
+          "id": "PROVIDER_ID",
           "descriptor": {
             "images": [
               {
@@ -68,17 +60,25 @@
             "name": "ICICI Bank",
             "short_desc": "ICICI Bank Ltd"
           },
-          "id": "PROVIDER_ID",
-          "items": [
+           "categories": [
             {
-              "category_ids": [
-                "101123"
-              ],
               "descriptor": {
                 "code": "WORKING_CAPITAL_LOAN",
                 "name": "Working Captail Loan"
               },
+              "id": "101123"
+            }
+          ],
+          "items": [
+            {
               "id": "WORKING_CAPITAL_LOAN_ID",
+              "category_ids": [
+                "101123"
+              ],
+              "descriptor": {
+                "code": "LOAN",
+                "name": "Loan"
+              },
               "matched": true,
               "recommended": true,
               "tags": [
@@ -177,13 +177,6 @@
                             "short_desc": "In month/days"
                           },
                           "value": "24 Months"
-                        },
-                        {
-                          "descriptor": {
-                            "code": "COUNTERPARTY_GSTIN_ALLOWED",
-                            "name": "Counterparty GSTIN Alowed"
-                          },
-                          "value": "GSTIN1, GSTIN2, GSTIN3"
                         }
                       ]
                     },
