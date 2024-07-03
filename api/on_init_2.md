@@ -207,7 +207,7 @@
           "xinput": {
             "head": {
               "descriptor": {
-                "name": "KYC Documents"
+                "name": "Physical Verification"
               },
               "index": {
                 "min": 0,
@@ -215,16 +215,16 @@
                 "max": 3
               },
               "headings": [
-                "Director KYC"
-                "KYC Documents",
+                "KYC Verification"
+                "Physical Verification",
+                "Verify Bank Account",
                 "eNACH Setup",
-                "Borrower Bank Details"
               ]
             },
             "form": {
-              "id": "KYC Documents",
-              "mime_type": "text/html",
-              "url": "https://bpp.credit.becknprotocol.org/kyc-docs/xinput/form/1"
+              "id": "KYC_LINK",
+              "mime_type": "application/html",
+              "url": "https://bpp.credit.becknprotocol.org/xinput/form/kyc_field_visit"
             },
             "required": true
           }
@@ -252,7 +252,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_2.md) | [Go to Form →](form_addtional_kyc_field_visit.md) | [Next File →](init_3.md)
+[← Back to Previous File](init_2.md) | [Go to Form →](form_physical_verification.md) | [Next File →](init_3.md)
 
 </p>
 

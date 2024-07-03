@@ -207,7 +207,7 @@
           "xinput": {
             "head": {
               "descriptor": {
-                "name": "Director KYC"
+                "name": "KYC Verification"
               },
               "index": {
                 "min": 0,
@@ -215,16 +215,16 @@
                 "max": 3
               },
               "headings": [
-                "Director KYC"
-                "Offline KYC",
+                "KYC Verification"
+                "Physical Verification",
+                "Verify Bank Account",
                 "eNACH Setup",
-                "Borrower Bank Details"
               ]
             },
             "form": {
               "id": "KYC_LINK",
               "mime_type": "application/html",
-              "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/kyc-link/director-kyc"
+              "url": "https://bpp.credit.becknprotocol.org/xinput/link/kyc-link"
             },
             "required": true
           }

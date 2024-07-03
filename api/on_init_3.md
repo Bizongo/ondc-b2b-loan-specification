@@ -207,7 +207,7 @@
           "xinput": {
             "head": {
               "descriptor": {
-                "name": "eNACH Setup"
+                "name": "Verify Bank Account"
               },
               "index": {
                 "min": 0,
@@ -215,16 +215,16 @@
                 "max": 3
               },
               "headings": [
-                "Director KYC"
-                "Offline KYC",
+                "KYC Verification"
+                "Physical Verification",
+                "Verify Bank Account",
                 "eNACH Setup",
-                "Borrower Bank Details"
               ]
             },
             "form": {
-              "id": "OFFLINE_KYC",
+              "id": "KYC_LINK",
               "mime_type": "application/html",
-              "url": "https://bpp.credit.becknprotocol.org/xinput/link/e-enach"
+              "url": "https://bpp.credit.becknprotocol.org/xinput/link/link_verify_bank_details"
             },
             "required": true
           }
@@ -252,7 +252,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_3.md) | [Go to Form →](link_enach.md) | [Next File →](on_status_3.md)
+[← Back to Previous File](init_3.md) | [Go to Form →](link_verify_bank_details.md) | [Next File →](on_status_3.md)
 
 </p>
 
