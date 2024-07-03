@@ -35,187 +35,299 @@
   "message": {
     "order": {
       "provider": {
-        "id": "PROVIDER_ID" 
-      },
-      "items": [
-        {
-          "id": "offer-pqr-789" 
-        }
-      ],
-      "fulfillment": { 
-        "type": "LOAN_SANCTION_DETAILS",
-        "tags": [
+        "categories": [
           {
             "descriptor": {
-              "code": "SANCTION_DETAILS",
-              "name": "Final Sanction Details"
+              "code": "WORKING_CAPITAL_LOAN",
+              "name": "Working Captail Loan"
             },
+            "id": "101123"
+          }
+        ],
+        "descriptor": {
+          "images": [
+            {
+              "size_type": "sm",
+              "url": "https://www.icicibank.com/content/dam/icicibank/india/assets/images/header/logo.png"
+            }
+          ],
+          "long_desc": "ICICI Bank Ltd, India.",
+          "name": "ICICI Bank",
+          "short_desc": "ICICI Bank Ltd"
+        },
+        "id": "PROVIDER_ID",
+        "items": [
+          {
+            "category_ids": [
+              "101123"
+            ],
+            "descriptor": {
+              "code": "WORKING_CAPITAL_LOAN",
+              "name": "Working Captail Loan"
+            },
+            "id": "WORKING_CAPITAL_LOAN_ID",
+            "matched": true,
+            "recommended": true,
             "tags": [
               {
                 "descriptor": {
-                  "code": "SANCTIONED_AMOUNT"
+                  "code": "SANCTION_DETAILS",
+                  "name": "Final Sanction Details"
                 },
-                "value": 90000
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "SANCTIONED_AMOUNT"
+                    },
+                    "value": 90000
+                  },
+                  {
+                    "descriptor": {
+                      "code": "INTEREST_RATE"
+                    },
+                    "value": 13.5
+                  },
+                  {
+                    "descriptor": {
+                      "code": "TENURE_MONTHS"
+                    },
+                    "value": 4
+                  },
+                  {
+                    "descriptor": {
+                      "code": "PROCESSING_FEES"
+                    },
+                    "value": 1200
+                  }
+                ]
               },
               {
                 "descriptor": {
-                  "code": "INTEREST_RATE"
-                },
-                "value": 13.5
-              },
-              {
-                "descriptor": {
-                  "code": "TENURE_MONTHS"
-                },
-                "value": 4
-              },
-              {
-                "descriptor": {
-                  "code": "PROCESSING_FEES"
-                },
-                "value": 1200
-              }
-            ]
-          },
-          {
-            "descriptor": {
-              "code": "LOAN_TERMS",
-              "name": "Loan Terms"
-            },
-            "tags": [
-              {
-                "descriptor": {
-                  "code": "GENERAL",
-                  "name": "General Terms"
+                  "code": "LOAN_TERMS",
+                  "name": "Loan Terms"
                 },
                 "tags": [
                   {
                     "descriptor": {
-                      "code": "LOAN_AMOUNT",
-                      "name": "Loan Amount"
+                      "code": "GENERAL",
+                      "name": "General Terms"
                     },
-                    "value": 75000
+                    "list": [
+                      {
+                        "descriptor": {
+                          "code": "LOAN_AMOUNT",
+                          "name": "Loan Amount"
+                        },
+                        "value": 75000
+                      },
+                      {
+                        "descriptor": {
+                          "code": "TOTAL_INTEREST_CHARGE",
+                          "name": "Total Interest Charge",
+                          "short_desc": "During entire tenure of loan"
+                        },
+                        "value": 20000
+                      },
+                      {
+                        "descriptor": {
+                          "code": "OTHER_UPFRONT_CHARGES",
+                          "name": "Other up front charges",
+                          "short_desc": "break-up of each component given below"
+                        },
+                        "value": 530
+                      },
+                      {
+                        "descriptor": {
+                          "code": "PROCESSING_FEE",
+                          "name": "Processing fee"
+                        },
+                        "value": 231
+                      },
+                      {
+                        "descriptor": {
+                          "code": "INSURANCE_CHARGES",
+                          "name": "Insurance charges"
+                        },
+                        "value": 231
+                      },
+                      {
+                        "descriptor": {
+                          "code": "OTHERS",
+                          "name": "Others"
+                        },
+                        "value": 231
+                      },
+                      {
+                        "descriptor": {
+                          "code": "TENOR_OF_THE_LOAN",
+                          "name": "Tenor of the loan",
+                          "short_desc": "In month/days"
+                        },
+                        "value": "24 Months"
+                      },
+                      {
+                        "descriptor": {
+                          "code": "COUNTERPARTY_GSTIN_ALLOWED",
+                          "name": "Counterparty GSTIN Alowed"
+                        },
+                        "value": "GSTIN1, GSTIN2, GSTIN3"
+                      }
+                    ]
                   },
                   {
                     "descriptor": {
-                      "code": "TOTAL_INTEREST_CHARGE",
-                      "name": "Total Interest Charge",
-                      "short_desc": "During entire tenure of loan"
+                      "code": "CONTINGENT",
+                      "name": "Contingent Terms"
                     },
-                    "value": 20000
-                  },
-                  {
-                    "descriptor": {
-                      "code": "OTHER_UPFRONT_CHARGES",
-                      "name": "Other up front charges",
-                      "short_desc": "break-up of each component given below"
-                    },
-                    "value": 530
-                  },
-                  {
-                    "descriptor": {
-                      "code": "PROCESSING_FEE",
-                      "name": "Processing fee"
-                    },
-                    "value": 231
-                  },
-                  {
-                    "descriptor": {
-                      "code": "INSURANCE_CHARGES",
-                      "name": "Insurance charges"
-                    },
-                    "value": 231
+                    "list": [
+                      {
+                        "descriptor": {
+                          "code": "RATE_ANNUALISED_PENAL_CHARGES",
+                          "name": "Rate Annualised penal charges"
+                        },
+                        "value": 20000
+                      },
+                      {
+                        "descriptor": {
+                          "code": "ANNUALISED_OTH_PENAL_CHARGES",
+                          "name": "Annualised oth penal charges",
+                          "short_desc": "if any, details to be provided"
+                        },
+                        "value": 20000
+                      }
+                    ]
                   },
                   {
                     "descriptor": {
                       "code": "OTHERS",
-                      "name": "Others"
+                      "name": "Other Terms"
                     },
-                    "value": 231
-                  },
-                  {
-                    "descriptor": {
-                      "code": "TENOR_OF_THE_LOAN",
-                      "name": "Tenor of the loan",
-                      "short_desc": "In month/days"
-                    },
-                    "value": "24 Months"
-                  },
-                  {
-                    "descriptor": {
-                      "code": "COUNTERPARTY_GSTIN_ALLOWED",
-                      "name": "Counterparty GSTIN Alowed"
-                    },
-                    "value": "GSTIN1, GSTIN2, GSTIN3"
+                    "list": [
+                      {
+                        "descriptor": {
+                          "code": "COOLING_OFF",
+                          "name": "Cooling off",
+                          "short_desc": "Look up period during which borrower shouldn't be charged any penalty on repayment loan."
+                        },
+                        "value": "12 Days"
+                      }
+                    ]
                   }
                 ]
+              }
+            ],
+            "xinput": {
+              "head": {
+                "descriptor": {
+                  "name": "Field Visit"
+                },
+                "index": {
+                  "min": 0,
+                  "cur": 0,
+                  "max": 0
+                },
+                "headings": [
+                  "Field Visit"
+                ]
+              },
+              "form": {
+                "id": "Addtional KYC & Field Visit",
+                "mime_type": "application/html",
+                "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/form_addtional_kyc_field_visit/F03"
+              },
+              "required": true
+            }
+          }
+        ],
+        "tags": [
+          {
+            "descriptor": {
+              "code": "CONTACT_INFO",
+              "name": "Contact Info"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "GRO_NAME",
+                  "name": "Gro name"
+                },
+                "value": "ICICI"
               },
               {
                 "descriptor": {
-                  "code": "CONTINGENT",
-                  "name": "Contingent Terms"
+                  "code": "GRO_EMAIL",
+                  "name": "Gro email"
                 },
-                "tags": [
-                  {
-                    "descriptor": {
-                      "code": "RATE_ANNUALISED_PENAL_CHARGES",
-                      "name": "Rate Annualised penal charges"
-                    },
-                    "value": 20000
-                  },
-                  {
-                    "descriptor": {
-                      "code": "ANNUALISED_OTH_PENAL_CHARGES",
-                      "name": "Annualised oth penal charges",
-                      "short_desc": "if any, details to be provided"
-                    },
-                    "value": 20000
-                  }
-                ]
+                "value": "lifeline@iciciprulife.com"
               },
               {
                 "descriptor": {
-                  "code": "OTHERS",
-                  "name": "Other Terms"
+                  "code": "GRO_CONTACT_NUMBER",
+                  "name": "Gro contact number"
                 },
-                "tags": [
-                  {
-                    "descriptor": {
-                      "code": "COOLING_OFF",
-                      "name": "Cooling off",
-                      "short_desc": "Look up period during which borrower shouldn't be charged any penalty on repayment loan."
-                    },
-                    "value": "12 Days"
-                  }
-                ]
+                "value": "1860 266 7766"
+              },
+              {
+                "descriptor": {
+                  "code": "CUSTOMER_SUPPORT_LINK",
+                  "name": "Customer support link"
+                },
+                "value": "https://buy.iciciprulife.com/buy/GrievanceRedStep.htm?execution=e1s1"
+              },
+              {
+                "descriptor": {
+                  "code": "CUSTOMER_SUPPORT_CONTACT_NUMBER",
+                  "name": "Customer support contact number"
+                },
+                "value": "1800 1080"
+              },
+              {
+                "descriptor": {
+                  "code": "CUSTOMER_SUPPORT_EMAIL",
+                  "name": "Customer support email"
+                },
+                "value": "customer.care@icicibank.com"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "LSP_INFO",
+              "name": "Lsp Info"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "LSP_NAME",
+                  "name": "Lsp name"
+                },
+                "value": "ICICI_LSP"
+              },
+              {
+                "descriptor": {
+                  "code": "LSP_EMAIL",
+                  "name": "Lsp email"
+                },
+                "value": "lsp@iciciprulife.com"
+              },
+              {
+                "descriptor": {
+                  "code": "LSP_CONTACT_NUMBER",
+                  "name": "Lsp contact number"
+                },
+                "value": "1860 266 7766"
+              },
+              {
+                "descriptor": {
+                  "code": "LSP_ADDRESS",
+                  "name": "Lsp Address"
+                },
+                "value": "One Indiabulls centre, Tower 1, 18th Floor Jupiter mill compound 841, Senapati Bapat Marg, Elphinstone Road, Mumbai 400013"
               }
             ]
           }
         ]
-      },
-      "xinput": {
-        "head": {
-          "descriptor": {
-            "name": "Field Visit"
-          },
-          "index": {
-            "min": 0,
-            "cur": 0,
-            "max": 0
-          },
-          "headings": [ 
-           "Field Visit" 
-          ]
-        },
-        "form": {
-          "id": "Addtional KYC & Field Visit",
-          "mime_type": "application/html",
-          "url": "https://bpp.credit.becknprotocol.org/loans-kyc/xinput/form/form_addtional_kyc_field_visit/F03"
-        },
-        "required": true
-      },
-      "created_at": "2024-05-21T10:15:00Z",
-      "updated_at": "2024-05-21T10:15:00Z"
+      }
     }
   }
 }
