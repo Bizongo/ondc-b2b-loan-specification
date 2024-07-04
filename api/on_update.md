@@ -96,7 +96,7 @@
                       "invoice_id": "invoice_submission_id_1",
                       "invoice_state": "PROCESSING",
                       "disbursement_amount": "20000",
-                      "description": "Invoice is being processes"
+                      "description": "Invoice is being processed"
                     }
                   ]
                 }
