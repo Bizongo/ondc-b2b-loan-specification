@@ -94,28 +94,9 @@
                   "list": [
                     {
                       "invoice_id": "invoice_submission_id_1",
-                      "invoice_state": "DISBURSED",
-                      "disbursement_amount": "50000",
-                      "disbursement_date": "2023-06-20",
-                      "utr": "UTR-123456789",
-                      "description": "Invoice Accepted"
-                    },
-                    {
-                      "invoice_id": "invoice_submission_id_2",
-                      "invoice_state": "REPAID",
-                      "disbursement_amount": "75000",
-                      "disbursement_date": "2023-07-05",
-                      "disbursement_utr": "UTR-456789012",
-                      "repayment_amount": "75000",
-                      "repayment_date": "2023-08-10",
-                      "repayment_utr": "UTR-789012345",
-                      "description": "Invoice Accepted"
-                    },
-                    {
-                      "invoice_id": "invoice_submission_id_3",
-                      "invoice_state": "REJECTED",
+                      "invoice_state": "PROCESSING",
                       "disbursement_amount": "20000",
-                      "description": "Invalid Rejected due to invalid gstin"
+                      "description": "Invoice is being processes"
                     }
                   ]
                 }
