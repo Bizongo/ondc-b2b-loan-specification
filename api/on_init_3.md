@@ -224,7 +224,7 @@
             "form": {
               "id": "KYC_LINK",
               "mime_type": "application/html",
-              "url": "https://bpp.credit.becknprotocol.org/xinput/link/link_verify_bank_details"
+              "url": "https://bpp.credit.becknprotocol.org/xinput/form/form_bank_details"
             },
             "required": true
           }
@@ -252,7 +252,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_3.md) | [Go to Form →](link_verify_bank_details.md) | [Next File →](on_status_3.md)
+[← Back to Previous File](init_3.md) | [Go to Form →](form_bank_details.md) | [Next File →](init_4.md)
 
 </p>
 
