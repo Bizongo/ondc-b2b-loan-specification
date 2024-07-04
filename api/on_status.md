@@ -89,8 +89,10 @@
                   "list": [
                     {
                       "invoice_id": "invoice_submission_id_1",
-                      "invoice_state": "PENDING",
-                    },
+                      "invoice_state": "PROCESSING",
+                      "disbursement_amount": "20000",
+                      "description": "Invoice is being processed"
+                    }
                     {
                       "invoice_id": "invoice_submission_id_3",
                       "invoice_state": "REJECTED",
