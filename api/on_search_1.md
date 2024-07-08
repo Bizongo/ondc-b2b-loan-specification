@@ -79,63 +79,7 @@
                                 "101123"
                             ],
                             "tags": [
-                                {
-                                    "descriptor": {
-                                        "code": "GENERAL_INFO",
-                                        "name": "General Information"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "code": "MIN_INTEREST_RATE",
-                                                "name": "Minimum Interest Rate",
-                                                "short_desc": "Loans starting from 9% (p.a)"
-                                            },
-                                            "value": "9%"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "code": "MAX_INTEREST_RATE",
-                                                "name": "Maximum Interest Rate",
-                                                "short_desc": "Loan Rate below from 15% (p.a)"
-                                            },
-                                            "value": "15%"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "code": "MIN_TENURE",
-                                                "name": "Minimum Tenure",
-                                                "short_desc": "Loan Tenure starting form 5 months"
-                                            },
-                                            "value": "5 months"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "code": "MAX_TENURE",
-                                                "name": "Maximum Tenure",
-                                                "short_desc": "Loan Tenure upto form 5 years"
-                                            },
-                                            "value": "5 years"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "code": "MIN_LOAN_AMOUNT",
-                                                "name": "Minimum Loan Amount",
-                                                "short_desc": "Loan Amount starting from 50,000"
-                                            },
-                                            "value": "50000"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "code": "MAX_LOAN_AMOUNT",
-                                                "name": "Minimum Loan Amount",
-                                                "short_desc": "Loan Amount upto form 50,00,000"
-                                            },
-                                            "value": "5000000"
-                                        }
-                                    ],
-                                    "display": true
-                                }
+                                
                             ],
                             "matched": true,
                             "recommended": true,
