@@ -20,8 +20,15 @@
     <input required name="gstr2A" type="file" accept=".json" /><br>
     <label for="gstr3B">GSTR3B</label><br>
     <input required name="gstr3B" type="file" accept=".json"/><br>
-    <label for="bank_statement_files">Upload Last 12 Months Bank Statements (PDFs in ZIP):</label><br>
-    <input required type="file" id="bank_statement_files" name="bank_statement_files" accept=".excel .pdf"><br>
+    <label for="bank_statement_files">Upload Last 12 Months Bank Statements:</label><br>
+    <input required type="file" id="bank_statement_files" name="bank_statement_files" accept=".pdf, .xlsx, .xls"><br>
+    <label for="mime_type">Select Bank Statement format</label><br>
+    <select required id="mime_type" name="mime_type">
+      <option value="">Select File Type</option>
+      <option value="application/pdf">PDF</option>
+      <option value="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">Excel (XLSX)</option>
+      <option value="application/vnd.ms-excel">Excel (XLS)</option>
+    </select><br>
     <input required type="hidden" id="formId" name="formId" value="FO1"><br>
     <input required type="submit" value="Submit"><br>
   </form>
