@@ -46,6 +46,95 @@
       "descriptor": {
         "name": "ICICI Bank"
       },
+      "fulfillments": [
+        {
+          "customer": {
+            "person": {
+              "name": "John Doe",
+              "dob": "12-09-1998",
+              "gender": "Male",
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "PAN",
+                    "name": "Customer PAN"
+                  },
+                  "value": "BXHPR3928U"
+                }
+              ]
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "CHECKLISTS",
+                "name": "Applicant Checklists"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "CREDIT_CHECK",
+                    "name": "Credit Check"
+                  },
+                  "value": "PENDING"
+                },
+                {
+                  "descriptor": {
+                    "code": "KYC",
+                    "name": "KYC"
+                  },
+                  "value": "PENDING"
+                },
+                {
+                  "descriptor": {
+                    "code": "E_SIGN",
+                    "name": "E Sign Required"
+                  },
+                  "value": "PENDING"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "customer": {
+            "person": {
+              "name": "Co Applicant 1"
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "CHECKLISTS",
+                "name": "Applicant Checklists"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "CREDIT_CHECK",
+                    "name": "Credit Check"
+                  },
+                  "value": "PENDING"
+                },
+                {
+                  "descriptor": {
+                    "code": "KYC",
+                    "name": "KYC"
+                  },
+                  "value": "PENDING"
+                },
+                {
+                  "descriptor": {
+                    "code": "E_SIGN",
+                    "name": "E Sign Required"
+                  },
+                  "value": "PENDING"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "providers": [
         {
           "id": "PROVIDER_ID",
@@ -93,14 +182,6 @@
                         "name": "Loan Amount"
                       },
                       "value": "90000 INR"
-                    },
-                    {
-                      "descriptor": {
-                        "code": "INTEREST_AMOUNT",
-                        "name": "Total Interest Charge",
-                        "short_desc": "During entire tenure of loan"
-                      },
-                      "value": "20000 INR"
                     },
                     {
                       "descriptor": {
@@ -175,6 +256,36 @@
                         "short_desc": "Look up period during which borrower shouldn't be charged any penalty on repayment loan."
                       },
                       "value": "PT12D"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "KYC_MODE",
+                        "name": "KYC Mode"
+                      },
+                      "value": "ONLINE"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "CO_APPLICANT",
+                        "name": "Co Applicant"
+                      },
+                      "value": "REQUIRED"
+                    }
+                  ],
+                  "display": true
+                },
+                {
+                  "descriptor": {
+                    "code": "CHECKLISTS",
+                    "name": "Checklists"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "PERSONAL_DISCUSSION",
+                        "name": "Personal Discussion"
+                      },
+                      "value": "PENDING"
                     }
                   ],
                   "display": true
@@ -296,6 +407,6 @@
 
 <p align="center">
 
-[← Back to Previous File](search_2.md) | [Go to Form →](form_accept_loan_terms.md) | [Next File →](select_1.md)
+[← Back to Previous File](search_3.md)  | [Next File →](select_1.md)
 
 </p>

@@ -29,22 +29,14 @@
     "bpp_id": "bpp.credit.becknprotocol.org",
     "bpp_uri": "https://bpp.credit.becknprotocol.org",
     "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
-    "message_id": "c8e3968c-cd78-4e46-aa34-0d541e46bd71",
+    "message_id": "c8e3968c-cd78-4e46-aa34-0d541e46bd73",
     "timestamp": "2023-05-25T05:23:03.443Z",
     "ttl": "P30M"
   },
   "message": {
     "order": {
       "provider": {
-        "categories": [
-          {
-            "descriptor": {
-              "code": "WORKING_CAPITAL_LOAN",
-              "name": "Working Captail Loan"
-            },
-            "id": "101123"
-          }
-        ],
+        "id": "PROVIDER_ID",
         "descriptor": {
           "images": [
             {
@@ -56,176 +48,143 @@
           "name": "ICICI Bank",
           "short_desc": "ICICI Bank Ltd"
         },
-        "id": "PROVIDER_ID",
-        "items": [
+        "fulfillments": [
           {
-            "category_ids": [
-              "101123"
-            ],
-            "descriptor": {
-              "code": "WORKING_CAPITAL_LOAN",
-              "name": "Working Captail Loan"
+            "customer": {
+              "person": {
+                "name": "John Doe",
+                "dob": "12-09-1998",
+                "gender": "Male",
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "PAN",
+                      "name": "Customer PAN"
+                    },
+                    "value": "BXHPR3928U"
+                  }
+                ]
+              }
             },
-            "id": "WORKING_CAPITAL_LOAN_ID",
-            "matched": true,
-            "recommended": true,
             "tags": [
               {
                 "descriptor": {
-                  "code": "SANCTION_DETAILS",
-                  "name": "Final Sanction Details"
+                  "code": "CHECKLISTS",
+                  "name": "Applicant Checklists"
                 },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "CREDIT_CHECK",
+                      "name": "Credit Check"
+                    },
+                    "value": "COMPLETED"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "KYC",
+                      "name": "KYC"
+                    },
+                    "value": "COMPLETED"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "E_SIGN",
+                      "name": "E Sign Required"
+                    },
+                    "value": "COMPLETED"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "customer": {
+              "person": {
+                "name": "Co Applicant 1",
+                "dob": "12-09-1998",
+                "gender": "Male",
                 "tags": [
                   {
                     "descriptor": {
-                      "code": "SANCTIONED_AMOUNT"
+                      "code": "PAN",
+                      "name": "Customer PAN"
                     },
-                    "value": 90000
-                  },
-                  {
-                    "descriptor": {
-                      "code": "INTEREST_RATE"
-                    },
-                    "value": 13.5
-                  },
-                  {
-                    "descriptor": {
-                      "code": "TENURE_MONTHS"
-                    },
-                    "value": 4
-                  },
-                  {
-                    "descriptor": {
-                      "code": "PROCESSING_FEES"
-                    },
-                    "value": 1200
+                    "value": "BXHPR3928U"
                   }
                 ]
-              },
+              }
+            },
+            "tags": [
               {
                 "descriptor": {
-                  "code": "LOAN_TERMS",
-                  "name": "Loan Terms"
+                  "code": "CHECKLISTS",
+                  "name": "Applicant Checklists"
                 },
-                "tags": [
+                "list": [
                   {
                     "descriptor": {
-                      "code": "GENERAL",
-                      "name": "General Terms"
+                      "code": "CREDIT_CHECK",
+                      "name": "Credit Check"
                     },
-                    "list": [
-                      {
-                        "descriptor": {
-                          "code": "LOAN_AMOUNT",
-                          "name": "Loan Amount"
-                        },
-                        "value": 75000
-                      },
-                      {
-                        "descriptor": {
-                          "code": "TOTAL_INTEREST_CHARGE",
-                          "name": "Total Interest Charge",
-                          "short_desc": "During entire tenure of loan"
-                        },
-                        "value": 20000
-                      },
-                      {
-                        "descriptor": {
-                          "code": "OTHER_UPFRONT_CHARGES",
-                          "name": "Other up front charges",
-                          "short_desc": "break-up of each component given below"
-                        },
-                        "value": 530
-                      },
-                      {
-                        "descriptor": {
-                          "code": "PROCESSING_FEE",
-                          "name": "Processing fee"
-                        },
-                        "value": 231
-                      },
-                      {
-                        "descriptor": {
-                          "code": "INSURANCE_CHARGES",
-                          "name": "Insurance charges"
-                        },
-                        "value": 231
-                      },
-                      {
-                        "descriptor": {
-                          "code": "OTHERS",
-                          "name": "Others"
-                        },
-                        "value": 231
-                      },
-                      {
-                        "descriptor": {
-                          "code": "TENOR_OF_THE_LOAN",
-                          "name": "Tenor of the loan",
-                          "short_desc": "In month/days"
-                        },
-                        "value": "24 Months"
-                      },
-                      {
-                        "descriptor": {
-                          "code": "COUNTERPARTY_GSTIN_ALLOWED",
-                          "name": "Counterparty GSTIN Alowed"
-                        },
-                        "value": "GSTIN1, GSTIN2, GSTIN3"
-                      }
-                    ]
+                    "value": "COMPLETED"
                   },
                   {
                     "descriptor": {
-                      "code": "CONTINGENT",
-                      "name": "Contingent Terms"
+                      "code": "KYC",
+                      "name": "KYC"
                     },
-                    "tags": [
-                      {
-                        "descriptor": {
-                          "code": "RATE_ANNUALISED_PENAL_CHARGES",
-                          "name": "Rate Annualised penal charges"
-                        },
-                        "value": 20000
-                      },
-                      {
-                        "descriptor": {
-                          "code": "ANNUALISED_OTH_PENAL_CHARGES",
-                          "name": "Annualised oth penal charges",
-                          "short_desc": "if any, details to be provided"
-                        },
-                        "value": 20000
-                      }
-                    ]
+                    "value": "COMPLETED"
                   },
                   {
                     "descriptor": {
-                      "code": "OTHERS",
-                      "name": "Other Terms"
+                      "code": "E_SIGN",
+                      "name": "E Sign Required"
                     },
-                    "tags": [
-                      {
-                        "descriptor": {
-                          "code": "COOLING_OFF",
-                          "name": "Cooling off",
-                          "short_desc": "Look up period during which borrower shouldn't be charged any penalty on repayment loan."
-                        },
-                        "value": "12 Days"
-                      }
-                    ]
+                    "value": "COMPLETED"
                   }
                 ]
               }
-            ],
-            "xinput": {
-              "form_response": {
-                "status": "SUCCESS",
-                "submission_id": "79850933-4e41-4c76-bbe6-c5a392481226"
-              }
-            }
+            ]
           }
         ],
         "tags": [
+          {
+            "descriptor": {
+              "code": "LSP_INFO",
+              "name": "Lsp Info"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "LSP_NAME",
+                  "name": "Lsp name"
+                },
+                "value": "ICICI_LSP"
+              },
+              {
+                "descriptor": {
+                  "code": "LSP_EMAIL",
+                  "name": "Lsp email"
+                },
+                "value": "lsp@iciciprulife.com"
+              },
+              {
+                "descriptor": {
+                  "code": "LSP_CONTACT_NUMBER",
+                  "name": "Lsp contact number"
+                },
+                "value": "1860 266 7766"
+              },
+              {
+                "descriptor": {
+                  "code": "LSP_ADDRESS",
+                  "name": "Lsp Address"
+                },
+                "value": "One Indiabulls centre, Tower 1, 18th Floor Jupiter mill compound 841, Senapati Bapat Marg, Elphinstone Road, Mumbai 400013"
+              }
+            ]
+          },
           {
             "descriptor": {
               "code": "CONTACT_INFO",
@@ -275,45 +234,243 @@
                 "value": "customer.care@icicibank.com"
               }
             ]
-          },
-          {
-            "descriptor": {
-              "code": "LSP_INFO",
-              "name": "Lsp Info"
-            },
-            "list": [
-              {
-                "descriptor": {
-                  "code": "LSP_NAME",
-                  "name": "Lsp name"
-                },
-                "value": "ICICI_LSP"
-              },
-              {
-                "descriptor": {
-                  "code": "LSP_EMAIL",
-                  "name": "Lsp email"
-                },
-                "value": "lsp@iciciprulife.com"
-              },
-              {
-                "descriptor": {
-                  "code": "LSP_CONTACT_NUMBER",
-                  "name": "Lsp contact number"
-                },
-                "value": "1860 266 7766"
-              },
-              {
-                "descriptor": {
-                  "code": "LSP_ADDRESS",
-                  "name": "Lsp Address"
-                },
-                "value": "One Indiabulls centre, Tower 1, 18th Floor Jupiter mill compound 841, Senapati Bapat Marg, Elphinstone Road, Mumbai 400013"
-              }
-            ]
           }
         ]
-      }
+      },
+      "quote": {
+        "id": "LOAN_LEAD_ID_OR_SIMILAR",
+        "price": {
+          "currency": "INR",
+          "value": "442300"
+        },
+        "breakup": [
+          {
+            "title": "PRINCIPAL_AMOUNT",
+            "price": {
+              "value": "400000",
+              "currency": "INR"
+            }
+          },
+          {
+            "title": "INTEREST_AMOUNT",
+            "price": {
+              "value": "40000",
+              "currency": "INR"
+            }
+          },
+          {
+            "title": "PROCESSING_FEE",
+            "price": {
+              "value": "1800",
+              "currency": "INR"
+            }
+          },
+          {
+            "title": "OTHER_UPFRONT_CHARGES",
+            "price": {
+              "value": "0",
+              "currency": "INR"
+            }
+          },
+          {
+            "title": "INSURANCE_CHARGES",
+            "price": {
+              "value": "500",
+              "currency": "INR"
+            }
+          },
+          {
+            "title": "NET_DISBURSED_AMOUNT",
+            "price": {
+              "value": "397700",
+              "currency": "INR"
+            }
+          },
+          {
+            "title": "OTHER_CHARGES",
+            "price": {
+              "value": "0",
+              "currency": "INR"
+            }
+          }
+        ],
+        "ttl": "PT15D"
+      },
+      "items": [
+        {
+          "id": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN",
+          "parent_item_id": "ITEM_ID_WORKING_CAPITAL_LOAN",
+          "descriptor": {
+            "code": "LOAN",
+            "name": "Loan"
+          },
+          "category_ids": [
+            "101123"
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "INFO",
+                "name": "Information"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "PRINCIPAL_AMOUNT",
+                    "name": "Loan Amount"
+                  },
+                  "value": "90000 INR"
+                },
+                {
+                  "descriptor": {
+                    "code": "INTEREST_AMOUNT",
+                    "name": "Total Interest Charge",
+                    "short_desc": "During entire tenure of loan"
+                  },
+                  "value": "20000 INR"
+                },
+                {
+                  "descriptor": {
+                    "code": "INTEREST_RATE",
+                    "name": "Interest Rate"
+                  },
+                  "value": "13.5 %"
+                },
+                {
+                  "descriptor": {
+                    "code": "PROCESSING_FEE",
+                    "name": "Processing Fee"
+                  },
+                  "value": "1200 INR"
+                },
+                {
+                  "descriptor": {
+                    "code": "INSURANCE_CHARGES",
+                    "name": "Insurance Charges"
+                  },
+                  "value": "231 INR"
+                },
+                {
+                  "descriptor": {
+                    "code": "OTHER_UPFRONT_CHARGES",
+                    "name": "Other up front charges",
+                    "short_desc": "Other up front charges"
+                  },
+                  "value": "530 INR"
+                },
+                {
+                  "descriptor": {
+                    "code": "TERM",
+                    "name": "Loan Term"
+                  },
+                  "value": "PT24M"
+                },
+                {
+                  "descriptor": {
+                    "code": "REPAYMENT_FREQUENCY",
+                    "name": "Repayment Frequency",
+                    "short_desc": "Repayment Frequency by borrower"
+                  },
+                  "value": "PT1M"
+                },
+                {
+                  "descriptor": {
+                    "code": "NUMBER_OF_INSTALLMENTS",
+                    "name": "Number of installments of repayment",
+                    "short_desc": "Number of installments borrower has to make to payback the loan"
+                  },
+                  "value": "45"
+                },
+                {
+                  "descriptor": {
+                    "code": "RATE_ANNUALISED_PENAL_CHARGES",
+                    "name": "Rate Annualised penal charges"
+                  },
+                  "value": "2 %"
+                },
+                {
+                  "descriptor": {
+                    "code": "OTHER_CHARGES",
+                    "name": "Other Charges"
+                  },
+                  "value": "231 INR"
+                },
+                {
+                  "descriptor": {
+                    "code": "COOL_OFF_PERIOD",
+                    "name": "Cooling off",
+                    "short_desc": "Look up period during which borrower shouldn't be charged any penalty on repayment loan."
+                  },
+                  "value": "PT12D"
+                },
+                {
+                  "descriptor": {
+                    "code": "KYC_MODE",
+                    "name": "KYC Mode"
+                  },
+                  "value": "ONLINE"
+                },
+                {
+                  "descriptor": {
+                    "code": "CO_APPLICANT",
+                    "name": "Co Applicant"
+                  },
+                  "value": "REQUIRED"
+                }
+              ],
+              "display": true
+            },
+            {
+              "descriptor": {
+                "code": "CHECKLISTS",
+                "name": "Checklists"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "PERSONAL_DISCUSSION",
+                    "name": "Personal Discussion"
+                  },
+                  "value": "COMPLETED"
+                }
+              ],
+              "display": true
+            }
+          ],
+          "matched": true,
+          "recommended": true,
+          "xinput": {
+            "form_response": {
+              "form": {
+                "id": "F03"
+              },
+              "status": "SUCCESS",
+              "submission_id": "79850933-4e41-4c76-bbe6-c5a392481226"
+            }
+          }
+        }
+      ],
+      "payments": [
+        {
+          "collected_by": "BPP",
+          "params": {
+            "amount": "1000",
+            "bank_account_number": "1800002341",
+            "bank_code": "SBIN0001234",
+            "currency": "INR"
+          },
+          "status": "PAID",
+          "type": "PRE_FULFILLMENT",
+          "url": "https://payment.fis.test.bpp.io",
+          "tags": [
+            {
+              "descriptor": {
+                "code": "PROCESSING_FEES"
+              }
+            }
+          ]
+        }
+      ]
     }
   }
 }
@@ -336,7 +493,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_init_2.md) | [Next File →](init_3.md)
+[← Back to Previous File](init_3.md) | [Next File →](confirm.md)
 
 </p>
 

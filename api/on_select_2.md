@@ -1,18 +1,17 @@
-## ON_INIT
+## ON_SELECT
 
-**Purpose:** Provides final sanction details, loan terms, and any additional requirements for loan disbursement.
+**Purpose:** Provides KYC details, operational limits, and document requirements for the selected loan offer.
 
-**Endpoint:** /on_init
+**Endpoint:** /on_select
 
 **Method:** POST
 
-**Description:** The FI uses this endpoint to send the final loan sanction details and terms to the buyer app.
+**Description:** The ONDC network (or the selected FI) uses this endpoint to send detailed information about the selected loan offer, including KYC requirements, working capital limits, and document submission details.
 
 **Steps:**
-  - **Loan Sanction:** The FI processes the INIT request, performs final checks, and sanctions the loan.
-  - **Final Details and Terms:** The FI sends the ON_INIT response with the final sanction details (amount, interest rate, tenure, fees), detailed loan terms, and any additional requirements (e.g., owner KYC, eNACH setup, bank account verification).
-  - **Present Details:** The buyer app displays the final sanction details and loan terms to the borrower.
-
+  - **Prepare Offer Details:** The FI prepares details about the KYC process, operational limits, and document requirements.
+  - **Send Details:** The network sends the ON_SELECT response to the buyer app, including the detailed information about the selected offer.
+  - **Present Details:** The buyer app displays the details to the borrower.
 
 
 
@@ -23,7 +22,7 @@
   "context": {
     "domain": "ONDC:FIS",
     "version": "2.0.0",
-    "action": "on_init",
+    "action": "on_select",
     "bap_id": "bizongo-next.becknprotocol.io",
     "bap_uri": "https://bizongo-next.becknprotocol.io/",
     "bpp_id": "bpp.credit.becknprotocol.org",
@@ -431,23 +430,22 @@
           "xinput": {
             "head": {
               "descriptor": {
-                "name": "Account Information"
+                "name": "BUSINESS_KYC"
               },
               "index": {
                 "min": 0,
-                "cur": 0,
-                "max": 2
+                "cur": 1,
+                "max": 1
               },
               "headings": [
-                "ACCOUNT_INFORMATION",
-                "ENACH",
-                "ESIGN"
+                "KYC_VERIFICATION",
+                "BUSINESS_KYC"
               ]
             },
             "form": {
-              "id": "BORROWER_BANK_ACCOUNT_INFO",
-              "mime_type": "text/html",
-              "url": "https://bpp.credit.becknprotocol.org/xinput/form/form_bank_details"
+              "id": "form_business_kyc",
+              "mime_type": "application/html",
+              "url": "https://bpp.credit.becknprotocol.org/xinput/form/form_business_kyc"
             },
             "required": true
           }
@@ -475,7 +473,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_1.md) | [Go to Form →](form_bank_details.md) | [Next File →](init_2.md)
+[← Back to Previous File](select_1.md) | [Go to Form →](form_business_kyc.md) | [Next File →](init_1.md)
 
 </p>
 

@@ -47,7 +47,17 @@
             },
             "items": [
                 {
-                    "id": "ITEM_ID_WORKING_CAPITAL_LOAN"
+                    "id": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN",
+                    "parent_item_id": "ITEM_ID_WORKING_CAPITAL_LOAN",
+                    "xinput": {
+                        "form": {
+                            "id": "F03"
+                        },
+                        "form_response": {
+                            "status": "SUCCESS",
+                            "submission_id": "F03_SUBMISSION_ID"
+                        }
+                    }
                 }
             ]
         }
@@ -72,7 +82,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_select_1.md) | [Next File →](on_init_1.md)
+[← Back to Previous File](on_select_2.md) | [Next File →](on_init_1.md)
 
 </p>
 

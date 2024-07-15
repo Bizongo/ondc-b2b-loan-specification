@@ -92,16 +92,15 @@
                                     "index": {
                                         "min": 0,
                                         "cur": 1,
-                                        "max": 2
+                                        "max": 1
                                     },
-                                    "headings": [
-                                        "Bank Statement & GST Returns",
-                                        "Business & Financial Details",
-                                        "Loan Acceptance" 
+                                   "headings": [
+                                        "BANK_STATEMENT_AND_GST_RETURNS",
+                                        "BUSINESS_AND_FINANCIAL_DOCUMENTS",
                                     ]
                                 },
                                 "form": {
-                                    "id": "form_gst_bank_statement_F01",
+                                    "id": "form_business_financial",
                                     "mime_type": "text/html",
                                     "url": "https://bpp.credit.becknprotocol.org/xinput/formid/form_business_financial/1",
                                     "resubmit": false,

@@ -78,9 +78,6 @@
                             "category_ids": [
                                 "101123"
                             ],
-                            "tags": [
-                                
-                            ],
                             "matched": true,
                             "recommended": true,
                             "xinput": {
@@ -91,12 +88,11 @@
                                     "index": {
                                         "min": 0,
                                         "cur": 0,
-                                        "max": 2
+                                        "max": 1
                                     },
                                     "headings": [
-                                        "Bank Statement & GST Returns",
-                                        "Business & Financial Details",
-                                        "Loan Acceptance" 
+                                        "BANK_STATEMENT_AND_GST_RETURNS",
+                                        "BUSINESS_AND_FINANCIAL_DOCUMENTS",
                                     ]
                                 },
                                 "form": {

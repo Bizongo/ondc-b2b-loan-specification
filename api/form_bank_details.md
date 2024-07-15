@@ -15,9 +15,7 @@
   <input type="text" id="bank_name" name="bank_name" required><br><br>
   <label for="ifsc_code">IFSC Code:</label>
   <input type="text" id="ifsc_code" name="ifsc_code" required><br><br>
-  <h3>Bank Verification</h3>
-  <label for="bank_verified">Bank Verified by Buyer App:</label>
-  <input type="checkbox" id="bank_verified" name="bank_verified"><br><br>
+  <input required type="hidden" id="formId" name="formId" value="FO1"><br>
   <input type="submit" value="Next">
 </body>
 </html>
@@ -29,7 +27,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_init_5.md) | [Next File →](init_4.md)
+[← Back to Previous File](on_init_1.md) | [Next File →](init_2.md)
 
 </p>
 

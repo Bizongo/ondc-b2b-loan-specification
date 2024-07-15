@@ -221,7 +221,7 @@
                 "max": 0
               },
               "headings": [
-                "Invoice Upload"
+                "INVOICE_UPLOAD"
               ]
             },
             "form": {
