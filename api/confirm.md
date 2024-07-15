@@ -40,7 +40,8 @@
             },
             "items": [
                 {
-                    "id": "ITEM_ID_WORKING_CAPITAL_LOAN",
+                    "id": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN",
+                    "parent_item_id": "ITEM_ID_WORKING_CAPITAL_LOAN",
                     "xinput": {
                         "form": {
                             "id": "F15"

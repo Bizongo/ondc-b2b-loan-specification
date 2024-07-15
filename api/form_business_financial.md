@@ -5,18 +5,17 @@
   <title>Business & Financial Details Form</title>
 </head>
 <body>
-  <h2>Business Details</h2>
-  <label for="director_list">Director List (handle LLP, Partnerships):</label>
-  <textarea id="director_list" name="director_list" required></textarea><br><br>
-  <label for="shareholding_pattern">Shareholding Pattern:</label>
-  <input type="file" id="shareholding_pattern" name="shareholding_pattern" accept=".pdf, .zip" required><br><br>
-  
-  <h2>Financial Details</h2>
-  <label for="financials">Last 2 years Financials with Tax Audit report and 2 year ITR:</label>
-  <input type="file" id="financials" name="financials" accept=".pdf, .zip" required><br><br>
-
-  <button type="submit">Submit</button>
-</form>
+  <form action="/form/submission/business_financial">
+    <label for="shareholding_pattern">Shareholding Pattern</label>
+    <input type="file" id="shareholding_pattern" name="shareholding_pattern" accept=".json, .pdf" required><br>
+    <input required type="hidden" id="formId" name="formId" value="FO1"><br>
+    <label for="financials">Last 2 year Tax Audit report</label>
+    <input required type="file" id="financials" name="financials" accept=".pdf, .zip" required><br><br>
+    <label for="financials">Last 2 year ITR</label>
+    <input required type="file" id="financials" name="financials" accept=".pdf, .zip" required><br><br>
+    <input required type="hidden" id="formId" name="formId" value="FO1"><br>
+    <input required type="submit" value="Submit"><br>
+  </form>
 </body>
 ```
 

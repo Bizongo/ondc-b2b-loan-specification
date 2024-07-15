@@ -39,7 +39,8 @@
             },
             "items": [
                 {
-                    "id": "ITEM_ID_WORKING_CAPITAL_LOAN",
+                    "id": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN",
+                    "parent_item_id": "ITEM_ID_WORKING_CAPITAL_LOAN",
                     "xinput": {
                         "form": {
                             "id": "F15"
@@ -73,7 +74,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_init_2.md) | [Next File →](on_init_3.md)
+[← Back to Previous File](on_status_1.md) | [Next File →](on_init_3.md)
 
 </p>
 

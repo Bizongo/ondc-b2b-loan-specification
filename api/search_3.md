@@ -50,6 +50,26 @@
       },
       "provider": {
         "id": "PROVIDER_ID",
+        "fulfillments": [
+          {
+            "customer": {
+              "person": {
+                "name": "John Doe",
+                "dob": "12-09-1998",
+                "gender": "Male",
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "PAN",
+                      "name": "Customer PAN"
+                    },
+                    "value": "BXHPR3928U"
+                  }
+                ]
+              }
+            }
+          }
+        ],
         "items": [
           {
             "id": "ITEM_ID_WORKING_CAPITAL_LOAN",
