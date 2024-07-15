@@ -19,107 +19,134 @@
 ``` json
 {
   "context": {
-    "domain": "ONDC:FIS12",
-    "location": {
-      "country": {
-        "code": "IND"
-      },
-      "city": {
-        "code": "*"
-      }
-    },
-    "version": "2.1.0",
+    "domain": "ONDC:FIS",
+    "version": "2.0.0",
     "action": "on_confirm",
-    "bap_uri": "https://bap.credit.becknprotocol.io/",
-    "bap_id": "bap.credit.becknprotocol.io",
+    "bap_id": "bizongo-next.becknprotocol.io",
+    "bap_uri": "https://bizongo-next.becknprotocol.io/",
     "bpp_id": "bpp.credit.becknprotocol.org",
     "bpp_uri": "https://bpp.credit.becknprotocol.org",
-    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
-    "message_id": "166a5633-66d2-4ec8-bdcb-65cfeb1e4697",
-    "ttl": "PT10M",
-    "timestamp": "2023-05-25T05:23:03.443Z"
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+    "message_id": "c8e3968c-cd78-4e46-aa34-0d541e46bd73",
+    "timestamp": "2023-05-25T05:23:03.443Z",
+    "ttl": "P30M"
   },
   "message": {
     "order": {
-      "id": "LOAN_LEAD_ID_OR_SIMILAR_ORDER_ID",
       "provider": {
         "id": "PROVIDER_ID",
         "descriptor": {
           "images": [
             {
-              "url": "https://www.icicibank.com/content/dam/icicibank/india/assets/images/header/logo.png",
-              "size_type": "sm"
+              "size_type": "sm",
+              "url": "https://www.icicibank.com/content/dam/icicibank/india/assets/images/header/logo.png"
             }
           ],
+          "long_desc": "ICICI Bank Ltd, India.",
           "name": "ICICI Bank",
-          "short_desc": "ICICI Bank Ltd",
-          "long_desc": "ICICI Bank Ltd, India."
+          "short_desc": "ICICI Bank Ltd"
         },
-        "tags": [
+        "fulfillments": [
           {
-            "descriptor": {
-              "code": "CONTACT_INFO",
-              "name": "Contact Info"
+            "customer": {
+              "person": {
+                "name": "John Doe",
+                "dob": "12-09-1998",
+                "gender": "Male",
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "PAN",
+                      "name": "Customer PAN"
+                    },
+                    "value": "BXHPR3928U"
+                  }
+                ]
+              }
             },
-            "list": [
+            "tags": [
               {
                 "descriptor": {
-                  "code": "GRO_NAME",
-                  "name": "Gro name"
+                  "code": "CHECKLISTS",
+                  "name": "Applicant Checklists"
                 },
-                "value": "ICICI"
-              },
-              {
-                "descriptor": {
-                  "code": "GRO_EMAIL",
-                  "name": "Gro email"
-                },
-                "value": "lifeline@iciciprulife.com"
-              },
-              {
-                "descriptor": {
-                  "code": "GRO_CONTACT_NUMBER",
-                  "name": "Gro contact number"
-                },
-                "value": "1860 266 7766"
-              },
-              {
-                "descriptor": {
-                  "code": "GRO_DESIGNATION",
-                  "name": "Gro Designation"
-                },
-                "value": "Nodal Grievance Redressal Officer"
-              },
-              {
-                "descriptor": {
-                  "code": "GRO_ADDRESS",
-                  "name": "Gro Address"
-                },
-                "value": "One Indiabulls centre, Tower 1, 18th Floor Jupiter mill compound 841, Senapati Bapat Marg, Elphinstone Road, Mumbai 400013"
-              },
-              {
-                "descriptor": {
-                  "code": "CUSTOMER_SUPPORT_LINK",
-                  "name": "Customer support link"
-                },
-                "value": "https://buy.iciciprulife.com/buy/GrievanceRedStep.htm?execution=e1s1"
-              },
-              {
-                "descriptor": {
-                  "code": "CUSTOMER_SUPPORT_CONTACT_NUMBER",
-                  "name": "Customer support contact number"
-                },
-                "value": "1800 1080"
-              },
-              {
-                "descriptor": {
-                  "code": "CUSTOMER_SUPPORT_EMAIL",
-                  "name": "Customer support email"
-                },
-                "value": "customer.care@icicibank.com"
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "CREDIT_CHECK",
+                      "name": "Credit Check"
+                    },
+                    "value": "COMPLETED"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "KYC",
+                      "name": "KYC"
+                    },
+                    "value": "COMPLETED"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "E_SIGN",
+                      "name": "E Sign Required"
+                    },
+                    "value": "COMPLETED"
+                  }
+                ]
               }
             ]
           },
+          {
+            "customer": {
+              "person": {
+                "name": "Co Applicant 1",
+                "dob": "12-09-1998",
+                "gender": "Male",
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "PAN",
+                      "name": "Customer PAN"
+                    },
+                    "value": "BXHPR3928U"
+                  }
+                ]
+              }
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "CHECKLISTS",
+                  "name": "Applicant Checklists"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "CREDIT_CHECK",
+                      "name": "Credit Check"
+                    },
+                    "value": "COMPLETED"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "KYC",
+                      "name": "KYC"
+                    },
+                    "value": "COMPLETED"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "E_SIGN",
+                      "name": "E Sign Required"
+                    },
+                    "value": "COMPLETED"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "tags": [
           {
             "descriptor": {
               "code": "LSP_INFO",
@@ -155,165 +182,77 @@
                 "value": "One Indiabulls centre, Tower 1, 18th Floor Jupiter mill compound 841, Senapati Bapat Marg, Elphinstone Road, Mumbai 400013"
               }
             ]
+          },
+          {
+            "descriptor": {
+              "code": "CONTACT_INFO",
+              "name": "Contact Info"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "GRO_NAME",
+                  "name": "Gro name"
+                },
+                "value": "ICICI"
+              },
+              {
+                "descriptor": {
+                  "code": "GRO_EMAIL",
+                  "name": "Gro email"
+                },
+                "value": "lifeline@iciciprulife.com"
+              },
+              {
+                "descriptor": {
+                  "code": "GRO_CONTACT_NUMBER",
+                  "name": "Gro contact number"
+                },
+                "value": "1860 266 7766"
+              },
+              {
+                "descriptor": {
+                  "code": "CUSTOMER_SUPPORT_LINK",
+                  "name": "Customer support link"
+                },
+                "value": "https://buy.iciciprulife.com/buy/GrievanceRedStep.htm?execution=e1s1"
+              },
+              {
+                "descriptor": {
+                  "code": "CUSTOMER_SUPPORT_CONTACT_NUMBER",
+                  "name": "Customer support contact number"
+                },
+                "value": "1800 1080"
+              },
+              {
+                "descriptor": {
+                  "code": "CUSTOMER_SUPPORT_EMAIL",
+                  "name": "Customer support email"
+                },
+                "value": "customer.care@icicibank.com"
+              }
+            ]
           }
         ]
       },
-      "items": [
-        {
-          "id": "CHILD_ITEM_ID_PERSONAL_LOAN",
-          "parent_item_id": "ITEM_ID_PERSONAL_LOAN",
-          "descriptor": {
-            "code": "LOAN",
-            "name": "Loan"
-          },
-          "price": {
-            "currency": "INR",
-            "value": "232800"
-          },
-          "fulfillment_ids": [
-            "F1"
-          ],
-          "tags": [
-            {
-              "descriptor": {
-                "code": "INFO",
-                "name": "Information"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "INTEREST_RATE",
-                    "name": "Interest Rate",
-                    "short_desc": "Loans starting from 12% (p.a)"
-                  },
-                  "value": "12 %"
-                },
-                {
-                  "descriptor": {
-                    "code": "TERM",
-                    "name": "Loan Term",
-                    "short_desc": "Loans Duration 5 months"
-                  },
-                  "value": "PT5M"
-                },
-                {
-                  "descriptor": {
-                    "code": "INTEREST_RATE_TYPE",
-                    "name": "Interest rate type",
-                    "short_desc": "Fixed Interest type"
-                  },
-                  "value": "FIXED"
-                },
-                {
-                  "descriptor": {
-                    "code": "APPLICATION_FEE",
-                    "name": "Application Fees"
-                  },
-                  "value": "1000 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "FORECLOSURE_FEE",
-                    "name": "Foreclosure Penalty",
-                    "short_desc": "Loan Foreclosure Penalty"
-                  },
-                  "value": "0.5 %"
-                },
-                {
-                  "descriptor": {
-                    "code": "INTEREST_RATE_CONVERSION_CHARGE",
-                    "name": "interest rate conversion charges"
-                  },
-                  "value": "1000 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "DELAY_PENALTY_FEE",
-                    "name": "Delayed payments penalty",
-                    "short_desc": "Delayed payments penalty"
-                  },
-                  "value": "5 %"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_PENALTY_FEE",
-                    "name": "Other Penal Charges",
-                    "short_desc": "Other Penal Charges"
-                  },
-                  "value": "1 %"
-                },
-                {
-                  "descriptor": {
-                    "code": "ANNUAL_PERCENTAGE_RATE",
-                    "name": "Annual Percentage Rate",
-                    "short_desc": "Effective annualized interest rate in percentage computed on net disbursed amount using IRR approach and reducing balance method"
-                  },
-                  "value": "5 %"
-                },
-                {
-                  "descriptor": {
-                    "code": "REPAYMENT_FREQUENCY",
-                    "name": "Repayment Frequency",
-                    "short_desc": "Repayment Frequency by borrower"
-                  },
-                  "value": "PT1M"
-                },
-                {
-                  "descriptor": {
-                    "code": "NUMBER_OF_INSTALLMENTS",
-                    "name": "Number of installments of repayment",
-                    "short_desc": "Number of installments borrower has to make to payback the loan"
-                  },
-                  "value": "45"
-                },
-                {
-                  "descriptor": {
-                    "code": "TNC_LINK",
-                    "name": "Terms & Conditions",
-                    "short_desc": "Terms and Conditions"
-                  },
-                  "value": "https://icicibank.com/loan/tnc.html"
-                },
-                {
-                  "descriptor": {
-                    "code": "COOL_OFF_PERIOD",
-                    "name": "cool off period",
-                    "short_desc": "Cooling off/look-up period during which borrower shall not be charged any penalty"
-                  },
-                  "value": "PT30D"
-                },
-                {
-                  "descriptor": {
-                    "code": "INSTALLMENT_AMOUNT",
-                    "name": "Installment amount",
-                    "short_desc": "Each installment amount of repayment"
-                  },
-                  "value": "46360 INR"
-                }
-              ],
-              "display": true
-            }
-          ]
-        }
-      ],
       "quote": {
-        "id": "LOAN_LEAD_ID_OR_SIMILAR",
+        "id": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN",
         "price": {
           "currency": "INR",
-          "value": "232800"
+          "value": "442300"
         },
         "breakup": [
           {
             "title": "PRINCIPAL_AMOUNT",
             "price": {
-              "value": "200000",
+              "value": "400000",
               "currency": "INR"
             }
           },
           {
             "title": "INTEREST_AMOUNT",
             "price": {
-              "value": "30000",
+              "value": "40000",
               "currency": "INR"
             }
           },
@@ -341,7 +280,7 @@
           {
             "title": "NET_DISBURSED_AMOUNT",
             "price": {
-              "value": "197700",
+              "value": "397700",
               "currency": "INR"
             }
           },
@@ -355,512 +294,159 @@
         ],
         "ttl": "PT15D"
       },
-      "fulfillments": [
+      "items": [
         {
-          "customer": {
-            "person": {
-              "name": "John Doe"
+          "id": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN",
+          "parent_item_id": "ITEM_ID_WORKING_CAPITAL_LOAN",
+          "descriptor": {
+            "code": "LOAN",
+            "name": "Loan"
+          },
+          "category_ids": [
+            "101123"
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "INFO",
+                "name": "Information"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "PRINCIPAL_AMOUNT",
+                    "name": "Loan Amount"
+                  },
+                  "value": "90000 INR"
+                },
+                {
+                  "descriptor": {
+                    "code": "INTEREST_AMOUNT",
+                    "name": "Total Interest Charge",
+                    "short_desc": "During entire tenure of loan"
+                  },
+                  "value": "20000 INR"
+                },
+                {
+                  "descriptor": {
+                    "code": "INTEREST_RATE",
+                    "name": "Interest Rate"
+                  },
+                  "value": "13.5 %"
+                },
+                {
+                  "descriptor": {
+                    "code": "PROCESSING_FEE",
+                    "name": "Processing Fee"
+                  },
+                  "value": "1200 INR"
+                },
+                {
+                  "descriptor": {
+                    "code": "INSURANCE_CHARGES",
+                    "name": "Insurance Charges"
+                  },
+                  "value": "231 INR"
+                },
+                {
+                  "descriptor": {
+                    "code": "OTHER_UPFRONT_CHARGES",
+                    "name": "Other up front charges",
+                    "short_desc": "Other up front charges"
+                  },
+                  "value": "530 INR"
+                },
+                {
+                  "descriptor": {
+                    "code": "TERM",
+                    "name": "Loan Term"
+                  },
+                  "value": "PT24M"
+                },
+                {
+                  "descriptor": {
+                    "code": "REPAYMENT_FREQUENCY",
+                    "name": "Repayment Frequency",
+                    "short_desc": "Repayment Frequency by borrower"
+                  },
+                  "value": "PT1M"
+                },
+                {
+                  "descriptor": {
+                    "code": "NUMBER_OF_INSTALLMENTS",
+                    "name": "Number of installments of repayment",
+                    "short_desc": "Number of installments borrower has to make to payback the loan"
+                  },
+                  "value": "45"
+                },
+                {
+                  "descriptor": {
+                    "code": "RATE_ANNUALISED_PENAL_CHARGES",
+                    "name": "Rate Annualised penal charges"
+                  },
+                  "value": "2 %"
+                },
+                {
+                  "descriptor": {
+                    "code": "OTHER_CHARGES",
+                    "name": "Other Charges"
+                  },
+                  "value": "231 INR"
+                },
+                {
+                  "descriptor": {
+                    "code": "COOL_OFF_PERIOD",
+                    "name": "Cooling off",
+                    "short_desc": "Look up period during which borrower shouldn't be charged any penalty on repayment loan."
+                  },
+                  "value": "PT12D"
+                },
+                {
+                  "descriptor": {
+                    "code": "KYC_MODE",
+                    "name": "KYC Mode"
+                  },
+                  "value": "ONLINE"
+                }
+              ],
+              "display": true
             },
-            "contact": {
-              "phone": "+91-9999999999",
-              "email": "john.doe@example.com"
+            {
+              "descriptor": {
+                "code": "CHECKLISTS",
+                "name": "Checklists"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "PERSONAL_DISCUSSION",
+                    "name": "Personal Discussion"
+                  },
+                  "value": "COMPLETED"
+                }
+              ],
+              "display": true
             }
-          },
-          "state": {
-            "descriptor": {
-              "code": "SANCTIONED"
-            }
-          },
-          "type": "LOAN",
-          "id": "F1"
+          ]
         }
       ],
       "payments": [
         {
-          "id": "PAYMENT_ID_PERSONAL_LOAN",
-          "type": "ON_ORDER",
-          "status": "NOT-PAID",
           "collected_by": "BPP",
-          "tags": [
-            {
-              "descriptor": {
-                "code": "BUYER_FINDER_FEES"
-              },
-              "display": false,
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "BUYER_FINDER_FEES_TYPE"
-                  },
-                  "value": "percent-annualized"
-                },
-                {
-                  "descriptor": {
-                    "code": "BUYER_FINDER_FEES_PERCENTAGE"
-                  },
-                  "value": "1"
-                }
-              ]
-            },
-            {
-              "descriptor": {
-                "code": "SETTLEMENT_TERMS"
-              },
-              "display": false,
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "SETTLEMENT_WINDOW"
-                  },
-                  "value": "PT60M"
-                },
-                {
-                  "descriptor": {
-                    "code": "SETTLEMENT_BASIS"
-                  },
-                  "value": "INVOICE_RECEIPT"
-                },
-                {
-                  "descriptor": {
-                    "code": "MANDATORY_ARBITRATION"
-                  },
-                  "value": "TRUE"
-                },
-                {
-                  "descriptor": {
-                    "code": "COURT_JURISDICTION"
-                  },
-                  "value": "New Delhi"
-                },
-                {
-                  "descriptor": {
-                    "code": "STATIC_TERMS"
-                  },
-                  "value": "https://bpp.credit.becknprotocol.org/personal-banking/loans/personal-loan"
-                },
-                {
-                  "descriptor": {
-                    "code": "SETTLEMENT_AMOUNT"
-                  },
-                  "value": "1159"
-                },
-                {
-                  "descriptor": {
-                    "code": "OFFLINE_CONTRACT"
-                  },
-                  "value": "true"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "POST_FULFILLMENT",
-          "id": "INSTALLMENT_ID_PERSONAL_LOAN",
           "params": {
-            "amount": "46360",
+            "amount": "1000",
+            "bank_account_number": "1800002341",
+            "bank_code": "SBIN0001234",
             "currency": "INR"
           },
-          "status": "NOT-PAID",
-          "time": {
-            "label": "INSTALLMENT",
-            "range": {
-              "start": "2023-06-01T00:00:00.000Z",
-              "end": "2023-06-30T23:59:59.999Z"
-            }
-          },
+          "status": "PAID",
+          "type": "PRE_FULFILLMENT",
+          "url": "https://payment.fis.test.bpp.io",
           "tags": [
             {
               "descriptor": {
-                "code": "BREAKUP",
-                "name": "Emi Breakup"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "PRINCIPAL_AMOUNT",
-                    "name": "Principal",
-                    "short_desc": "Loan Principal"
-                  },
-                  "value": "45360 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "INTEREST_AMOUNT",
-                    "name": "Interest",
-                    "short_desc": "Loan Interest"
-                  },
-                  "value": "500 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "PROCESSING_FEE",
-                    "name": "Processing Fee",
-                    "short_desc": "Processing Fee"
-                  },
-                  "value": "200 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_UPFRONT_CHARGES",
-                    "name": "other upfront charges",
-                    "short_desc": "other upfront charges"
-                  },
-                  "value": "0 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "INSURANCE_CHARGES",
-                    "name": "Insurance Charges",
-                    "short_desc": "Insurance Charges"
-                  },
-                  "value": "300 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "NET_DISBURSED_AMOUNT",
-                    "name": "net disbursed amount",
-                    "short_desc": "net disbursed amount"
-                  },
-                  "value": "45000 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_CHARGES",
-                    "name": "other charges",
-                    "short_desc": "other charges"
-                  },
-                  "value": "0 INR"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "POST_FULFILLMENT",
-          "id": "INSTALLMENT_ID_PERSONAL_LOAN",
-          "params": {
-            "amount": "46360",
-            "currency": "INR"
-          },
-          "status": "NOT-PAID",
-          "time": {
-            "label": "INSTALLMENT",
-            "range": {
-              "start": "2023-07-01T00:00:00.000Z",
-              "end": "2023-07-31T23:59:59.999Z"
-            }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "BREAKUP",
-                "name": "Emi Breakup"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "PRINCIPAL_AMOUNT",
-                    "name": "Principal",
-                    "short_desc": "Loan Principal"
-                  },
-                  "value": "45360 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "INTEREST_AMOUNT",
-                    "name": "Interest",
-                    "short_desc": "Loan Interest"
-                  },
-                  "value": "500 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "PROCESSING_FEE",
-                    "name": "Processing Fee",
-                    "short_desc": "Processing Fee"
-                  },
-                  "value": "200 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_UPFRONT_CHARGES",
-                    "name": "other upfront charges",
-                    "short_desc": "other upfront charges"
-                  },
-                  "value": "0 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "INSURANCE_CHARGES",
-                    "name": "Insurance Charges",
-                    "short_desc": "Insurance Charges"
-                  },
-                  "value": "300 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "NET_DISBURSED_AMOUNT",
-                    "name": "net disbursed amount",
-                    "short_desc": "net disbursed amount"
-                  },
-                  "value": "45000 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_CHARGES",
-                    "name": "other charges",
-                    "short_desc": "other charges"
-                  },
-                  "value": "0 INR"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "POST_FULFILLMENT",
-          "id": "INSTALLMENT_ID_PERSONAL_LOAN",
-          "params": {
-            "amount": "46360",
-            "currency": "INR"
-          },
-          "status": "NOT-PAID",
-          "time": {
-            "label": "INSTALLMENT",
-            "range": {
-              "start": "2023-08-01T00:00:00.000Z",
-              "end": "2023-08-31T23:59:59.999Z"
-            }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "BREAKUP",
-                "name": "Emi Breakup"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "PRINCIPAL_AMOUNT",
-                    "name": "Principal",
-                    "short_desc": "Loan Principal"
-                  },
-                  "value": "45360 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "INTEREST_AMOUNT",
-                    "name": "Interest",
-                    "short_desc": "Loan Interest"
-                  },
-                  "value": "500 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "PROCESSING_FEE",
-                    "name": "Processing Fee",
-                    "short_desc": "Processing Fee"
-                  },
-                  "value": "200 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_UPFRONT_CHARGES",
-                    "name": "other upfront charges",
-                    "short_desc": "other upfront charges"
-                  },
-                  "value": "0 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "INSURANCE_CHARGES",
-                    "name": "Insurance Charges",
-                    "short_desc": "Insurance Charges"
-                  },
-                  "value": "300 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "NET_DISBURSED_AMOUNT",
-                    "name": "net disbursed amount",
-                    "short_desc": "net disbursed amount"
-                  },
-                  "value": "45000 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_CHARGES",
-                    "name": "other charges",
-                    "short_desc": "other charges"
-                  },
-                  "value": "0 INR"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "POST_FULFILLMENT",
-          "id": "INSTALLMENT_ID_PERSONAL_LOAN",
-          "params": {
-            "amount": "46360",
-            "currency": "INR"
-          },
-          "status": "NOT-PAID",
-          "time": {
-            "label": "INSTALLMENT",
-            "range": {
-              "start": "2023-09-01T00:00:00.000Z",
-              "end": "2023-09-30T23:59:59.999Z"
-            }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "BREAKUP",
-                "name": "Emi Breakup"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "PRINCIPAL_AMOUNT",
-                    "name": "Principal",
-                    "short_desc": "Loan Principal"
-                  },
-                  "value": "45360 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "INTEREST_AMOUNT",
-                    "name": "Interest",
-                    "short_desc": "Loan Interest"
-                  },
-                  "value": "500 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "PROCESSING_FEE",
-                    "name": "Processing Fee",
-                    "short_desc": "Processing Fee"
-                  },
-                  "value": "200 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_UPFRONT_CHARGES",
-                    "name": "other upfront charges",
-                    "short_desc": "other upfront charges"
-                  },
-                  "value": "0 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "INSURANCE_CHARGES",
-                    "name": "Insurance Charges",
-                    "short_desc": "Insurance Charges"
-                  },
-                  "value": "300 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "NET_DISBURSED_AMOUNT",
-                    "name": "net disbursed amount",
-                    "short_desc": "net disbursed amount"
-                  },
-                  "value": "45000 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_CHARGES",
-                    "name": "other charges",
-                    "short_desc": "other charges"
-                  },
-                  "value": "0 INR"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "POST_FULFILLMENT",
-          "id": "INSTALLMENT_ID_PERSONAL_LOAN",
-          "params": {
-            "amount": "46360",
-            "currency": "INR"
-          },
-          "status": "NOT-PAID",
-          "time": {
-            "label": "INSTALLMENT",
-            "range": {
-              "start": "2023-10-01T00:00:00.000Z",
-              "end": "2023-10-31T23:59:59.999Z"
-            }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "BREAKUP",
-                "name": "Emi Breakup"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "PRINCIPAL_AMOUNT",
-                    "name": "Principal",
-                    "short_desc": "Loan Principal"
-                  },
-                  "value": "45360 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "INTEREST_AMOUNT",
-                    "name": "Interest",
-                    "short_desc": "Loan Interest"
-                  },
-                  "value": "500 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "PROCESSING_FEE",
-                    "name": "Processing Fee",
-                    "short_desc": "Processing Fee"
-                  },
-                  "value": "200 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_UPFRONT_CHARGES",
-                    "name": "other upfront charges",
-                    "short_desc": "other upfront charges"
-                  },
-                  "value": "0 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "INSURANCE_CHARGES",
-                    "name": "Insurance Charges",
-                    "short_desc": "Insurance Charges"
-                  },
-                  "value": "300 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "NET_DISBURSED_AMOUNT",
-                    "name": "net disbursed amount",
-                    "short_desc": "net disbursed amount"
-                  },
-                  "value": "45000 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_CHARGES",
-                    "name": "other charges",
-                    "short_desc": "other charges"
-                  },
-                  "value": "0 INR"
-                }
-              ]
+                "code": "PROCESSING_FEES"
+              }
             }
           ]
         }
@@ -902,4 +488,16 @@
 [← Back to Previous File](confirm.md) | [Go to Form →](form_invoice_upload.md) | [Next File →](update.md)
 
 </p>
+
+
+
+
+
+
+
+
+
+
+
+
 
