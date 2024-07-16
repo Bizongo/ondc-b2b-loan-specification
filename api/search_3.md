@@ -57,14 +57,11 @@
                 "name": "John Doe",
                 "dob": "12-09-1998",
                 "gender": "Male",
-                "tags": [
-                  {
-                    "descriptor": {
-                      "code": "PAN",
-                      "name": "Customer PAN"
-                    },
-                    "value": "BXHPR3928U"
-                  }
+                "creds" :[
+                   {
+                    "id":"BXU87Y252U",
+                    "type":"PAN"
+                   }
                 ]
               }
             }

@@ -50,18 +50,16 @@
         },
         "fulfillments": [
           {
+            "id": "1333",
             "customer": {
               "person": {
                 "name": "John Doe",
                 "dob": "12-09-1998",
                 "gender": "Male",
-                "tags": [
+                "creds": [
                   {
-                    "descriptor": {
-                      "code": "PAN",
-                      "name": "Customer PAN"
-                    },
-                    "value": "BXHPR3928U"
+                    "id": "BXU87Y252U",
+                    "type": "PAN"
                   }
                 ]
               }
@@ -75,13 +73,6 @@
                 "list": [
                   {
                     "descriptor": {
-                      "code": "CREDIT_CHECK",
-                      "name": "Credit Check"
-                    },
-                    "value": "COMPLETED"
-                  },
-                  {
-                    "descriptor": {
                       "code": "KYC",
                       "name": "KYC"
                     },
@@ -92,25 +83,23 @@
                       "code": "E_SIGN",
                       "name": "E Sign Required"
                     },
-                    "value": "COMPLETED"
+                    "value": "PENDING"
                   }
                 ]
               }
             ]
           },
           {
+            "id": "1334",
             "customer": {
               "person": {
                 "name": "Co Applicant 1",
                 "dob": "12-09-1998",
                 "gender": "Male",
-                "tags": [
+                "creds": [
                   {
-                    "descriptor": {
-                      "code": "PAN",
-                      "name": "Customer PAN"
-                    },
-                    "value": "BXHPR3928U"
+                    "id": "BXU87Y252A",
+                    "type": "PAN"
                   }
                 ]
               }
@@ -124,13 +113,6 @@
                 "list": [
                   {
                     "descriptor": {
-                      "code": "CREDIT_CHECK",
-                      "name": "Credit Check"
-                    },
-                    "value": "COMPLETED"
-                  },
-                  {
-                    "descriptor": {
                       "code": "KYC",
                       "name": "KYC"
                     },
@@ -141,7 +123,7 @@
                       "code": "E_SIGN",
                       "name": "E Sign Required"
                     },
-                    "value": "COMPLETED"
+                    "value": "PENDING"
                   }
                 ]
               }
@@ -241,20 +223,34 @@
         "id": "LOAN_LEAD_ID_OR_SIMILAR",
         "price": {
           "currency": "INR",
-          "value": "442300"
+          "value": "2792"
         },
         "breakup": [
           {
+            "title": "WOKRKING_CAPITAL_LIMIT",
+            "price": {
+              "value": "100000",
+              "currency": "INR"
+            }
+          },
+          {
+            "title": "CURRENT_UTLIZATION",
+            "price": {
+              "value": "0",
+              "currency": "INR"
+            }
+          },
+          {
             "title": "PRINCIPAL_AMOUNT",
             "price": {
-              "value": "400000",
+              "value": "0",
               "currency": "INR"
             }
           },
           {
             "title": "INTEREST_AMOUNT",
             "price": {
-              "value": "40000",
+              "value": "0",
               "currency": "INR"
             }
           },
@@ -266,35 +262,28 @@
             }
           },
           {
-            "title": "OTHER_UPFRONT_CHARGES",
-            "price": {
-              "value": "0",
-              "currency": "INR"
-            }
-          },
-          {
             "title": "INSURANCE_CHARGES",
             "price": {
-              "value": "500",
+              "value": "231",
               "currency": "INR"
             }
           },
           {
-            "title": "NET_DISBURSED_AMOUNT",
+            "title": "OTHER_UPFRONT_CHARGES",
             "price": {
-              "value": "397700",
+              "value": "530",
               "currency": "INR"
             }
           },
           {
             "title": "OTHER_CHARGES",
             "price": {
-              "value": "0",
+              "value": "231",
               "currency": "INR"
             }
           }
         ],
-        "ttl": "PT15D"
+        "ttl": "PT5D"
       },
       "items": [
         {
@@ -307,6 +296,14 @@
           "category_ids": [
             "101123"
           ],
+          "fulfillment_ids": [
+            "1333",
+            "1334"
+          ],
+          "price": {
+            "currency": "INR",
+            "value": "2792"
+          },
           "tags": [
             {
               "descriptor": {
@@ -316,18 +313,10 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "PRINCIPAL_AMOUNT",
-                    "name": "Loan Amount"
+                    "code": "WORKING_CAPITAL_LIMIT",
+                    "name": "Working capital limit"
                   },
                   "value": "90000 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "INTEREST_AMOUNT",
-                    "name": "Total Interest Charge",
-                    "short_desc": "During entire tenure of loan"
-                  },
-                  "value": "20000 INR"
                 },
                 {
                   "descriptor": {
@@ -363,7 +352,7 @@
                     "code": "TERM",
                     "name": "Loan Term"
                   },
-                  "value": "PT24M"
+                  "value": "P24M"
                 },
                 {
                   "descriptor": {
@@ -371,15 +360,7 @@
                     "name": "Repayment Frequency",
                     "short_desc": "Repayment Frequency by borrower"
                   },
-                  "value": "PT1M"
-                },
-                {
-                  "descriptor": {
-                    "code": "NUMBER_OF_INSTALLMENTS",
-                    "name": "Number of installments of repayment",
-                    "short_desc": "Number of installments borrower has to make to payback the loan"
-                  },
-                  "value": "45"
+                  "value": "P1M"
                 },
                 {
                   "descriptor": {
@@ -401,7 +382,7 @@
                     "name": "Cooling off",
                     "short_desc": "Look up period during which borrower shouldn't be charged any penalty on repayment loan."
                   },
-                  "value": "PT12D"
+                  "value": "P12D"
                 },
                 {
                   "descriptor": {
@@ -428,10 +409,52 @@
               "list": [
                 {
                   "descriptor": {
+                    "code": "INDIVIDUAL_KYC",
+                    "name": "Indvidual KYC"
+                  },
+                  "value": "COMPLETED"
+                },
+                {
+                  "descriptor": {
+                    "code": "BUSINESS_KYC",
+                    "name": "Business KYC"
+                  },
+                  "value": "PENDING"
+                },
+                {
+                  "descriptor": {
                     "code": "PERSONAL_DISCUSSION",
                     "name": "Personal Discussion"
                   },
-                  "value": "COMPLETED"
+                  "value": "PENDING"
+                },
+                {
+                  "descriptor": {
+                    "code": "PHYSICAL_VERIFICATION",
+                    "name": "Physical Verification"
+                  },
+                  "value": "PENDING"
+                },
+                {
+                  "descriptor": {
+                    "code": "ENACH",
+                    "name": "Enach"
+                  },
+                  "value": "PENDING"
+                },
+                {
+                  "descriptor": {
+                    "code": "PROCESSING_FEE",
+                    "name": "Processing Fees"
+                  },
+                  "value": "PENDING"
+                },
+                {
+                  "descriptor": {
+                    "code": "ESIGN",
+                    "name": "Esign"
+                  },
+                  "value": "PENDING"
                 }
               ],
               "display": true
@@ -472,7 +495,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_status_1.md) | [Next File →](init_3.md)
+[← Back to Previous File](on_select_1.md) | [Next File →](select_2.md)
 
 </p>
 

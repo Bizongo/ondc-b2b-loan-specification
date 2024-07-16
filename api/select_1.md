@@ -43,7 +43,41 @@
   "message": {
     "order": {
       "provider": {
-        "id": "PROVIDER_ID"
+        "id": "PROVIDER_ID",
+        "fulfillments": [
+          {
+            "id":"1333",
+            "customer": {
+              "person": {
+                "name": "John Doe",
+                "dob": "12-09-1998",
+                "gender": "Male",
+                "creds" :[
+                   {
+                    "id":"BXU87Y252U",
+                    "type":"PAN"
+                   }
+                ]
+              }
+            }
+          },
+          {
+            "id":"1334",
+            "customer": {
+              "person": {
+                "name": "Co Applicant 1",
+                "dob": "12-09-1998",
+                "gender": "Male",
+                "creds" :[
+                   {
+                    "id":"BXU87Y252A",
+                    "type":"PAN"
+                   }
+                ]
+              }
+            }
+          }
+        ]
       },
       "items": [
         {
