@@ -12,14 +12,16 @@
 
 <body>
   <form action="/form/submission/gst_bank_statement">
-    <label for="gstinProfile">GSTIN Profile</label><br>
+    <label for="gstinProfile">GSTN public profile</label><br>
     <input required name="gstinProfile" type="file" accept=".json"/><br>
-    <label for="gstr1">GSTR1</label><br>
-    <input required name="gstr1" type="file"  accept=".json"/><br>
-    <label for="gstr2A">GSTR2A</label><br>
-    <input required name="gstr2A" type="file" accept=".json" /><br>
-    <label for="gstr3B">GSTR3B</label><br>
-    <input required name="gstr3B" type="file" accept=".json"/><br>
+    <label for="gstr1">GSTR-1 B2B Invoice</label><br>
+    <input required name="gstr1-b2b-invoice" type="file"  accept=".json"/><br>
+    <label for="gstr1">GGSTR-1 CDNR</label><br>
+    <input required name="gstr1-b2b-cdnr" type="file"  accept=".json"/><br>
+    <label for="gstr2A">GSTR-2A B2B Invoices</label><br>
+    <input required name="gstr2A-b2b-invoices" type="file" accept=".json" /><br>
+    <label for="gstr3B">GSTR-3B Summary</label><br>
+    <input required name="gstr3B-summary" type="file" accept=".json"/><br>
     <label for="bank_statement_files">Upload Last 12 Months Bank Statements:</label><br>
     <input required type="file" id="bank_statement_files" name="bank_statement_files" accept=".pdf, .xlsx, .xls"><br>
     <label for="mime_type">Select Bank Statement format</label><br>
