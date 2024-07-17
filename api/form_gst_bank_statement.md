@@ -29,6 +29,9 @@
       <option value="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">Excel (XLSX)</option>
       <option value="application/vnd.ms-excel">Excel (XLS)</option>
     </select><br>
+     <label for="bureauConsent">Bureau Consent</label>
+    <input type="checkbox" id="bureauConsent" name="bureauConsent" required/>
+    <input type="hidden" id="formId" name="formId" value="FO1">
     <input required type="hidden" id="formId" name="formId" value="FO1"><br>
     <input required type="submit" value="Submit"><br>
   </form>
