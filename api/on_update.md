@@ -30,7 +30,7 @@
     "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
     "message_id": "c8e3968c-cd78-4e46-aa34-0d541e46bd73",
     "timestamp": "2023-05-25T05:23:03.443Z",
-    "ttl": "P30M"
+    "ttl": "PT30M"
   },
   "message": {
     "order": {
