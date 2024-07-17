@@ -33,7 +33,7 @@
         "action": "on_search",
         "bap_id": "bap.credit.becknprotocol.io",
         "bap_uri": "https://bap.credit.becknprotocol.io/",
-        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+        "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7d62196",
         "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
         "ttl": "PT30M",
         "timestamp": "2023-05-25T05:23:03.443Z",

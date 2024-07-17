@@ -29,7 +29,7 @@
         "code": "*"
       }
     },
-    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7d62196",
     "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
     "action": "select",
     "timestamp": "2023-05-25T05:23:03.443Z",
@@ -43,7 +43,41 @@
   "message": {
     "order": {
       "provider": {
-        "id": "PROVIDER_ID"
+        "id": "PROVIDER_ID",
+        "fulfillments": [
+          {
+            "id":"1333",
+            "customer": {
+              "person": {
+                "name": "John Doe",
+                "dob": "12-09-1998",
+                "gender": "Male",
+                "creds" :[
+                   {
+                    "id":"BXU87Y252U",
+                    "type":"PAN"
+                   }
+                ]
+              }
+            }
+          },
+          {
+            "id":"1334",
+            "customer": {
+              "person": {
+                "name": "Co Applicant 1",
+                "dob": "12-09-1998",
+                "gender": "Male",
+                "creds" :[
+                   {
+                    "id":"BXU87Y252A",
+                    "type":"PAN"
+                   }
+                ]
+              }
+            }
+          }
+        ]
       },
       "items": [
         {

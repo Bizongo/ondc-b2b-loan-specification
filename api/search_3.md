@@ -30,7 +30,7 @@
         "code": "*"
       }
     },
-    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7d62196",
     "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
     "action": "search",
     "timestamp": "2023-05-25T05:23:03.443Z",
@@ -57,14 +57,11 @@
                 "name": "John Doe",
                 "dob": "12-09-1998",
                 "gender": "Male",
-                "tags": [
-                  {
-                    "descriptor": {
-                      "code": "PAN",
-                      "name": "Customer PAN"
-                    },
-                    "value": "BXHPR3928U"
-                  }
+                "creds" :[
+                   {
+                    "id":"BXU87Y252U",
+                    "type":"PAN"
+                   }
                 ]
               }
             }
