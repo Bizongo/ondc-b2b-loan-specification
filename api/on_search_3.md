@@ -48,19 +48,16 @@
       },
       "fulfillments": [
         {
-          "id":"1333",
+          "id": "1333",
           "customer": {
             "person": {
               "name": "John Doe",
               "dob": "12-09-1998",
               "gender": "Male",
-              "tags": [
+              "creds": [
                 {
-                  "descriptor": {
-                    "code": "PAN",
-                    "name": "Customer PAN"
-                  },
-                  "value": "BXHPR3928U"
+                  "id": "BXU87Y252U",
+                  "type": "PAN"
                 }
               ]
             }
@@ -91,7 +88,7 @@
           ]
         },
         {
-          "id":"1334",
+          "id": "1334",
           "customer": {
             "person": {
               "name": "Co Applicant 1"
@@ -157,7 +154,10 @@
               "category_ids": [
                 "101123"
               ],
-              "fulfillment_ids" :["1333","1334"],
+              "fulfillment_ids": [
+                "1333",
+                "1334"
+              ],
               "tags": [
                 {
                   "descriptor": {
@@ -289,7 +289,7 @@
                       },
                       "value": "PENDING"
                     },
-                     {
+                    {
                       "descriptor": {
                         "code": "ENACH",
                         "name": "Enach"
@@ -303,7 +303,7 @@
                       },
                       "value": "PENDING"
                     },
-                     {
+                    {
                       "descriptor": {
                         "code": "ESIGN",
                         "name": "Esign"

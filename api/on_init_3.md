@@ -28,7 +28,7 @@
     "bap_uri": "https://bizongo-next.becknprotocol.io/",
     "bpp_id": "bpp.credit.becknprotocol.org",
     "bpp_uri": "https://bpp.credit.becknprotocol.org",
-    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
+    "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62196",
     "message_id": "c8e3968c-cd78-4e46-aa34-0d541e46bd73",
     "timestamp": "2023-05-25T05:23:03.443Z",
     "ttl": "P30M"

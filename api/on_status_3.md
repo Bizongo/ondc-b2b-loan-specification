@@ -223,20 +223,34 @@
         "id": "LOAN_LEAD_ID_OR_SIMILAR",
         "price": {
           "currency": "INR",
-          "value": "442300"
+          "value": "2792"
         },
         "breakup": [
           {
+            "title": "WOKRKING_CAPITAL_LIMIT",
+            "price": {
+              "value": "100000",
+              "currency": "INR"
+            }
+          },
+          {
+            "title": "CURRENT_UTLIZATION",
+            "price": {
+              "value": "0",
+              "currency": "INR"
+            }
+          },
+          {
             "title": "PRINCIPAL_AMOUNT",
             "price": {
-              "value": "400000",
+              "value": "0",
               "currency": "INR"
             }
           },
           {
             "title": "INTEREST_AMOUNT",
             "price": {
-              "value": "40000",
+              "value": "0",
               "currency": "INR"
             }
           },
@@ -248,35 +262,28 @@
             }
           },
           {
-            "title": "OTHER_UPFRONT_CHARGES",
-            "price": {
-              "value": "0",
-              "currency": "INR"
-            }
-          },
-          {
             "title": "INSURANCE_CHARGES",
             "price": {
-              "value": "500",
+              "value": "231",
               "currency": "INR"
             }
           },
           {
-            "title": "NET_DISBURSED_AMOUNT",
+            "title": "OTHER_UPFRONT_CHARGES",
             "price": {
-              "value": "397700",
+              "value": "530",
               "currency": "INR"
             }
           },
           {
             "title": "OTHER_CHARGES",
             "price": {
-              "value": "0",
+              "value": "231",
               "currency": "INR"
             }
           }
         ],
-        "ttl": "PT15D"
+        "ttl": "PT5D"
       },
       "items": [
         {
