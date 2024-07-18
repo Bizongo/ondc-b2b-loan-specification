@@ -507,7 +507,7 @@
 
 <p align="center">
 
-[← Back to Previous File](select_1.md) | [Go to Form →](link_kyc_1.md) | [Next File →](on_status_1.md)
+[← Back to Previous File](select_1.md) | [Go to Form →](link_kyc.md) | [Next File →](on_status_1.md)
 
 </p>
 
