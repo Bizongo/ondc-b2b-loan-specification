@@ -72,7 +72,7 @@
             "id": "ITEM_ID_WORKING_CAPITAL_LOAN",
             "xinput": {
               "form": {
-                "id": "F02"
+                "id": "<form_business_financial_F02>"
               },
               "form_response": {
                 "status": "SUCCESS",

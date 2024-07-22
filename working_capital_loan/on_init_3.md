@@ -229,7 +229,7 @@
           {
             "title": "WOKRKING_CAPITAL_LIMIT",
             "price": {
-              "value": "100000",
+              "value": "1100000",
               "currency": "INR"
             }
           },
@@ -241,44 +241,30 @@
             }
           },
           {
-            "title": "PRINCIPAL_AMOUNT",
-            "price": {
-              "value": "0",
-              "currency": "INR"
-            }
-          },
-          {
-            "title": "INTEREST_AMOUNT",
-            "price": {
-              "value": "0",
-              "currency": "INR"
-            }
-          },
-          {
             "title": "PROCESSING_FEE",
             "price": {
-              "value": "1800",
+              "value": "1100",
               "currency": "INR"
             }
           },
           {
             "title": "INSURANCE_CHARGES",
             "price": {
-              "value": "231",
+              "value": "1100",
               "currency": "INR"
             }
           },
           {
             "title": "OTHER_UPFRONT_CHARGES",
             "price": {
-              "value": "530",
+              "value": "11000",
               "currency": "INR"
             }
           },
           {
             "title": "OTHER_CHARGES",
             "price": {
-              "value": "231",
+              "value": "1100",
               "currency": "INR"
             }
           }
@@ -312,12 +298,12 @@
               },
               "list": [
                 {
-                  "descriptor": {
-                    "code": "WORKING_CAPITAL_LIMIT",
-                    "name": "Working capital limit"
-                  },
-                  "value": "90000 INR"
-                },
+                      "descriptor": {
+                        "code": "WORKING_CAPITAL_LIMIT",
+                        "name": "Working capital limit"
+                      },
+                      "value": "1100000 INR"
+                    },
                 {
                   "descriptor": {
                     "code": "INTEREST_RATE",
@@ -479,7 +465,7 @@
               ]
             },
             "form": {
-              "id": "ESIGN_FORM_ID",
+              "id": "<form_esign_F07>",
               "mime_type": "text/html",
               "url": "https://bpp.credit.becknprotocol.org/xinput/link/link_esign"
             },
@@ -521,7 +507,7 @@
 
 <p align="center">
 
-[← Back to Previous File](init_3.md) | [Go to Form →](link_esign.md) | [Next File →](init_4.md)
+[← Back to Previous File](init_3.md) | [Go to Form →](link_esign.md) | [Next File →](on_status_3.md)
 
 </p>
 

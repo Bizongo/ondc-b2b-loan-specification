@@ -85,11 +85,11 @@
           "parent_item_id": "ITEM_ID_WORKING_CAPITAL_LOAN",
           "xinput": {
             "form": {
-              "id": "F03"
+              "id": "<form_account_info_F05>"
             },
             "form_response": {
               "status": "SUCCESS",
-              "submission_id": "F03_SUBMISSION_ID"
+              "submission_id": "<form_submission_id_account_info_F05>"
             }
           }
         }

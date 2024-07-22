@@ -96,7 +96,7 @@
                                     ]
                                 },
                                 "form": {
-                                    "id": "form_gst_bank_statement_F01",
+                                    "id": "<form_gst_bank_statement_F01>",
                                     "mime_type": "text/html",
                                     "url": "https://bpp.credit.becknprotocol.org/xinput/form/form_gst_bank_statement",
                                     "resubmit": false,

@@ -170,7 +170,7 @@
                         "code": "WORKING_CAPITAL_LIMIT",
                         "name": "Working capital limit"
                       },
-                      "value": "90000 INR"
+                      "value": "1100000 INR"
                     },
                     {
                       "descriptor": {

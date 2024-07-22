@@ -229,7 +229,7 @@
           {
             "title": "WOKRKING_CAPITAL_LIMIT",
             "price": {
-              "value": "100000",
+              "value": "1100000",
               "currency": "INR"
             }
           },
@@ -241,44 +241,30 @@
             }
           },
           {
-            "title": "PRINCIPAL_AMOUNT",
-            "price": {
-              "value": "0",
-              "currency": "INR"
-            }
-          },
-          {
-            "title": "INTEREST_AMOUNT",
-            "price": {
-              "value": "0",
-              "currency": "INR"
-            }
-          },
-          {
             "title": "PROCESSING_FEE",
             "price": {
-              "value": "1800",
+              "value": "1100",
               "currency": "INR"
             }
           },
           {
             "title": "INSURANCE_CHARGES",
             "price": {
-              "value": "231",
+              "value": "1100",
               "currency": "INR"
             }
           },
           {
             "title": "OTHER_UPFRONT_CHARGES",
             "price": {
-              "value": "530",
+              "value": "11000",
               "currency": "INR"
             }
           },
           {
             "title": "OTHER_CHARGES",
             "price": {
-              "value": "231",
+              "value": "1100",
               "currency": "INR"
             }
           }
@@ -312,12 +298,12 @@
               },
               "list": [
                 {
-                  "descriptor": {
-                    "code": "WORKING_CAPITAL_LIMIT",
-                    "name": "Working capital limit"
-                  },
-                  "value": "90000 INR"
-                },
+                      "descriptor": {
+                        "code": "WORKING_CAPITAL_LIMIT",
+                        "name": "Working capital limit"
+                      },
+                      "value": "1100000 INR"
+                    },
                 {
                   "descriptor": {
                     "code": "INTEREST_RATE",
@@ -465,10 +451,10 @@
           "xinput": {
             "form_response": {
               "form": {
-                "id": "F03"
+                "id": "<form_enach_F06>"
               },
               "status": "SUCCESS",
-              "submission_id": "79850933-4e41-4c76-bbe6-c5a392481226"
+              "submission_id": "<form_submission_id_enach_F06>"
             }
           }
         }

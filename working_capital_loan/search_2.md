@@ -55,7 +55,7 @@
             "id": "ITEM_ID_WORKING_CAPITAL_LOAN",
             "xinput": {
               "form": {
-                "id": "F01"
+                "id": "<form_gst_bank_statement_F01>"
               },
               "form_response": {
                 "status": "SUCCESS",
