@@ -52,6 +52,10 @@
                   "type": "PAN"
                 }
               ]
+            },
+            "contact": {
+                "email": "john.doe@gmail.com",
+                "phone": "7888888888"
             }
           }
         },
@@ -68,6 +72,10 @@
                   "type": "PAN"
                 }
               ]
+            },
+            "contact": {
+                "email": "applicant.1@gmail.com",
+                "phone": "7888888888"
             }
           }
         }

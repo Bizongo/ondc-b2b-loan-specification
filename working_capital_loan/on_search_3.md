@@ -60,6 +60,10 @@
                   "type": "PAN"
                 }
               ]
+            },
+            "contact": {
+                "email": "john.doe@gmail.com",
+                "phone": "7888888888"
             }
           },
           "tags": [
