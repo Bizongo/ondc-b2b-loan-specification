@@ -37,7 +37,7 @@
     <label for="karta_authority_letter">Karta Authority Letter</label>
     <input type="file" id="karta_authority_letter" name="karta_authority_letter" accept=".pdf" required><br>
     
-    <input required type="hidden" id="formId" name="formId" value="FO1"><br>
+    <input required type="hidden" id="form_id" name="form_id" value="FO1"><br>
 
     <input type="submit" value="Submit"><br>
   </form>

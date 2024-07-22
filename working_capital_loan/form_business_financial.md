@@ -13,8 +13,8 @@
     <label for="financials">Last 2 year ITR</label>
     <input required type="file" id="itr" name="itr" accept=".pdf, .zip" required><br><br>
     <label for="financials">Provisionals of latest FY</label>
-    <input required type="file" id="provisionals-latest-fy" name="provisionals-latest-fy" accept=".pdf, .zip" required><br><br>
-    <input required type="hidden" id="formId" name="formId" value="FO1"><br>
+    <input required type="file" id="provisionals_latest_fy" name="provisionals_latest_fy" accept=".pdf, .zip" required><br><br>
+    <input required type="hidden" id="form_id" name="form_id" value="FO1"><br>
     <input required type="submit" value="Submit"><br>
   </form>
 </body>
