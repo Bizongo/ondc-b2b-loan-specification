@@ -59,7 +59,7 @@
               },
               "form_response": {
                 "status": "SUCCESS",
-                "submission_id": "F01_SUBMISSION_ID"
+                "submission_id": "<form_submission_id_gst_bank_statement_F01>"
               }
             }
           }

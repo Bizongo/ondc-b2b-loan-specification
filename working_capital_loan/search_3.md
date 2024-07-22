@@ -76,7 +76,7 @@
               },
               "form_response": {
                 "status": "SUCCESS",
-                "submission_id": "F02_SUBMISSION_ID"
+                "submission_id": "<form_submission_id_business_financial_F02>"
               }
             }
           }
