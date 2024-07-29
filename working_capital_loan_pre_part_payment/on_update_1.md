@@ -152,20 +152,20 @@
         "id": "LOAN_LEAD_ID_OR_SIMILAR",
         "price": {
           "currency": "INR",
-          "value": "20200"
+          "value": "10300"
         },
         "breakup": [
           {
             "title": "PRINCIPAL_AMOUNT",
             "price": {
-              "value": "20000",
+              "value": "10000",
               "currency": "INR"
             }
           },
           {
             "title": "INTEREST_AMOUNT",
             "price": {
-              "value": "400",
+              "value": "300",
               "currency": "INR"
             }
           }
@@ -238,26 +238,22 @@
       ],
       "payments": [
         {
-          "id": "INVOICE_MISSED_EMI_PAYMENT_ID",
-          "url": "https://pg.icici.com/?amount=47360&ref_id=b5487595-42c3-4e20-bd43-ae21400f60f0",
+          "id": "PAYMENT_ID_PERSONAL_LOAN",
+          "url": "https://pg.icici.com/?amount=92720&ref_id=b5487595-42c3-4e20-bd43-ae21400f60f0",
           "params": {
-            "amount": "20500",
+            "amount": "10000",
             "currency": "INR"
           },
-          "status": "PAID",
+          "status": "NOT-PAID",
           "time": {
-            "label": "MISSED_EMI_PAYMENT",
-            "range": {
-              "start": "2023-08-01T00:00:00.000Z",
-              "end": "2023-08-31T23:59:59.999Z"
-            }
+            "label": "PRE_PART_PAYMENT"
           },
           "type": "POST_FULFILLMENT"
         },
         {
           "id": "INVOICE_DISBURSEMENT_ID",
           "params": {
-            "transaction_id" : "AXISBANK1222",
+            "transaction_id": "AXISBANK1222",
             "amount": "20000",
             "currency": "INR",
             "bank_account_number": "1800002341",
@@ -282,7 +278,7 @@
             "source_bank_account_number": "1800002341",
             "source_bank_code": "AXIN0001234"
           },
-          "status": "DELAYED",
+          "status": "DEFFERED",
           "time": {
             "range": {
               "start": "2024-06-01T00:00:00.000Z",
@@ -313,6 +309,50 @@
               ]
             }
           ]
+        },
+        {
+          "id": "INVOICE_REPAYMENT_ID",
+          "collected_by": "BPP",
+          "type": "POST-FULLFILLMENT",
+          "params": {
+            "amount": "10300",
+            "currency": "INR",
+            "bank_account_number": "1800002341",
+            "bank_code": "AXIN0001234",
+            "source_bank_account_number": "1800002341",
+            "source_bank_code": "AXIN0001234"
+          },
+          "status": "NOT-PAID",
+          "time": {
+            "range": {
+              "start": "2024-06-01T00:00:00.000Z",
+              "end": "2024-07-30T23:00:00.000Z"
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "BREAKUP",
+                "name": "Repayment Breakup"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "PRINCIPAL_AMOUNT",
+                    "name": "Principal Amount"
+                  },
+                  "value": "10000"
+                },
+                {
+                  "descriptor": {
+                    "code": "INTEREST_AMOUNT",
+                    "name": "Interest Amount"
+                  },
+                  "value": "300"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -337,7 +377,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_update_3.md) 
+[← Back to Previous File](update_1.md) | [Next File →](on_update_2.md)
 
 </p>
 

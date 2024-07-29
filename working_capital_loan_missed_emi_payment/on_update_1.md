@@ -43,92 +43,20 @@
         },
         "fulfillments": [
           {
-            "id": "1333",
+            "id": "1335",
             "customer": {
               "person": {
-                "name": "John Doe",
-                "dob": "12-09-1998",
-                "gender": "Male",
-                "creds": [
-                  {
-                    "id": "BXU87Y252U",
-                    "type": "PAN"
-                  }
-                ]
+                "name": "John Doe"
               },
               "contact": {
                 "email": "john.doe@gmail.com",
                 "phone": "7888888888"
               }
             },
-            "tags": [
-              {
-                "descriptor": {
-                  "code": "CHECKLISTS",
-                  "name": "Applicant Checklists"
-                },
-                "list": [
-                  {
-                    "descriptor": {
-                      "code": "KYC",
-                      "name": "KYC"
-                    },
-                    "value": "COMPLETED"
-                  },
-                  {
-                    "descriptor": {
-                      "code": "E_SIGN",
-                      "name": "E Sign Required"
-                    },
-                    "value": "COMPLETED"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "1334",
-            "customer": {
-              "person": {
-                "name": "Co Applicant 1",
-                "dob": "12-09-1998",
-                "gender": "Male",
-                "creds": [
-                  {
-                    "id": "BXU87Y252A",
-                    "type": "PAN"
-                  }
-                ]
-              },
-              "contact": {
-                "email": "applicant.1@gmail.com",
-                "phone": "7888888888"
-              }
-            },
-            "tags": [
-              {
-                "descriptor": {
-                  "code": "CHECKLISTS",
-                  "name": "Applicant Checklists"
-                },
-                "list": [
-                  {
-                    "descriptor": {
-                      "code": "KYC",
-                      "name": "KYC"
-                    },
-                    "value": "COMPLETED"
-                  },
-                  {
-                    "descriptor": {
-                      "code": "E_SIGN",
-                      "name": "E Sign Required"
-                    },
-                    "value": "COMPLETED"
-                  }
-                ]
-              }
-            ]
+            "authorization": {
+              "type": "OTP",
+              "token": "1222"
+            }
           }
         ],
         "tags": [
@@ -224,62 +152,20 @@
         "id": "LOAN_LEAD_ID_OR_SIMILAR",
         "price": {
           "currency": "INR",
-          "value": "14300"
+          "value": "20200"
         },
         "breakup": [
           {
-            "title": "WOKRKING_CAPITAL_LIMIT",
-            "price": {
-              "value": "1100000",
-              "currency": "INR"
-            }
-          },
-          {
-            "title": "CURRENT_UTLIZATION",
+            "title": "PRINCIPAL_AMOUNT",
             "price": {
               "value": "20000",
               "currency": "INR"
             }
           },
           {
-            "title": "PROCESSING_FEE",
+            "title": "INTEREST_AMOUNT",
             "price": {
-              "value": "1100",
-              "currency": "INR"
-            }
-          },
-          {
-            "title": "INSURANCE_CHARGES",
-            "price": {
-              "value": "1100",
-              "currency": "INR"
-            }
-          },
-          {
-            "title": "OTHER_UPFRONT_CHARGES",
-            "price": {
-              "value": "11000",
-              "currency": "INR"
-            }
-          },
-          {
-            "title": "OTHER_CHARGES",
-            "price": {
-              "value": "1100",
-              "currency": "INR"
-            }
-          },
-          {
-            "title": "FORCLOSUER_CHARGES",
-            "price": {
-              "value": "9536",
-              "currency": "INR"
-            }
-          },
-          {
-            "title": "OUTSTANDING_INTEREST",
-            "price": {
-              "value": "200",
+              "value": "400",
               "currency": "INR"
             }
           }
@@ -288,7 +174,7 @@
       },
       "items": [
         {
-          "id": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN",
+          "id": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN_DISBURSEMENT",
           "parent_item_id": "ITEM_ID_WORKING_CAPITAL_LOAN",
           "descriptor": {
             "code": "LOAN",
@@ -298,12 +184,11 @@
             "101123"
           ],
           "fulfillment_ids": [
-            "1333",
-            "1334"
+            "1335"
           ],
           "price": {
             "currency": "INR",
-            "value": "2792"
+            "value": "20400"
           },
           "tags": [
             {
@@ -314,46 +199,10 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "WORKING_CAPITAL_LIMIT",
-                    "name": "Working capital limit"
-                  },
-                  "value": "1100000 INR"
-                },
-                {
-                  "descriptor": {
                     "code": "INTEREST_RATE",
                     "name": "Interest Rate"
                   },
                   "value": "13.5 %"
-                },
-                {
-                  "descriptor": {
-                    "code": "PROCESSING_FEE",
-                    "name": "Processing Fee"
-                  },
-                  "value": "1200 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "INSURANCE_CHARGES",
-                    "name": "Insurance Charges"
-                  },
-                  "value": "231 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_UPFRONT_CHARGES",
-                    "name": "Other up front charges",
-                    "short_desc": "Other up front charges"
-                  },
-                  "value": "530 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "TERM",
-                    "name": "Loan Term"
-                  },
-                  "value": "P24M"
                 },
                 {
                   "descriptor": {
@@ -362,42 +211,6 @@
                     "short_desc": "Repayment Frequency by borrower"
                   },
                   "value": "P1M"
-                },
-                {
-                  "descriptor": {
-                    "code": "RATE_ANNUALISED_PENAL_CHARGES",
-                    "name": "Rate Annualised penal charges"
-                  },
-                  "value": "2 %"
-                },
-                {
-                  "descriptor": {
-                    "code": "OTHER_CHARGES",
-                    "name": "Other Charges"
-                  },
-                  "value": "231 INR"
-                },
-                {
-                  "descriptor": {
-                    "code": "COOL_OFF_PERIOD",
-                    "name": "Cooling off",
-                    "short_desc": "Look up period during which borrower shouldn't be charged any penalty on repayment loan."
-                  },
-                  "value": "P12D"
-                },
-                {
-                  "descriptor": {
-                    "code": "KYC_MODE",
-                    "name": "KYC Mode"
-                  },
-                  "value": "ONLINE"
-                },
-                {
-                  "descriptor": {
-                    "code": "CO_APPLICANT",
-                    "name": "Co Applicant"
-                  },
-                  "value": "REQUIRED"
                 }
               ],
               "display": true
@@ -410,84 +223,52 @@
               "list": [
                 {
                   "descriptor": {
-                    "code": "INDIVIDUAL_KYC",
-                    "name": "Indvidual KYC"
-                  },
-                  "value": "COMPLETED"
-                },
-                {
-                  "descriptor": {
-                    "code": "BUSINESS_KYC",
-                    "name": "Business KYC"
-                  },
-                  "value": "COMPLETED"
-                },
-                {
-                  "descriptor": {
-                    "code": "PERSONAL_DISCUSSION",
-                    "name": "Personal Discussion"
-                  },
-                  "value": "COMPLETED"
-                },
-                {
-                  "descriptor": {
-                    "code": "PHYSICAL_VERIFICATION",
-                    "name": "Physical Verification"
-                  },
-                  "value": "COMPLETED"
-                },
-                {
-                  "descriptor": {
-                    "code": "ENACH",
-                    "name": "Enach"
-                  },
-                  "value": "COMPLETED"
-                },
-                {
-                  "descriptor": {
-                    "code": "PROCESSING_FEE",
-                    "name": "Processing Fees"
-                  },
-                  "value": "COMPLETED"
-                },
-                {
-                  "descriptor": {
-                    "code": "ESIGN",
-                    "name": "Esign"
+                    "code": "DRADOWN_APPROVAL",
+                    "name": "Drawdown Approval"
                   },
                   "value": "COMPLETED"
                 }
               ],
               "display": true
-            },
-            {
-              "descriptor": {
-                "code": "WORKING_CAPITAL_TRANSACTIONS",
-                "name": "Working Capital Transactions"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "LOAN_DRAWDOWN",
-                    "name": "Loan Drawdown"
-                  },
-                  "value": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN_DISBURSEMENT"
-                }
-              ]
             }
-          ]
+          ],
+          "matched": true,
+          "recommended": true
         }
       ],
       "payments": [
         {
-          "collected_by": "BPP",
+          "id": "INVOICE_MISSED_EMI_PAYMENT_ID",
+          "url": "https://pg.icici.com/?amount=47360&ref_id=b5487595-42c3-4e20-bd43-ae21400f60f0",
           "params": {
-            "amount": "1000",
+            "amount": "20500",
             "currency": "INR"
           },
-          "status": "PAID",
-          "type": "PRE_ORDER",
-          "url": "https://payment.fis.test.bpp.io"
+          "status": "NOT-PAID",
+          "time": {
+            "label": "MISSED_EMI_PAYMENT",
+            "range": {
+              "start": "2023-08-01T00:00:00.000Z",
+              "end": "2023-08-31T23:59:59.999Z"
+            }
+          },
+          "type": "POST_FULFILLMENT"
+        },
+        {
+          "id": "INVOICE_DISBURSEMENT_ID",
+          "params": {
+            "transaction_id" : "AXISBANK1222",
+            "amount": "20000",
+            "currency": "INR",
+            "bank_account_number": "1800002341",
+            "bank_code": "SBIN0001234"
+          },
+          "time": {
+            "timestamp": "2022-11-18T08:28:29.131Z"
+          },
+          "collected_by": "BAP",
+          "type": "POST-ORDER",
+          "status": "PAID"
         },
         {
           "id": "INVOICE_REPAYMENT_ID",
@@ -532,69 +313,6 @@
               ]
             }
           ]
-        },
-        {
-          "id": "INVOICE_REPAYMENT_ID",
-          "collected_by": "BPP",
-          "type": "POST-FULLFILLMENT",
-          "params": {
-            "amount": "20500",
-            "currency": "INR",
-            "bank_account_number": "1800002341",
-            "bank_code": "AXIN0001234",
-            "source_bank_account_number": "1800002341",
-            "source_bank_code": "AXIN0001234"
-          },
-          "status": "NOT-PAID",
-          "time": {
-            "range": {
-              "start": "2024-06-01T00:00:00.000Z",
-              "end": "2024-07-30T23:00:00.000Z"
-            }
-          },
-          "tags": [
-            {
-              "descriptor": {
-                "code": "BREAKUP",
-                "name": "Repayment Breakup"
-              },
-              "list": [
-                {
-                  "descriptor": {
-                    "code": "PRINCIPAL_AMOUNT",
-                    "name": "Principal Amount"
-                  },
-                  "value": "20000"
-                },
-                {
-                  "descriptor": {
-                    "code": "INTEREST_AMOUNT",
-                    "name": "Interest Amount"
-                  },
-                  "value": "400"
-                },
-                {
-                  "descriptor": {
-                    "code": "LATE_PAYMENT_CHARGES",
-                    "name": "Late Payment Charges"
-                  },
-                  "value": "100"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "documents": [
-        {
-          "descriptor": {
-            "code": "LOAN_AGREEMENT",
-            "name": "Loan Agreement Document",
-            "short_desc": "Download your Loan Agreement document here",
-            "long_desc": "A Loan Agreement Document is a legal contract outlining terms such as loan amount, interest rate, repayment schedule, and collateral, binding a lender and borrower in a formal financial arrangement."
-          },
-          "mime_type": "application/pdf",
-          "url": "https://lender.com/loan/loan-agreement/O1.pdf"
         }
       ]
     }
@@ -619,7 +337,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_update_2.md) 
+[← Back to Previous File](update_1.md) | [Next File →](on_update_2.md)
 
 </p>
 
