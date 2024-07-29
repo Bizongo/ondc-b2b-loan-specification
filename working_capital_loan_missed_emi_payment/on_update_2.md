@@ -1,17 +1,12 @@
-## ON_CONFIRM
+## ON_UPDATE
 
 **Purpose:** Provides the working capital line ID and details.
 
-**Endpoint:** /on_confirm
+**Endpoint:** /on_update
 
 **Method:** POST
 
 **Description:** The FI uses this endpoint to formally confirm the loan and provide the working capital line ID and its details.
-
-**Steps:**
-  - **Loan Finalization:** The FI processes the CONFIRM request and finalizes the loan details.
-  - **Send Confirmation:** The FI sends the ON_CONFIRM response to the buyer app, including the LINE_ID and LINE_DETAILS (like credit limit, available limit, start/end dates).
-  - **Display Confirmation:** The buyer app displays the confirmation to the borrower.
 
 
 ### Request Body
@@ -21,7 +16,7 @@
   "context": {
     "domain": "ONDC:FIS",
     "version": "2.0.0",
-    "action": "on_confirm",
+    "action": "on_update",
     "bap_id": "bizongo-next.becknprotocol.io",
     "bap_uri": "https://bizongo-next.becknprotocol.io/",
     "bpp_id": "bpp.credit.becknprotocol.org",
@@ -229,7 +224,7 @@
         "id": "LOAN_LEAD_ID_OR_SIMILAR",
         "price": {
           "currency": "INR",
-          "value": "2792"
+          "value": "14300"
         },
         "breakup": [
           {
@@ -242,7 +237,7 @@
           {
             "title": "CURRENT_UTLIZATION",
             "price": {
-              "value": "0",
+              "value": "20000",
               "currency": "INR"
             }
           },
@@ -271,6 +266,20 @@
             "title": "OTHER_CHARGES",
             "price": {
               "value": "1100",
+              "currency": "INR"
+            }
+          },
+          {
+            "title": "FORCLOSUER_CHARGES",
+            "price": {
+              "value": "9536",
+              "currency": "INR"
+            }
+          },
+          {
+            "title": "OUTSTANDING_INTEREST",
+            "price": {
+              "value": "200",
               "currency": "INR"
             }
           }
@@ -450,6 +459,21 @@
                 }
               ],
               "display": true
+            },
+            {
+              "descriptor": {
+                "code": "WORKING_CAPITAL_TRANSACTIONS",
+                "name": "Working Capital Transactions"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "LOAN_DRAWDOWN",
+                    "name": "Loan Drawdown"
+                  },
+                  "value": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN_DISBURSEMENT"
+                }
+              ]
             }
           ]
         }
@@ -464,24 +488,101 @@
           "status": "PAID",
           "type": "PRE_ORDER",
           "url": "https://payment.fis.test.bpp.io"
-        }
-      ],
-      "cancellation_terms": [
-        {
-          "fulfillment_state": {
-            "descriptor": {
-              "code": "SANCTIONED"
-            }
-          },
-          "cancellation_fee": {
-            "percentage": "3%"
-          }
         },
         {
-          "external_ref": {
-            "mimetype": "text/html",
-            "url": "https://bpp.credit.becknprotocol.org/tnc.html"
-          }
+          "id": "INVOICE_REPAYMENT_ID",
+          "collected_by": "BPP",
+          "type": "POST-FULLFILLMENT",
+          "params": {
+            "amount": "20400",
+            "currency": "INR",
+            "bank_account_number": "1800002341",
+            "bank_code": "AXIN0001234",
+            "source_bank_account_number": "1800002341",
+            "source_bank_code": "AXIN0001234"
+          },
+          "status": "DELAYED",
+          "time": {
+            "range": {
+              "start": "2024-06-01T00:00:00.000Z",
+              "end": "2024-07-30T23:00:00.000Z"
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "BREAKUP",
+                "name": "Repayment Breakup"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "PRINCIPAL_AMOUNT",
+                    "name": "Principal Amount"
+                  },
+                  "value": "20000"
+                },
+                {
+                  "descriptor": {
+                    "code": "INTEREST_AMOUNT",
+                    "name": "Interest Amount"
+                  },
+                  "value": "400"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "INVOICE_REPAYMENT_ID",
+          "collected_by": "BPP",
+          "type": "POST-FULLFILLMENT",
+          "params": {
+            "amount": "20500",
+            "currency": "INR",
+            "bank_account_number": "1800002341",
+            "bank_code": "AXIN0001234",
+            "source_bank_account_number": "1800002341",
+            "source_bank_code": "AXIN0001234"
+          },
+          "status": "PAID",
+          "time": {
+            "range": {
+              "start": "2024-06-01T00:00:00.000Z",
+              "end": "2024-07-30T23:00:00.000Z"
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "BREAKUP",
+                "name": "Repayment Breakup"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "PRINCIPAL_AMOUNT",
+                    "name": "Principal Amount"
+                  },
+                  "value": "20000"
+                },
+                {
+                  "descriptor": {
+                    "code": "INTEREST_AMOUNT",
+                    "name": "Interest Amount"
+                  },
+                  "value": "400"
+                },
+                {
+                  "descriptor": {
+                    "code": "LATE_PAYMENT_CHARGES",
+                    "name": "Late Payment Charges"
+                  },
+                  "value": "100"
+                }
+              ]
+            }
+          ]
         }
       ],
       "documents": [
