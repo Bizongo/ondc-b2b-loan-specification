@@ -1,4 +1,4 @@
-## ON_CONFIRM
+## ON_UPDATE
 
 **Purpose:** Provides the working capital line ID and details.
 
@@ -7,11 +7,6 @@
 **Method:** POST
 
 **Description:** The FI uses this endpoint to formally confirm the loan and provide the working capital line ID and its details.
-
-**Steps:**
-  - **Loan Finalization:** The FI processes the CONFIRM request and finalizes the loan details.
-  - **Send Confirmation:** The FI sends the ON_CONFIRM response to the buyer app, including the LINE_ID and LINE_DETAILS (like credit limit, available limit, start/end dates).
-  - **Display Confirmation:** The buyer app displays the confirmation to the borrower.
 
 
 ### Request Body
@@ -229,7 +224,7 @@
         "id": "LOAN_LEAD_ID_OR_SIMILAR",
         "price": {
           "currency": "INR",
-          "value": "2792"
+          "value": "34300"
         },
         "breakup": [
           {
@@ -242,7 +237,7 @@
           {
             "title": "CURRENT_UTLIZATION",
             "price": {
-              "value": "0",
+              "value": "20000",
               "currency": "INR"
             }
           },
@@ -450,6 +445,21 @@
                 }
               ],
               "display": true
+            },
+            {
+              "descriptor": {
+                "code": "WORKING_CAPITAL_TRANSACTIONS",
+                "name": "Working Capital Transactions"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "LOAN_DRAWDOWN",
+                    "name": "Loan Drawdown"
+                  },
+                  "value": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN_DISBURSEMENT"
+                }
+              ]
             }
           ]
         }
@@ -464,24 +474,6 @@
           "status": "PAID",
           "type": "PRE_ORDER",
           "url": "https://payment.fis.test.bpp.io"
-        }
-      ],
-      "cancellation_terms": [
-        {
-          "fulfillment_state": {
-            "descriptor": {
-              "code": "SANCTIONED"
-            }
-          },
-          "cancellation_fee": {
-            "percentage": "3%"
-          }
-        },
-        {
-          "external_ref": {
-            "mimetype": "text/html",
-            "url": "https://bpp.credit.becknprotocol.org/tnc.html"
-          }
         }
       ],
       "documents": [

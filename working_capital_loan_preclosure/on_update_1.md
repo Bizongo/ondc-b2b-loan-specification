@@ -1,4 +1,4 @@
-## ON_CONFIRM
+## ON_UPDATE
 
 **Purpose:** Provides the working capital line ID and details.
 
@@ -7,11 +7,6 @@
 **Method:** POST
 
 **Description:** The FI uses this endpoint to formally confirm the loan and provide the working capital line ID and its details.
-
-**Steps:**
-  - **Loan Finalization:** The FI processes the CONFIRM request and finalizes the loan details.
-  - **Send Confirmation:** The FI sends the ON_CONFIRM response to the buyer app, including the LINE_ID and LINE_DETAILS (like credit limit, available limit, start/end dates).
-  - **Display Confirmation:** The buyer app displays the confirmation to the borrower.
 
 
 ### Request Body
@@ -229,7 +224,7 @@
         "id": "LOAN_LEAD_ID_OR_SIMILAR",
         "price": {
           "currency": "INR",
-          "value": "2792"
+          "value": "14300"
         },
         "breakup": [
           {
@@ -242,7 +237,7 @@
           {
             "title": "CURRENT_UTLIZATION",
             "price": {
-              "value": "0",
+              "value": "20000",
               "currency": "INR"
             }
           },
@@ -271,6 +266,20 @@
             "title": "OTHER_CHARGES",
             "price": {
               "value": "1100",
+              "currency": "INR"
+            }
+          },
+          {
+            "title": "FORCLOSUER_CHARGES",
+            "price": {
+              "value": "9536",
+              "currency": "INR"
+            }
+          },
+          {
+            "title": "OUTSTANDING_INTEREST",
+            "price": {
+              "value": "200",
               "currency": "INR"
             }
           }
@@ -450,6 +459,21 @@
                 }
               ],
               "display": true
+            },
+            {
+              "descriptor": {
+                "code": "WORKING_CAPITAL_TRANSACTIONS",
+                "name": "Working Capital Transactions"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "LOAN_DRAWDOWN",
+                    "name": "Loan Drawdown"
+                  },
+                  "value": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN_DISBURSEMENT"
+                }
+              ]
             }
           ]
         }
@@ -464,6 +488,19 @@
           "status": "PAID",
           "type": "PRE_ORDER",
           "url": "https://payment.fis.test.bpp.io"
+        },
+        {
+          "id": "PAYMENT_ID_PERSONAL_LOAN",
+          "url": "https://pg.icici.com/?amount=148616&ref_id=b5487595-42c3-4e20-bd43-ae21400f60f0",
+          "params": {
+            "amount": "20200",
+            "currency": "INR"
+          },
+          "status": "NOT-PAID",
+          "time": {
+            "label": "FORECLOSURE"
+          },
+          "type": "POST_FULFILLMENT"
         }
       ],
       "cancellation_terms": [
@@ -480,7 +517,7 @@
         {
           "external_ref": {
             "mimetype": "text/html",
-            "url": "https://bpp.credit.becknprotocol.org/tnc.html"
+            "url": "https://icicibank.com/loan/tnc.html"
           }
         }
       ],
@@ -494,6 +531,16 @@
           },
           "mime_type": "application/pdf",
           "url": "https://lender.com/loan/loan-agreement/O1.pdf"
+        },
+        {
+          "descriptor": {
+            "code": "LOAN_CANCELLATION",
+            "name": "Loan Cancellation Document",
+            "short_desc": "Download your Loan Cancellation document here",
+            "long_desc": "A Loan Cancellation Document is a formal agreement used to terminate an existing loan, releasing the borrower from repayment obligations and confirming the loan's cancellation."
+          },
+          "mime_type": "application/pdf",
+          "url": "https://lender.com/loan/loan-cancellation/O1.pdf"
         }
       ]
     }
@@ -518,7 +565,7 @@
 
 <p align="center">
 
-[← Back to Previous File](confirm.md) 
+[← Back to Previous File](update_1.md) | [Next File →](on_update_2.md)
 
 </p>
 
