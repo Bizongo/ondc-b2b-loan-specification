@@ -184,14 +184,6 @@
                     "name": "Interest Rate"
                   },
                   "value": "13.5 %"
-                },
-                {
-                  "descriptor": {
-                    "code": "REPAYMENT_FREQUENCY",
-                    "name": "Repayment Frequency",
-                    "short_desc": "Repayment Frequency by borrower"
-                  },
-                  "value": "P1M"
                 }
               ],
               "display": true

@@ -293,9 +293,9 @@
             "1334"
           ],
           "price": {
-            "currency": "INR",
-            "value": "2792"
-          },
+          "currency": "INR",
+          "value": "14300"
+        },
           "tags": [
             {
               "descriptor": {

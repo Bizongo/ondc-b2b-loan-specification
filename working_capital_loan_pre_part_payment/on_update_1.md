@@ -239,6 +239,7 @@
       "payments": [
         {
           "id": "PAYMENT_ID_PRE_PART_PAYMENT",
+          "collected_by": "BPP",
           "url": "https://pg.icici.com/?amount=92720&ref_id=b5487595-42c3-4e20-bd43-ae21400f60f0",
           "params": {
             "amount": "10000",
@@ -262,7 +263,7 @@
           "time": {
             "timestamp": "2022-11-18T08:28:29.131Z"
           },
-          "collected_by": "BAP",
+          "collected_by": "MERCHANT",
           "type": "POST-ORDER",
           "status": "PAID"
         },

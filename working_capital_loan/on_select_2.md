@@ -294,9 +294,9 @@
             "1334"
           ],
           "price": {
-            "currency": "INR",
-            "value": "2792"
-          },
+          "currency": "INR",
+          "value": "14300"
+        },
           "tags": [
             {
               "descriptor": {
@@ -458,7 +458,7 @@
           "xinput": {
             "head": {
               "descriptor": {
-                "name": "Business KYC"
+                "name": "Entity KYC"
               },
               "index": {
                 "min": 0,
@@ -467,7 +467,7 @@
               },
               "headings": [
                 "INDIVIDUAL_KYC",
-                "BUSINESS_KYC"
+                "ENTITY_KYC"
               ]
             },
             "form": {

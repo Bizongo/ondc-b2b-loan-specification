@@ -288,9 +288,9 @@
             "1334"
           ],
           "price": {
-            "currency": "INR",
-            "value": "2792"
-          },
+          "currency": "INR",
+          "value": "14300"
+        },
           "tags": [
             {
               "descriptor": {
@@ -448,15 +448,11 @@
             },
             {
               "descriptor": {
-                "code": "WORKING_CAPITAL_TRANSACTIONS",
-                "name": "Working Capital Transactions"
+                "code": "LINKED_ORDER_IDS",
+                "name": "Linked Order IDs"
               },
               "list": [
                 {
-                  "descriptor": {
-                    "code": "LOAN_DRAWDOWN",
-                    "name": "Loan Drawdown"
-                  },
                   "value": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN_DISBURSEMENT"
                 }
               ]

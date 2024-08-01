@@ -239,6 +239,7 @@
       "payments": [
         {
           "id": "INVOICE_MISSED_EMI_PAYMENT_ID",
+          "collected_by": "MERCHANT",
           "url": "https://pg.icici.com/?amount=47360&ref_id=b5487595-42c3-4e20-bd43-ae21400f60f0",
           "params": {
             "amount": "20500",
@@ -252,7 +253,31 @@
               "end": "2023-08-31T23:59:59.999Z"
             }
           },
-          "type": "POST_FULFILLMENT"
+          "type": "POST_FULFILLMENT",
+          "tags": [
+            {
+              "descriptor": {
+                "code": "BREAKUP",
+                "name": "Repayment Breakup"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "PRINCIPAL_AMOUNT",
+                    "name": "Principal Amount"
+                  },
+                  "value": "20000"
+                },
+                {
+                  "descriptor": {
+                    "code": "INTEREST_AMOUNT",
+                    "name": "Interest Amount"
+                  },
+                  "value": "500"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "INVOICE_DISBURSEMENT_ID",
@@ -264,9 +289,10 @@
             "bank_code": "SBIN0001234"
           },
           "time": {
+            "label": "PAYMENT_DATE",
             "timestamp": "2022-11-18T08:28:29.131Z"
           },
-          "collected_by": "BAP",
+          "collected_by": "MERCHANT",
           "type": "POST-ORDER",
           "status": "PAID"
         },
@@ -282,7 +308,7 @@
             "source_bank_account_number": "1800002341",
             "source_bank_code": "AXIN0001234"
           },
-          "status": "DELAYED",
+          "status": "DIFFERED",
           "time": {
             "range": {
               "start": "2024-06-01T00:00:00.000Z",

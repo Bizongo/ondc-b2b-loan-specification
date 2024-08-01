@@ -246,9 +246,53 @@
             "bank_account_number": "1800002341",
             "bank_code": "SBIN0001234"
           },
-          "collected_by": "BAP",
+          "collected_by": "MERCHANT",
           "type": "POST-ORDER",
           "status": "NOT-PAID"
+        },
+        {
+          "id": "INVOICE_REPAYMENT_ID",
+          "collected_by": "BPP",
+          "type": "POST-FULLFILLMENT",
+          "params": {
+            "amount": "20400",
+            "currency": "INR",
+            "bank_account_number": "1800002341",
+            "bank_code": "AXIN0001234",
+            "source_bank_account_number": "1800002341",
+            "source_bank_code": "AXIN0001234"
+          },
+          "status": "NOT-PAID",
+          "time": {
+            "range": {
+              "start": "2024-06-01T00:00:00.000Z",
+              "end": "2024-07-30T23:00:00.000Z"
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "BREAKUP",
+                "name": "Repayment Breakup"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "PRINCIPAL_AMOUNT",
+                    "name": "Principal Amount"
+                  },
+                  "value": "20000"
+                },
+                {
+                  "descriptor": {
+                    "code": "INTEREST_AMOUNT",
+                    "name": "Interest Amount"
+                  },
+                  "value": "400"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "INVOICE_REPAYMENT_ID",
