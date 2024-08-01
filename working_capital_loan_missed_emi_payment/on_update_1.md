@@ -239,7 +239,7 @@
       "payments": [
         {
           "id": "INVOICE_MISSED_EMI_PAYMENT_ID",
-          "collected_by": "MERCHANT",
+          "collected_by": "BPP",
           "url": "https://pg.icici.com/?amount=47360&ref_id=b5487595-42c3-4e20-bd43-ae21400f60f0",
           "params": {
             "amount": "20500",

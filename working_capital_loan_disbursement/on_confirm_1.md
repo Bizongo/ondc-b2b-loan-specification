@@ -247,7 +247,7 @@
             "bank_account_number": "1800002341",
             "bank_code": "SBIN0001234"
           },
-          "collected_by": "BAP",
+          "collected_by": "MERCHANT",
           "type": "POST-ORDER",
           "status": "NOT-PAID"
         },

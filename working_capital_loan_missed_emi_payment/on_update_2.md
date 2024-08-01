@@ -292,7 +292,7 @@
             "label": "PAYMENT_DATE",
             "timestamp": "2022-11-18T08:28:29.131Z"
           },
-          "collected_by": "BAP",
+          "collected_by": "MERCHANT",
           "type": "POST-ORDER",
           "status": "PAID"
         },
