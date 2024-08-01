@@ -273,7 +273,14 @@
                     "code": "INTEREST_AMOUNT",
                     "name": "Interest Amount"
                   },
-                  "value": "500"
+                  "value": "400"
+                },
+                {
+                  "descriptor": {
+                    "code": "LATE_PAYMENT_FEE",
+                    "name": "Late Payment fees"
+                  },
+                  "value": "100"
                 }
               ]
             }
