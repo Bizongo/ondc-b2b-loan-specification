@@ -452,31 +452,7 @@
               ],
               "display": true
             }
-          ],
-          "matched": true,
-          "recommended": true,
-          "xinput": {
-            "head": {
-              "descriptor": {
-                "name": "Entity KYC"
-              },
-              "index": {
-                "min": 0,
-                "cur": 1,
-                "max": 1
-              },
-              "headings": [
-                "INDIVIDUAL_KYC",
-                "ENTITY_KYC"
-              ]
-            },
-            "form": {
-              "id": "<form_business_kyc_F04>",
-              "mime_type": "text/html",
-              "url": "https://bpp.credit.becknprotocol.org/xinput/link/business-kyc"
-            },
-            "required": true
-          }
+          ]
         }
       ]
     }

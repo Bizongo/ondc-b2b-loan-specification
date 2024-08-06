@@ -412,7 +412,7 @@
                     "code": "BUSINESS_KYC",
                     "name": "Business KYC"
                   },
-                  "value": "COMPLETED"
+                  "value": "PENDING"
                 },
                 {
                   "descriptor": {
@@ -501,7 +501,7 @@
 
 <p align="center">
 
-[← Back to Previous File](select_1.md) | [Go to Form →](form_business_kyc.md) | [Next File →](init_1.md)
+[← Back to Previous File](select_1.md) | [Go to Form →](form_business_kyc.md) | [Next File →](select_3.md)
 
 </p>
 
