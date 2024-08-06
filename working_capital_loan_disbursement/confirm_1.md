@@ -31,12 +31,21 @@
       "ref_order_ids": "ITEM_ID_WORKING_CAPITAL_LOAN",
       "fulfillments": [
         {
-          "id": "1335",
-          "authorization": {
-            "type": "OTP",
-            "token": "1222"
+            "id": "1335",
+            "customer": {
+              "person": {
+                "name": "John Doe",
+                "cred": {
+                  "type": "OTP",
+                  "id" : "12345"
+                }
+              },
+              "contact": {
+                "email": "john.doe@gmail.com",
+                "phone": "7888888888"
+              }
+            }
           }
-        }
       ],
       "items": [
         {

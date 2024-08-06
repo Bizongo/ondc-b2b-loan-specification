@@ -468,7 +468,7 @@
             "currency": "INR"
           },
           "status": "PAID",
-          "type": "PRE_ORDER",
+          "type": "PRE-ORDER",
           "url": "https://payment.fis.test.bpp.io"
         }
       ],

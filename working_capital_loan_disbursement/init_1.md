@@ -28,7 +28,7 @@
   },
   "message": {
     "order": {
-      "ref_order_ids": "WORKING_CAPITAL_LINE_ORDER_ID",
+      "ref_order_ids": ["WORKING_CAPITAL_LINE_ORDER_ID"],
       "price": {
         "currency": "INR",
         "value": "20000"

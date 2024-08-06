@@ -48,16 +48,16 @@
             "id": "1335",
             "customer": {
               "person": {
-                "name": "John Doe"
+                "name": "John Doe",
+                "cred": {
+                  "type": "OTP",
+                  "id" : "12345"
+                }
               },
               "contact": {
                 "email": "john.doe@gmail.com",
                 "phone": "7888888888"
               }
-            },
-            "authorization": {
-              "type": "OTP",
-              "token": "1222"
             }
           }
         ],
