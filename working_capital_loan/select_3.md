@@ -1,18 +1,18 @@
-## INIT
+## SELECT
 
-**Purpose:** Signals the borrower's intent to proceed with the loan and provides fulfillment details for sanction requirements.
+**Purpose:** Allows the buyer app to select a specific loan offer from an FI.
 
-**Endpoint:** /init
+**Endpoint:** /select
 
 **Method:** POST
 
-**Description:** The buyer app uses this endpoint to inform the FI that the borrower intends to proceed with the loan and to provide details about the fulfillment of pre-sanction requirements, including KYC, document submission, and acceptance of operational limits.
+**Description:** The buyer app uses this endpoint to inform the ONDC network and the selected FI that the borrower has chosen a particular loan offer.
 
 **Steps:**
-  - **Confirmation of Intent:** The borrower confirms their intent to proceed with the loan.
-  - **Fulfilment Details:** The buyer app sends the INIT request with details about KYC completion (or scheduling), document submission status (including upload URLs), and confirmation of acceptance of the working capital limits.
-  - **Process Initiation:** The FI initiates the loan processing steps.
-  - **Response (ACK):** The FI sends an ACK response to the buyer app.
+  - **Offer Selection:** The borrower, through the buyer app, selects a loan offer from the list of available offers.
+  - **Send Selection:** The buyer app sends a SELECT request to the network, specifying the FI ID and catalog ID of the selected offer.
+  - **Confirmation (ACK):** The network sends an ACK response to the buyer app.
+  - **Network Broadcast:** The ONDC network broadcasts the SEARCH request to registered FIs.
 
 
 ### Request Body
@@ -31,7 +31,7 @@
     },
     "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7d62196",
     "message_id": "bb579fb8-cb82-4824-be12-fcbc405b6608",
-    "action": "init",
+    "action": "select",
     "timestamp": "2023-05-25T05:23:03.443Z",
     "version": "2.0.0",
     "bap_uri": "https://bap.credit.becknprotocol.io/",
@@ -90,7 +90,16 @@
       "items": [
         {
           "id": "CHILD_ITEM_ID_WORKING_CAPITAL_LOAN",
-          "parent_item_id": "ITEM_ID_WORKING_CAPITAL_LOAN"
+          "parent_item_id": "ITEM_ID_WORKING_CAPITAL_LOAN",
+          "xinput": {
+            "form": {
+              "id": "<form_business_kyc_F04>"
+            },
+            "form_response": {
+              "status": "SUCCESS",
+              "submission_id": "<form_submission_id_business_kyc_F04>"
+            }
+          }
         }
       ]
     }
@@ -115,7 +124,7 @@
 
 <p align="center">
 
-[← Back to Previous File](on_select_2.md) | [Next File →](on_init_1.md)
+[← Back to Previous File](on_status_1.md) | [Next File →](on_select_3.md)
 
 </p>
 
